@@ -110,6 +110,10 @@ func (r *BaseRequest) SetRootDomain(rootDomain string) {
 	r.rootDomain = rootDomain
 }
 
+func (r *BaseRequest) SetPath(path string) {
+	r.path = path
+}
+
 func (r *BaseRequest) SetHttpMethod(method string) {
 	switch strings.ToUpper(method) {
 	case POST:
