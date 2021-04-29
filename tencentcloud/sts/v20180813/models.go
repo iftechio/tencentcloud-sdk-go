@@ -15,10 +15,10 @@
 package v20180813
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type ApiKey struct {
@@ -63,8 +63,8 @@ type AssumeRoleRequest struct {
 }
 
 func (r *AssumeRoleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -104,8 +104,8 @@ type AssumeRoleResponse struct {
 }
 
 func (r *AssumeRoleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -134,8 +134,8 @@ type AssumeRoleWithSAMLRequest struct {
 }
 
 func (r *AssumeRoleWithSAMLRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -175,8 +175,8 @@ type AssumeRoleWithSAMLResponse struct {
 }
 
 func (r *AssumeRoleWithSAMLResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -215,8 +215,8 @@ type GetFederationTokenRequest struct {
 }
 
 func (r *GetFederationTokenRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -246,7 +246,7 @@ type GetFederationTokenResponse struct {
 		ExpiredTime *uint64 `json:"ExpiredTime,omitempty" name:"ExpiredTime"`
 
 		// 证书有效的时间，以 iso8601 格式的 UTC 时间表示
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Expiration *string `json:"Expiration,omitempty" name:"Expiration"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -255,8 +255,8 @@ type GetFederationTokenResponse struct {
 }
 
 func (r *GetFederationTokenResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -273,8 +273,8 @@ type QueryApiKeyRequest struct {
 }
 
 func (r *QueryApiKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -304,8 +304,8 @@ type QueryApiKeyResponse struct {
 }
 
 func (r *QueryApiKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

@@ -15,97 +15,96 @@
 package v20180410
 
 import (
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/profile"
 )
 
 const APIVersion = "2018-04-10"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewAcceptDirectConnectTunnelRequest() (request *AcceptDirectConnectTunnelRequest) {
-    request = &AcceptDirectConnectTunnelRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "AcceptDirectConnectTunnel")
-    return
+	request = &AcceptDirectConnectTunnelRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "AcceptDirectConnectTunnel")
+	return
 }
 
 func NewAcceptDirectConnectTunnelResponse() (response *AcceptDirectConnectTunnelResponse) {
-    response = &AcceptDirectConnectTunnelResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &AcceptDirectConnectTunnelResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 接受专用通道申请
 func (c *Client) AcceptDirectConnectTunnel(request *AcceptDirectConnectTunnelRequest) (response *AcceptDirectConnectTunnelResponse, err error) {
-    if request == nil {
-        request = NewAcceptDirectConnectTunnelRequest()
-    }
-    response = NewAcceptDirectConnectTunnelResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewAcceptDirectConnectTunnelRequest()
+	}
+	response = NewAcceptDirectConnectTunnelResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewApplyInternetAddressRequest() (request *ApplyInternetAddressRequest) {
-    request = &ApplyInternetAddressRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "ApplyInternetAddress")
-    return
+	request = &ApplyInternetAddressRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "ApplyInternetAddress")
+	return
 }
 
 func NewApplyInternetAddressResponse() (response *ApplyInternetAddressResponse) {
-    response = &ApplyInternetAddressResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ApplyInternetAddressResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 申请互联网CIDR地址
 func (c *Client) ApplyInternetAddress(request *ApplyInternetAddressRequest) (response *ApplyInternetAddressResponse, err error) {
-    if request == nil {
-        request = NewApplyInternetAddressRequest()
-    }
-    response = NewApplyInternetAddressResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewApplyInternetAddressRequest()
+	}
+	response = NewApplyInternetAddressResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewCreateDirectConnectRequest() (request *CreateDirectConnectRequest) {
-    request = &CreateDirectConnectRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "CreateDirectConnect")
-    return
+	request = &CreateDirectConnectRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "CreateDirectConnect")
+	return
 }
 
 func NewCreateDirectConnectResponse() (response *CreateDirectConnectResponse) {
-    response = &CreateDirectConnectResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &CreateDirectConnectResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 申请物理专线接入。
@@ -113,461 +112,461 @@ func NewCreateDirectConnectResponse() (response *CreateDirectConnectResponse) {
 // 账号要进行实名认证，否则不允许申请物理专线；
 // 若账户下存在欠费状态的物理专线，则不能申请更多的物理专线。
 func (c *Client) CreateDirectConnect(request *CreateDirectConnectRequest) (response *CreateDirectConnectResponse, err error) {
-    if request == nil {
-        request = NewCreateDirectConnectRequest()
-    }
-    response = NewCreateDirectConnectResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewCreateDirectConnectRequest()
+	}
+	response = NewCreateDirectConnectResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewCreateDirectConnectTunnelRequest() (request *CreateDirectConnectTunnelRequest) {
-    request = &CreateDirectConnectTunnelRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "CreateDirectConnectTunnel")
-    return
+	request = &CreateDirectConnectTunnelRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "CreateDirectConnectTunnel")
+	return
 }
 
 func NewCreateDirectConnectTunnelResponse() (response *CreateDirectConnectTunnelResponse) {
-    response = &CreateDirectConnectTunnelResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &CreateDirectConnectTunnelResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 用于创建专用通道的接口
 func (c *Client) CreateDirectConnectTunnel(request *CreateDirectConnectTunnelRequest) (response *CreateDirectConnectTunnelResponse, err error) {
-    if request == nil {
-        request = NewCreateDirectConnectTunnelRequest()
-    }
-    response = NewCreateDirectConnectTunnelResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewCreateDirectConnectTunnelRequest()
+	}
+	response = NewCreateDirectConnectTunnelResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDeleteDirectConnectRequest() (request *DeleteDirectConnectRequest) {
-    request = &DeleteDirectConnectRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "DeleteDirectConnect")
-    return
+	request = &DeleteDirectConnectRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "DeleteDirectConnect")
+	return
 }
 
 func NewDeleteDirectConnectResponse() (response *DeleteDirectConnectResponse) {
-    response = &DeleteDirectConnectResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DeleteDirectConnectResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 删除物理专线。
 // 只能删除处于已连接状态的物理专线。
 func (c *Client) DeleteDirectConnect(request *DeleteDirectConnectRequest) (response *DeleteDirectConnectResponse, err error) {
-    if request == nil {
-        request = NewDeleteDirectConnectRequest()
-    }
-    response = NewDeleteDirectConnectResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDeleteDirectConnectRequest()
+	}
+	response = NewDeleteDirectConnectResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDeleteDirectConnectTunnelRequest() (request *DeleteDirectConnectTunnelRequest) {
-    request = &DeleteDirectConnectTunnelRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "DeleteDirectConnectTunnel")
-    return
+	request = &DeleteDirectConnectTunnelRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "DeleteDirectConnectTunnel")
+	return
 }
 
 func NewDeleteDirectConnectTunnelResponse() (response *DeleteDirectConnectTunnelResponse) {
-    response = &DeleteDirectConnectTunnelResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DeleteDirectConnectTunnelResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 删除专用通道
 func (c *Client) DeleteDirectConnectTunnel(request *DeleteDirectConnectTunnelRequest) (response *DeleteDirectConnectTunnelResponse, err error) {
-    if request == nil {
-        request = NewDeleteDirectConnectTunnelRequest()
-    }
-    response = NewDeleteDirectConnectTunnelResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDeleteDirectConnectTunnelRequest()
+	}
+	response = NewDeleteDirectConnectTunnelResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeAccessPointsRequest() (request *DescribeAccessPointsRequest) {
-    request = &DescribeAccessPointsRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "DescribeAccessPoints")
-    return
+	request = &DescribeAccessPointsRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "DescribeAccessPoints")
+	return
 }
 
 func NewDescribeAccessPointsResponse() (response *DescribeAccessPointsResponse) {
-    response = &DescribeAccessPointsResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeAccessPointsResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 查询物理专线接入点
 func (c *Client) DescribeAccessPoints(request *DescribeAccessPointsRequest) (response *DescribeAccessPointsResponse, err error) {
-    if request == nil {
-        request = NewDescribeAccessPointsRequest()
-    }
-    response = NewDescribeAccessPointsResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeAccessPointsRequest()
+	}
+	response = NewDescribeAccessPointsResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeDirectConnectTunnelExtraRequest() (request *DescribeDirectConnectTunnelExtraRequest) {
-    request = &DescribeDirectConnectTunnelExtraRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "DescribeDirectConnectTunnelExtra")
-    return
+	request = &DescribeDirectConnectTunnelExtraRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "DescribeDirectConnectTunnelExtra")
+	return
 }
 
 func NewDescribeDirectConnectTunnelExtraResponse() (response *DescribeDirectConnectTunnelExtraResponse) {
-    response = &DescribeDirectConnectTunnelExtraResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeDirectConnectTunnelExtraResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 本接口（DescribeDirectConnectTunnelExtra）用于查询专用通道扩展信息
 func (c *Client) DescribeDirectConnectTunnelExtra(request *DescribeDirectConnectTunnelExtraRequest) (response *DescribeDirectConnectTunnelExtraResponse, err error) {
-    if request == nil {
-        request = NewDescribeDirectConnectTunnelExtraRequest()
-    }
-    response = NewDescribeDirectConnectTunnelExtraResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeDirectConnectTunnelExtraRequest()
+	}
+	response = NewDescribeDirectConnectTunnelExtraResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeDirectConnectTunnelsRequest() (request *DescribeDirectConnectTunnelsRequest) {
-    request = &DescribeDirectConnectTunnelsRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "DescribeDirectConnectTunnels")
-    return
+	request = &DescribeDirectConnectTunnelsRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "DescribeDirectConnectTunnels")
+	return
 }
 
 func NewDescribeDirectConnectTunnelsResponse() (response *DescribeDirectConnectTunnelsResponse) {
-    response = &DescribeDirectConnectTunnelsResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeDirectConnectTunnelsResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 用于查询专用通道列表。
 func (c *Client) DescribeDirectConnectTunnels(request *DescribeDirectConnectTunnelsRequest) (response *DescribeDirectConnectTunnelsResponse, err error) {
-    if request == nil {
-        request = NewDescribeDirectConnectTunnelsRequest()
-    }
-    response = NewDescribeDirectConnectTunnelsResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeDirectConnectTunnelsRequest()
+	}
+	response = NewDescribeDirectConnectTunnelsResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeDirectConnectsRequest() (request *DescribeDirectConnectsRequest) {
-    request = &DescribeDirectConnectsRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "DescribeDirectConnects")
-    return
+	request = &DescribeDirectConnectsRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "DescribeDirectConnects")
+	return
 }
 
 func NewDescribeDirectConnectsResponse() (response *DescribeDirectConnectsResponse) {
-    response = &DescribeDirectConnectsResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeDirectConnectsResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 查询物理专线列表。
 func (c *Client) DescribeDirectConnects(request *DescribeDirectConnectsRequest) (response *DescribeDirectConnectsResponse, err error) {
-    if request == nil {
-        request = NewDescribeDirectConnectsRequest()
-    }
-    response = NewDescribeDirectConnectsResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeDirectConnectsRequest()
+	}
+	response = NewDescribeDirectConnectsResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeInternetAddressRequest() (request *DescribeInternetAddressRequest) {
-    request = &DescribeInternetAddressRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "DescribeInternetAddress")
-    return
+	request = &DescribeInternetAddressRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "DescribeInternetAddress")
+	return
 }
 
 func NewDescribeInternetAddressResponse() (response *DescribeInternetAddressResponse) {
-    response = &DescribeInternetAddressResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeInternetAddressResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 获取用户互联网公网地址信息
 func (c *Client) DescribeInternetAddress(request *DescribeInternetAddressRequest) (response *DescribeInternetAddressResponse, err error) {
-    if request == nil {
-        request = NewDescribeInternetAddressRequest()
-    }
-    response = NewDescribeInternetAddressResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeInternetAddressRequest()
+	}
+	response = NewDescribeInternetAddressResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeInternetAddressQuotaRequest() (request *DescribeInternetAddressQuotaRequest) {
-    request = &DescribeInternetAddressQuotaRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "DescribeInternetAddressQuota")
-    return
+	request = &DescribeInternetAddressQuotaRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "DescribeInternetAddressQuota")
+	return
 }
 
 func NewDescribeInternetAddressQuotaResponse() (response *DescribeInternetAddressQuotaResponse) {
-    response = &DescribeInternetAddressQuotaResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeInternetAddressQuotaResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 获取用户互联网公网地址配额
 func (c *Client) DescribeInternetAddressQuota(request *DescribeInternetAddressQuotaRequest) (response *DescribeInternetAddressQuotaResponse, err error) {
-    if request == nil {
-        request = NewDescribeInternetAddressQuotaRequest()
-    }
-    response = NewDescribeInternetAddressQuotaResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeInternetAddressQuotaRequest()
+	}
+	response = NewDescribeInternetAddressQuotaResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeInternetAddressStatisticsRequest() (request *DescribeInternetAddressStatisticsRequest) {
-    request = &DescribeInternetAddressStatisticsRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "DescribeInternetAddressStatistics")
-    return
+	request = &DescribeInternetAddressStatisticsRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "DescribeInternetAddressStatistics")
+	return
 }
 
 func NewDescribeInternetAddressStatisticsResponse() (response *DescribeInternetAddressStatisticsResponse) {
-    response = &DescribeInternetAddressStatisticsResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeInternetAddressStatisticsResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 获取用户互联网公网地址分配统计信息
 func (c *Client) DescribeInternetAddressStatistics(request *DescribeInternetAddressStatisticsRequest) (response *DescribeInternetAddressStatisticsResponse, err error) {
-    if request == nil {
-        request = NewDescribeInternetAddressStatisticsRequest()
-    }
-    response = NewDescribeInternetAddressStatisticsResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeInternetAddressStatisticsRequest()
+	}
+	response = NewDescribeInternetAddressStatisticsResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribePublicDirectConnectTunnelRoutesRequest() (request *DescribePublicDirectConnectTunnelRoutesRequest) {
-    request = &DescribePublicDirectConnectTunnelRoutesRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "DescribePublicDirectConnectTunnelRoutes")
-    return
+	request = &DescribePublicDirectConnectTunnelRoutesRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "DescribePublicDirectConnectTunnelRoutes")
+	return
 }
 
 func NewDescribePublicDirectConnectTunnelRoutesResponse() (response *DescribePublicDirectConnectTunnelRoutesResponse) {
-    response = &DescribePublicDirectConnectTunnelRoutesResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribePublicDirectConnectTunnelRoutesResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 本接口（DescribePublicDirectConnectTunnelRoutes）用于查询互联网通道路由列表
 func (c *Client) DescribePublicDirectConnectTunnelRoutes(request *DescribePublicDirectConnectTunnelRoutesRequest) (response *DescribePublicDirectConnectTunnelRoutesResponse, err error) {
-    if request == nil {
-        request = NewDescribePublicDirectConnectTunnelRoutesRequest()
-    }
-    response = NewDescribePublicDirectConnectTunnelRoutesResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribePublicDirectConnectTunnelRoutesRequest()
+	}
+	response = NewDescribePublicDirectConnectTunnelRoutesResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDisableInternetAddressRequest() (request *DisableInternetAddressRequest) {
-    request = &DisableInternetAddressRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "DisableInternetAddress")
-    return
+	request = &DisableInternetAddressRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "DisableInternetAddress")
+	return
 }
 
 func NewDisableInternetAddressResponse() (response *DisableInternetAddressResponse) {
-    response = &DisableInternetAddressResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DisableInternetAddressResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 停用用户申请的公网互联网地址
 func (c *Client) DisableInternetAddress(request *DisableInternetAddressRequest) (response *DisableInternetAddressResponse, err error) {
-    if request == nil {
-        request = NewDisableInternetAddressRequest()
-    }
-    response = NewDisableInternetAddressResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDisableInternetAddressRequest()
+	}
+	response = NewDisableInternetAddressResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewEnableInternetAddressRequest() (request *EnableInternetAddressRequest) {
-    request = &EnableInternetAddressRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "EnableInternetAddress")
-    return
+	request = &EnableInternetAddressRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "EnableInternetAddress")
+	return
 }
 
 func NewEnableInternetAddressResponse() (response *EnableInternetAddressResponse) {
-    response = &EnableInternetAddressResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &EnableInternetAddressResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 启用已停用的互联网公网地址
 func (c *Client) EnableInternetAddress(request *EnableInternetAddressRequest) (response *EnableInternetAddressResponse, err error) {
-    if request == nil {
-        request = NewEnableInternetAddressRequest()
-    }
-    response = NewEnableInternetAddressResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewEnableInternetAddressRequest()
+	}
+	response = NewEnableInternetAddressResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewModifyDirectConnectAttributeRequest() (request *ModifyDirectConnectAttributeRequest) {
-    request = &ModifyDirectConnectAttributeRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "ModifyDirectConnectAttribute")
-    return
+	request = &ModifyDirectConnectAttributeRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "ModifyDirectConnectAttribute")
+	return
 }
 
 func NewModifyDirectConnectAttributeResponse() (response *ModifyDirectConnectAttributeResponse) {
-    response = &ModifyDirectConnectAttributeResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ModifyDirectConnectAttributeResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 修改物理专线的属性。
 func (c *Client) ModifyDirectConnectAttribute(request *ModifyDirectConnectAttributeRequest) (response *ModifyDirectConnectAttributeResponse, err error) {
-    if request == nil {
-        request = NewModifyDirectConnectAttributeRequest()
-    }
-    response = NewModifyDirectConnectAttributeResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewModifyDirectConnectAttributeRequest()
+	}
+	response = NewModifyDirectConnectAttributeResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewModifyDirectConnectTunnelAttributeRequest() (request *ModifyDirectConnectTunnelAttributeRequest) {
-    request = &ModifyDirectConnectTunnelAttributeRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "ModifyDirectConnectTunnelAttribute")
-    return
+	request = &ModifyDirectConnectTunnelAttributeRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "ModifyDirectConnectTunnelAttribute")
+	return
 }
 
 func NewModifyDirectConnectTunnelAttributeResponse() (response *ModifyDirectConnectTunnelAttributeResponse) {
-    response = &ModifyDirectConnectTunnelAttributeResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ModifyDirectConnectTunnelAttributeResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 修改专用通道属性
 func (c *Client) ModifyDirectConnectTunnelAttribute(request *ModifyDirectConnectTunnelAttributeRequest) (response *ModifyDirectConnectTunnelAttributeResponse, err error) {
-    if request == nil {
-        request = NewModifyDirectConnectTunnelAttributeRequest()
-    }
-    response = NewModifyDirectConnectTunnelAttributeResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewModifyDirectConnectTunnelAttributeRequest()
+	}
+	response = NewModifyDirectConnectTunnelAttributeResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewModifyDirectConnectTunnelExtraRequest() (request *ModifyDirectConnectTunnelExtraRequest) {
-    request = &ModifyDirectConnectTunnelExtraRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "ModifyDirectConnectTunnelExtra")
-    return
+	request = &ModifyDirectConnectTunnelExtraRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "ModifyDirectConnectTunnelExtra")
+	return
 }
 
 func NewModifyDirectConnectTunnelExtraResponse() (response *ModifyDirectConnectTunnelExtraResponse) {
-    response = &ModifyDirectConnectTunnelExtraResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ModifyDirectConnectTunnelExtraResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 本接口（ModifyDirectConnectTunnelExtra）用于修改专用通道扩展信息
 func (c *Client) ModifyDirectConnectTunnelExtra(request *ModifyDirectConnectTunnelExtraRequest) (response *ModifyDirectConnectTunnelExtraResponse, err error) {
-    if request == nil {
-        request = NewModifyDirectConnectTunnelExtraRequest()
-    }
-    response = NewModifyDirectConnectTunnelExtraResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewModifyDirectConnectTunnelExtraRequest()
+	}
+	response = NewModifyDirectConnectTunnelExtraResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewRejectDirectConnectTunnelRequest() (request *RejectDirectConnectTunnelRequest) {
-    request = &RejectDirectConnectTunnelRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "RejectDirectConnectTunnel")
-    return
+	request = &RejectDirectConnectTunnelRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "RejectDirectConnectTunnel")
+	return
 }
 
 func NewRejectDirectConnectTunnelResponse() (response *RejectDirectConnectTunnelResponse) {
-    response = &RejectDirectConnectTunnelResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &RejectDirectConnectTunnelResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 拒绝专用通道申请
 func (c *Client) RejectDirectConnectTunnel(request *RejectDirectConnectTunnelRequest) (response *RejectDirectConnectTunnelResponse, err error) {
-    if request == nil {
-        request = NewRejectDirectConnectTunnelRequest()
-    }
-    response = NewRejectDirectConnectTunnelResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewRejectDirectConnectTunnelRequest()
+	}
+	response = NewRejectDirectConnectTunnelResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewReleaseInternetAddressRequest() (request *ReleaseInternetAddressRequest) {
-    request = &ReleaseInternetAddressRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("dc", APIVersion, "ReleaseInternetAddress")
-    return
+	request = &ReleaseInternetAddressRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("dc", APIVersion, "ReleaseInternetAddress")
+	return
 }
 
 func NewReleaseInternetAddressResponse() (response *ReleaseInternetAddressResponse) {
-    response = &ReleaseInternetAddressResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ReleaseInternetAddressResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 释放已申请的互联网地址
 func (c *Client) ReleaseInternetAddress(request *ReleaseInternetAddressRequest) (response *ReleaseInternetAddressResponse, err error) {
-    if request == nil {
-        request = NewReleaseInternetAddressRequest()
-    }
-    response = NewReleaseInternetAddressResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewReleaseInternetAddressRequest()
+	}
+	response = NewReleaseInternetAddressResponse()
+	err = c.Send(request, response)
+	return
 }

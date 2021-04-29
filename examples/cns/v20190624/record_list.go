@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/cns/v20190624"
-	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
-	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/errors"
-	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
-	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/regions"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/cns/v20190624"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/errors"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/regions"
 )
 
 func main() {

@@ -6,10 +6,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
-	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/errors"
-	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
-	tic "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/tic/v20201117"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/errors"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/profile"
+	tic "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/tic/v20201117"
 )
 
 var client *tic.Client

@@ -15,10 +15,10 @@
 package v20180801
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type AddDelayLiveStreamRequest struct {
@@ -44,8 +44,8 @@ type AddDelayLiveStreamRequest struct {
 }
 
 func (r *AddDelayLiveStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -76,8 +76,8 @@ type AddDelayLiveStreamResponse struct {
 }
 
 func (r *AddDelayLiveStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -118,8 +118,8 @@ type AddLiveDomainRequest struct {
 }
 
 func (r *AddLiveDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -150,8 +150,8 @@ type AddLiveDomainResponse struct {
 }
 
 func (r *AddLiveDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -186,8 +186,8 @@ type AddLiveWatermarkRequest struct {
 }
 
 func (r *AddLiveWatermarkRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -222,8 +222,8 @@ type AddLiveWatermarkResponse struct {
 }
 
 func (r *AddLiveWatermarkResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -290,8 +290,8 @@ type BindLiveDomainCertRequest struct {
 }
 
 func (r *BindLiveDomainCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -320,8 +320,8 @@ type BindLiveDomainCertResponse struct {
 }
 
 func (r *BindLiveDomainCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -414,8 +414,8 @@ type CancelCommonMixStreamRequest struct {
 }
 
 func (r *CancelCommonMixStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -442,8 +442,8 @@ type CancelCommonMixStreamResponse struct {
 }
 
 func (r *CancelCommonMixStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -573,7 +573,7 @@ type CommonMixLayoutParams struct {
 	// 不填默认为0。
 	// 0表示输入流为音视频。
 	// 2表示输入流为图片。
-	// 3表示输入流为画布。 
+	// 3表示输入流为画布。
 	// 4表示输入流为音频。
 	// 5表示输入流为纯视频。
 	InputType *int64 `json:"InputType,omitempty" name:"InputType"`
@@ -596,7 +596,7 @@ type CommonMixLayoutParams struct {
 	// 像素：[0，2000]
 	// 百分比：[0.01，0.99]
 	// 不填默认为0。
-	// 相对于大主播背景画面左上角的横向偏移。 
+	// 相对于大主播背景画面左上角的横向偏移。
 	// 使用百分比时，期望输出为（百分比 * 背景宽）。
 	LocationX *float64 `json:"LocationX,omitempty" name:"LocationX"`
 
@@ -604,7 +604,7 @@ type CommonMixLayoutParams struct {
 	// 像素：[0，2000]
 	// 百分比：[0.01，0.99]
 	// 不填默认为0。
-	// 相对于大主播背景画面左上角的纵向偏移。 
+	// 相对于大主播背景画面左上角的纵向偏移。
 	// 使用百分比时，期望输出为（百分比 * 背景宽）
 	LocationY *float64 `json:"LocationY,omitempty" name:"LocationY"`
 
@@ -698,8 +698,8 @@ type CreateCommonMixStreamRequest struct {
 }
 
 func (r *CreateCommonMixStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -730,8 +730,8 @@ type CreateCommonMixStreamResponse struct {
 }
 
 func (r *CreateCommonMixStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -754,8 +754,8 @@ type CreateLiveCallbackRuleRequest struct {
 }
 
 func (r *CreateLiveCallbackRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -784,8 +784,8 @@ type CreateLiveCallbackRuleResponse struct {
 }
 
 func (r *CreateLiveCallbackRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -837,8 +837,8 @@ type CreateLiveCallbackTemplateRequest struct {
 }
 
 func (r *CreateLiveCallbackTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -876,8 +876,8 @@ type CreateLiveCallbackTemplateResponse struct {
 }
 
 func (r *CreateLiveCallbackTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -911,8 +911,8 @@ type CreateLiveCertRequest struct {
 }
 
 func (r *CreateLiveCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -947,8 +947,8 @@ type CreateLiveCertResponse struct {
 }
 
 func (r *CreateLiveCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1009,8 +1009,8 @@ type CreateLiveRecordRequest struct {
 }
 
 func (r *CreateLiveRecordRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1049,8 +1049,8 @@ type CreateLiveRecordResponse struct {
 }
 
 func (r *CreateLiveRecordResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1077,8 +1077,8 @@ type CreateLiveRecordRuleRequest struct {
 }
 
 func (r *CreateLiveRecordRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1108,8 +1108,8 @@ type CreateLiveRecordRuleResponse struct {
 }
 
 func (r *CreateLiveRecordRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1152,8 +1152,8 @@ type CreateLiveRecordTemplateRequest struct {
 }
 
 func (r *CreateLiveRecordTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1191,8 +1191,8 @@ type CreateLiveRecordTemplateResponse struct {
 }
 
 func (r *CreateLiveRecordTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1219,8 +1219,8 @@ type CreateLiveSnapshotRuleRequest struct {
 }
 
 func (r *CreateLiveSnapshotRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1250,8 +1250,8 @@ type CreateLiveSnapshotRuleResponse struct {
 }
 
 func (r *CreateLiveSnapshotRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1310,8 +1310,8 @@ type CreateLiveSnapshotTemplateRequest struct {
 }
 
 func (r *CreateLiveSnapshotTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1351,8 +1351,8 @@ type CreateLiveSnapshotTemplateResponse struct {
 }
 
 func (r *CreateLiveSnapshotTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1378,8 +1378,8 @@ type CreateLiveTranscodeRuleRequest struct {
 }
 
 func (r *CreateLiveTranscodeRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1409,8 +1409,8 @@ type CreateLiveTranscodeRuleResponse struct {
 }
 
 func (r *CreateLiveTranscodeRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1442,7 +1442,7 @@ type CreateLiveTranscodeTemplateRequest struct {
 	AudioBitrate *int64 `json:"AudioBitrate,omitempty" name:"AudioBitrate"`
 
 	// 视频编码：h264/h265/origin，默认origin。
-	// 
+	//
 	// origin: 保持原始编码格式
 	Vcodec *string `json:"Vcodec,omitempty" name:"Vcodec"`
 
@@ -1502,7 +1502,7 @@ type CreateLiveTranscodeTemplateRequest struct {
 
 	// 极速高清视频码率压缩比。
 	// 极速高清目标码率=VideoBitrate * (1-AdaptBitratePercent)
-	// 
+	//
 	// 取值范围：0.0到0.5
 	AdaptBitratePercent *float64 `json:"AdaptBitratePercent,omitempty" name:"AdaptBitratePercent"`
 
@@ -1511,8 +1511,8 @@ type CreateLiveTranscodeTemplateRequest struct {
 }
 
 func (r *CreateLiveTranscodeTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1561,8 +1561,8 @@ type CreateLiveTranscodeTemplateResponse struct {
 }
 
 func (r *CreateLiveTranscodeTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1588,8 +1588,8 @@ type CreateLiveWatermarkRuleRequest struct {
 }
 
 func (r *CreateLiveWatermarkRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1619,8 +1619,8 @@ type CreateLiveWatermarkRuleResponse struct {
 }
 
 func (r *CreateLiveWatermarkRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1675,8 +1675,8 @@ type CreatePullStreamConfigRequest struct {
 }
 
 func (r *CreatePullStreamConfigRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1711,8 +1711,8 @@ type CreatePullStreamConfigResponse struct {
 }
 
 func (r *CreatePullStreamConfigResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1752,8 +1752,8 @@ type CreateRecordTaskRequest struct {
 }
 
 func (r *CreateRecordTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1790,8 +1790,8 @@ type CreateRecordTaskResponse struct {
 }
 
 func (r *CreateRecordTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1823,7 +1823,7 @@ type DelayInfo struct {
 	// 推流域名。
 	DomainName *string `json:"DomainName,omitempty" name:"DomainName"`
 
-	// 推流路径，与推流和播放地址中的 
+	// 推流路径，与推流和播放地址中的
 	//  AppName 保持一致，默认为 live。
 	AppName *string `json:"AppName,omitempty" name:"AppName"`
 
@@ -1860,8 +1860,8 @@ type DeleteLiveCallbackRuleRequest struct {
 }
 
 func (r *DeleteLiveCallbackRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1889,8 +1889,8 @@ type DeleteLiveCallbackRuleResponse struct {
 }
 
 func (r *DeleteLiveCallbackRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1909,8 +1909,8 @@ type DeleteLiveCallbackTemplateRequest struct {
 }
 
 func (r *DeleteLiveCallbackTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1937,8 +1937,8 @@ type DeleteLiveCallbackTemplateResponse struct {
 }
 
 func (r *DeleteLiveCallbackTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1955,8 +1955,8 @@ type DeleteLiveCertRequest struct {
 }
 
 func (r *DeleteLiveCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1983,8 +1983,8 @@ type DeleteLiveCertResponse struct {
 }
 
 func (r *DeleteLiveCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2004,8 +2004,8 @@ type DeleteLiveDomainRequest struct {
 }
 
 func (r *DeleteLiveDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2033,8 +2033,8 @@ type DeleteLiveDomainResponse struct {
 }
 
 func (r *DeleteLiveDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2054,8 +2054,8 @@ type DeleteLiveRecordRequest struct {
 }
 
 func (r *DeleteLiveRecordRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2083,8 +2083,8 @@ type DeleteLiveRecordResponse struct {
 }
 
 func (r *DeleteLiveRecordResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2110,8 +2110,8 @@ type DeleteLiveRecordRuleRequest struct {
 }
 
 func (r *DeleteLiveRecordRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2140,8 +2140,8 @@ type DeleteLiveRecordRuleResponse struct {
 }
 
 func (r *DeleteLiveRecordRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2158,8 +2158,8 @@ type DeleteLiveRecordTemplateRequest struct {
 }
 
 func (r *DeleteLiveRecordTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2186,8 +2186,8 @@ type DeleteLiveRecordTemplateResponse struct {
 }
 
 func (r *DeleteLiveRecordTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2210,8 +2210,8 @@ type DeleteLiveSnapshotRuleRequest struct {
 }
 
 func (r *DeleteLiveSnapshotRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2240,8 +2240,8 @@ type DeleteLiveSnapshotRuleResponse struct {
 }
 
 func (r *DeleteLiveSnapshotRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2260,8 +2260,8 @@ type DeleteLiveSnapshotTemplateRequest struct {
 }
 
 func (r *DeleteLiveSnapshotTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2288,8 +2288,8 @@ type DeleteLiveSnapshotTemplateResponse struct {
 }
 
 func (r *DeleteLiveSnapshotTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2315,8 +2315,8 @@ type DeleteLiveTranscodeRuleRequest struct {
 }
 
 func (r *DeleteLiveTranscodeRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2346,8 +2346,8 @@ type DeleteLiveTranscodeRuleResponse struct {
 }
 
 func (r *DeleteLiveTranscodeRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2366,8 +2366,8 @@ type DeleteLiveTranscodeTemplateRequest struct {
 }
 
 func (r *DeleteLiveTranscodeTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2394,8 +2394,8 @@ type DeleteLiveTranscodeTemplateResponse struct {
 }
 
 func (r *DeleteLiveTranscodeTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2414,8 +2414,8 @@ type DeleteLiveWatermarkRequest struct {
 }
 
 func (r *DeleteLiveWatermarkRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2442,8 +2442,8 @@ type DeleteLiveWatermarkResponse struct {
 }
 
 func (r *DeleteLiveWatermarkResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2466,8 +2466,8 @@ type DeleteLiveWatermarkRuleRequest struct {
 }
 
 func (r *DeleteLiveWatermarkRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2496,8 +2496,8 @@ type DeleteLiveWatermarkRuleResponse struct {
 }
 
 func (r *DeleteLiveWatermarkRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2516,8 +2516,8 @@ type DeletePullStreamConfigRequest struct {
 }
 
 func (r *DeletePullStreamConfigRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2544,8 +2544,8 @@ type DeletePullStreamConfigResponse struct {
 }
 
 func (r *DeletePullStreamConfigResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2562,8 +2562,8 @@ type DeleteRecordTaskRequest struct {
 }
 
 func (r *DeleteRecordTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2590,8 +2590,8 @@ type DeleteRecordTaskResponse struct {
 }
 
 func (r *DeleteRecordTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2611,8 +2611,8 @@ type DescribeAllStreamPlayInfoListRequest struct {
 }
 
 func (r *DescribeAllStreamPlayInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2646,8 +2646,8 @@ type DescribeAllStreamPlayInfoListResponse struct {
 }
 
 func (r *DescribeAllStreamPlayInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2670,8 +2670,8 @@ type DescribeAreaBillBandwidthAndFluxListRequest struct {
 }
 
 func (r *DescribeAreaBillBandwidthAndFluxListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2703,8 +2703,8 @@ type DescribeAreaBillBandwidthAndFluxListResponse struct {
 }
 
 func (r *DescribeAreaBillBandwidthAndFluxListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2744,8 +2744,8 @@ type DescribeBillBandwidthAndFluxListRequest struct {
 }
 
 func (r *DescribeBillBandwidthAndFluxListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2795,8 +2795,8 @@ type DescribeBillBandwidthAndFluxListResponse struct {
 }
 
 func (r *DescribeBillBandwidthAndFluxListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2834,8 +2834,8 @@ type DescribeCallbackRecordsListRequest struct {
 }
 
 func (r *DescribeCallbackRecordsListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2883,8 +2883,8 @@ type DescribeCallbackRecordsListResponse struct {
 }
 
 func (r *DescribeCallbackRecordsListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2916,8 +2916,8 @@ type DescribeConcurrentRecordStreamNumRequest struct {
 }
 
 func (r *DescribeConcurrentRecordStreamNumRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2951,8 +2951,8 @@ type DescribeConcurrentRecordStreamNumResponse struct {
 }
 
 func (r *DescribeConcurrentRecordStreamNumResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2972,8 +2972,8 @@ type DescribeDeliverBandwidthListRequest struct {
 }
 
 func (r *DescribeDeliverBandwidthListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3004,8 +3004,8 @@ type DescribeDeliverBandwidthListResponse struct {
 }
 
 func (r *DescribeDeliverBandwidthListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3038,8 +3038,8 @@ type DescribeGroupProIspPlayInfoListRequest struct {
 }
 
 func (r *DescribeGroupProIspPlayInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3074,8 +3074,8 @@ type DescribeGroupProIspPlayInfoListResponse struct {
 }
 
 func (r *DescribeGroupProIspPlayInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3101,8 +3101,8 @@ type DescribeHttpStatusInfoListRequest struct {
 }
 
 func (r *DescribeHttpStatusInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3134,8 +3134,8 @@ type DescribeHttpStatusInfoListResponse struct {
 }
 
 func (r *DescribeHttpStatusInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3149,8 +3149,8 @@ type DescribeLiveCallbackRulesRequest struct {
 }
 
 func (r *DescribeLiveCallbackRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3179,8 +3179,8 @@ type DescribeLiveCallbackRulesResponse struct {
 }
 
 func (r *DescribeLiveCallbackRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3199,8 +3199,8 @@ type DescribeLiveCallbackTemplateRequest struct {
 }
 
 func (r *DescribeLiveCallbackTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3230,8 +3230,8 @@ type DescribeLiveCallbackTemplateResponse struct {
 }
 
 func (r *DescribeLiveCallbackTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3245,8 +3245,8 @@ type DescribeLiveCallbackTemplatesRequest struct {
 }
 
 func (r *DescribeLiveCallbackTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3275,8 +3275,8 @@ type DescribeLiveCallbackTemplatesResponse struct {
 }
 
 func (r *DescribeLiveCallbackTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3293,8 +3293,8 @@ type DescribeLiveCertRequest struct {
 }
 
 func (r *DescribeLiveCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3324,8 +3324,8 @@ type DescribeLiveCertResponse struct {
 }
 
 func (r *DescribeLiveCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3339,8 +3339,8 @@ type DescribeLiveCertsRequest struct {
 }
 
 func (r *DescribeLiveCertsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3369,8 +3369,8 @@ type DescribeLiveCertsResponse struct {
 }
 
 func (r *DescribeLiveCertsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3384,8 +3384,8 @@ type DescribeLiveDelayInfoListRequest struct {
 }
 
 func (r *DescribeLiveDelayInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3414,8 +3414,8 @@ type DescribeLiveDelayInfoListResponse struct {
 }
 
 func (r *DescribeLiveDelayInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3432,8 +3432,8 @@ type DescribeLiveDomainCertRequest struct {
 }
 
 func (r *DescribeLiveDomainCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3463,8 +3463,8 @@ type DescribeLiveDomainCertResponse struct {
 }
 
 func (r *DescribeLiveDomainCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3481,8 +3481,8 @@ type DescribeLiveDomainPlayInfoListRequest struct {
 }
 
 func (r *DescribeLiveDomainPlayInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3527,8 +3527,8 @@ type DescribeLiveDomainPlayInfoListResponse struct {
 }
 
 func (r *DescribeLiveDomainPlayInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3545,8 +3545,8 @@ type DescribeLiveDomainRequest struct {
 }
 
 func (r *DescribeLiveDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3568,7 +3568,7 @@ type DescribeLiveDomainResponse struct {
 	Response *struct {
 
 		// 域名信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DomainInfo *DomainInfo `json:"DomainInfo,omitempty" name:"DomainInfo"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -3577,8 +3577,8 @@ type DescribeLiveDomainResponse struct {
 }
 
 func (r *DescribeLiveDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3610,8 +3610,8 @@ type DescribeLiveDomainsRequest struct {
 }
 
 func (r *DescribeLiveDomainsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3649,8 +3649,8 @@ type DescribeLiveDomainsResponse struct {
 }
 
 func (r *DescribeLiveDomainsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3665,7 +3665,7 @@ type DescribeLiveForbidStreamListRequest struct {
 	// 取得第几页，默认1。
 	PageNum *int64 `json:"PageNum,omitempty" name:"PageNum"`
 
-	// 每页大小，最大100。 
+	// 每页大小，最大100。
 	// 取值：1~100之前的任意整数。
 	// 默认值：10。
 	PageSize *int64 `json:"PageSize,omitempty" name:"PageSize"`
@@ -3675,8 +3675,8 @@ type DescribeLiveForbidStreamListRequest struct {
 }
 
 func (r *DescribeLiveForbidStreamListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3720,8 +3720,8 @@ type DescribeLiveForbidStreamListResponse struct {
 }
 
 func (r *DescribeLiveForbidStreamListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3744,7 +3744,7 @@ type DescribeLivePackageInfoRequest struct {
 	// 2. BuyTimeAsc： 最老购买的排在最前面
 	// 3. ExpireTimeDesc： 最后过期的排在最前面
 	// 4. ExpireTimeAsc：最先过期的排在最前面
-	// 
+	//
 	// 注意：
 	// 1. PackageType 为 2（连麦包） 的时候，不支持 3、4 排序
 	OrderBy *string `json:"OrderBy,omitempty" name:"OrderBy"`
@@ -3758,8 +3758,8 @@ type DescribeLivePackageInfoRequest struct {
 }
 
 func (r *DescribeLivePackageInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3784,36 +3784,36 @@ type DescribeLivePackageInfoResponse struct {
 	Response *struct {
 
 		// 套餐包信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LivePackageInfoList []*LivePackageInfo `json:"LivePackageInfoList,omitempty" name:"LivePackageInfoList" list`
 
 		// 套餐包当前计费方式:
-	// -1: 无计费方式或获取失败
-	// 0: 无计费方式
-	// 201: 月结带宽
-	// 202: 月结流量
-	// 203: 日结带宽
-	// 204: 日结流量
-	// 205: 日结时长
-	// 206: 月结时长
-	// 304: 日结流量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// -1: 无计费方式或获取失败
+		// 0: 无计费方式
+		// 201: 月结带宽
+		// 202: 月结流量
+		// 203: 日结带宽
+		// 204: 日结流量
+		// 205: 日结时长
+		// 206: 月结时长
+		// 304: 日结流量
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PackageBillMode *int64 `json:"PackageBillMode,omitempty" name:"PackageBillMode"`
 
 		// 总页数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalPage *int64 `json:"TotalPage,omitempty" name:"TotalPage"`
 
 		// 数据总条数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalNum *int64 `json:"TotalNum,omitempty" name:"TotalNum"`
 
 		// 当前页数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PageNum *int64 `json:"PageNum,omitempty" name:"PageNum"`
 
 		// 当前每页数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PageSize *int64 `json:"PageSize,omitempty" name:"PageSize"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -3822,8 +3822,8 @@ type DescribeLivePackageInfoResponse struct {
 }
 
 func (r *DescribeLivePackageInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3840,8 +3840,8 @@ type DescribeLivePlayAuthKeyRequest struct {
 }
 
 func (r *DescribeLivePlayAuthKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3871,8 +3871,8 @@ type DescribeLivePlayAuthKeyResponse struct {
 }
 
 func (r *DescribeLivePlayAuthKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3889,8 +3889,8 @@ type DescribeLivePushAuthKeyRequest struct {
 }
 
 func (r *DescribeLivePushAuthKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3920,8 +3920,8 @@ type DescribeLivePushAuthKeyResponse struct {
 }
 
 func (r *DescribeLivePushAuthKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3935,8 +3935,8 @@ type DescribeLiveRecordRulesRequest struct {
 }
 
 func (r *DescribeLiveRecordRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3965,8 +3965,8 @@ type DescribeLiveRecordRulesResponse struct {
 }
 
 func (r *DescribeLiveRecordRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3983,8 +3983,8 @@ type DescribeLiveRecordTemplateRequest struct {
 }
 
 func (r *DescribeLiveRecordTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4014,8 +4014,8 @@ type DescribeLiveRecordTemplateResponse struct {
 }
 
 func (r *DescribeLiveRecordTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4034,8 +4034,8 @@ type DescribeLiveRecordTemplatesRequest struct {
 }
 
 func (r *DescribeLiveRecordTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4065,8 +4065,8 @@ type DescribeLiveRecordTemplatesResponse struct {
 }
 
 func (r *DescribeLiveRecordTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4080,8 +4080,8 @@ type DescribeLiveSnapshotRulesRequest struct {
 }
 
 func (r *DescribeLiveSnapshotRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4110,8 +4110,8 @@ type DescribeLiveSnapshotRulesResponse struct {
 }
 
 func (r *DescribeLiveSnapshotRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4129,8 +4129,8 @@ type DescribeLiveSnapshotTemplateRequest struct {
 }
 
 func (r *DescribeLiveSnapshotTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4160,8 +4160,8 @@ type DescribeLiveSnapshotTemplateResponse struct {
 }
 
 func (r *DescribeLiveSnapshotTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4175,8 +4175,8 @@ type DescribeLiveSnapshotTemplatesRequest struct {
 }
 
 func (r *DescribeLiveSnapshotTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4205,8 +4205,8 @@ type DescribeLiveSnapshotTemplatesResponse struct {
 }
 
 func (r *DescribeLiveSnapshotTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4218,7 +4218,7 @@ func (r *DescribeLiveSnapshotTemplatesResponse) FromJsonString(s string) error {
 type DescribeLiveStreamEventListRequest struct {
 	*tchttp.BaseRequest
 
-	// 起始时间。 
+	// 起始时间。
 	// UTC 格式，例如：2018-12-29T19:00:00Z。
 	// 支持查询60天内的历史记录。
 	StartTime *string `json:"StartTime,omitempty" name:"StartTime"`
@@ -4268,8 +4268,8 @@ type DescribeLiveStreamEventListRequest struct {
 }
 
 func (r *DescribeLiveStreamEventListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4320,8 +4320,8 @@ type DescribeLiveStreamEventListResponse struct {
 }
 
 func (r *DescribeLiveStreamEventListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4342,7 +4342,7 @@ type DescribeLiveStreamOnlineListRequest struct {
 	// 取得第几页，默认1。
 	PageNum *uint64 `json:"PageNum,omitempty" name:"PageNum"`
 
-	// 每页大小，最大100。 
+	// 每页大小，最大100。
 	// 取值：10~100之间的任意整数。
 	// 默认值：10。
 	PageSize *uint64 `json:"PageSize,omitempty" name:"PageSize"`
@@ -4352,8 +4352,8 @@ type DescribeLiveStreamOnlineListRequest struct {
 }
 
 func (r *DescribeLiveStreamOnlineListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4399,8 +4399,8 @@ type DescribeLiveStreamOnlineListResponse struct {
 }
 
 func (r *DescribeLiveStreamOnlineListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4421,7 +4421,7 @@ type DescribeLiveStreamPublishedListRequest struct {
 	// 注意：EndTime和StartTime相差不可超过30天。
 	EndTime *string `json:"EndTime,omitempty" name:"EndTime"`
 
-	// 起始时间。 
+	// 起始时间。
 	// UTC 格式，例如：2016-06-29T19:00:00Z。
 	// 最长支持查询60天内数据。
 	StartTime *string `json:"StartTime,omitempty" name:"StartTime"`
@@ -4444,8 +4444,8 @@ type DescribeLiveStreamPublishedListRequest struct {
 }
 
 func (r *DescribeLiveStreamPublishedListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4493,8 +4493,8 @@ type DescribeLiveStreamPublishedListResponse struct {
 }
 
 func (r *DescribeLiveStreamPublishedListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4524,8 +4524,8 @@ type DescribeLiveStreamPushInfoListRequest struct {
 }
 
 func (r *DescribeLiveStreamPushInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4570,8 +4570,8 @@ type DescribeLiveStreamPushInfoListResponse struct {
 }
 
 func (r *DescribeLiveStreamPushInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4594,8 +4594,8 @@ type DescribeLiveStreamStateRequest struct {
 }
 
 func (r *DescribeLiveStreamStateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4619,9 +4619,9 @@ type DescribeLiveStreamStateResponse struct {
 	Response *struct {
 
 		// 流状态，
-	// active：活跃，
-	// inactive：非活跃，
-	// forbid：禁播。
+		// active：活跃，
+		// inactive：非活跃，
+		// forbid：禁播。
 		StreamState *string `json:"StreamState,omitempty" name:"StreamState"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -4630,8 +4630,8 @@ type DescribeLiveStreamStateResponse struct {
 }
 
 func (r *DescribeLiveStreamStateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4674,8 +4674,8 @@ type DescribeLiveTranscodeDetailInfoRequest struct {
 }
 
 func (r *DescribeLiveTranscodeDetailInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4723,8 +4723,8 @@ type DescribeLiveTranscodeDetailInfoResponse struct {
 }
 
 func (r *DescribeLiveTranscodeDetailInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4744,8 +4744,8 @@ type DescribeLiveTranscodeRulesRequest struct {
 }
 
 func (r *DescribeLiveTranscodeRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4776,8 +4776,8 @@ type DescribeLiveTranscodeRulesResponse struct {
 }
 
 func (r *DescribeLiveTranscodeRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4795,8 +4795,8 @@ type DescribeLiveTranscodeTemplateRequest struct {
 }
 
 func (r *DescribeLiveTranscodeTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4826,8 +4826,8 @@ type DescribeLiveTranscodeTemplateResponse struct {
 }
 
 func (r *DescribeLiveTranscodeTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4841,8 +4841,8 @@ type DescribeLiveTranscodeTemplatesRequest struct {
 }
 
 func (r *DescribeLiveTranscodeTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4871,8 +4871,8 @@ type DescribeLiveTranscodeTemplatesResponse struct {
 }
 
 func (r *DescribeLiveTranscodeTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4889,8 +4889,8 @@ type DescribeLiveWatermarkRequest struct {
 }
 
 func (r *DescribeLiveWatermarkRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4920,8 +4920,8 @@ type DescribeLiveWatermarkResponse struct {
 }
 
 func (r *DescribeLiveWatermarkResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4935,8 +4935,8 @@ type DescribeLiveWatermarkRulesRequest struct {
 }
 
 func (r *DescribeLiveWatermarkRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4965,8 +4965,8 @@ type DescribeLiveWatermarkRulesResponse struct {
 }
 
 func (r *DescribeLiveWatermarkRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4980,8 +4980,8 @@ type DescribeLiveWatermarksRequest struct {
 }
 
 func (r *DescribeLiveWatermarksRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5013,8 +5013,8 @@ type DescribeLiveWatermarksResponse struct {
 }
 
 func (r *DescribeLiveWatermarksResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5040,8 +5040,8 @@ type DescribeLogDownloadListRequest struct {
 }
 
 func (r *DescribeLogDownloadListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5076,8 +5076,8 @@ type DescribeLogDownloadListResponse struct {
 }
 
 func (r *DescribeLogDownloadListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5113,8 +5113,8 @@ type DescribePlayErrorCodeDetailInfoListRequest struct {
 }
 
 func (r *DescribePlayErrorCodeDetailInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5152,8 +5152,8 @@ type DescribePlayErrorCodeDetailInfoListResponse struct {
 }
 
 func (r *DescribePlayErrorCodeDetailInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5194,8 +5194,8 @@ type DescribePlayErrorCodeSumInfoListRequest struct {
 }
 
 func (r *DescribePlayErrorCodeSumInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5262,8 +5262,8 @@ type DescribePlayErrorCodeSumInfoListResponse struct {
 }
 
 func (r *DescribePlayErrorCodeSumInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5304,8 +5304,8 @@ type DescribeProIspPlaySumInfoListRequest struct {
 }
 
 func (r *DescribeProIspPlaySumInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5366,8 +5366,8 @@ type DescribeProIspPlaySumInfoListResponse struct {
 }
 
 func (r *DescribeProIspPlaySumInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5419,8 +5419,8 @@ type DescribeProvinceIspPlayInfoListRequest struct {
 }
 
 func (r *DescribeProvinceIspPlayInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5461,8 +5461,8 @@ type DescribeProvinceIspPlayInfoListResponse struct {
 }
 
 func (r *DescribeProvinceIspPlayInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5480,8 +5480,8 @@ type DescribePullStreamConfigsRequest struct {
 }
 
 func (r *DescribePullStreamConfigsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5511,8 +5511,8 @@ type DescribePullStreamConfigsResponse struct {
 }
 
 func (r *DescribePullStreamConfigsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5541,8 +5541,8 @@ type DescribeScreenShotSheetNumListRequest struct {
 }
 
 func (r *DescribeScreenShotSheetNumListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5576,8 +5576,8 @@ type DescribeScreenShotSheetNumListResponse struct {
 }
 
 func (r *DescribeScreenShotSheetNumListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5613,8 +5613,8 @@ type DescribeStreamDayPlayInfoListRequest struct {
 }
 
 func (r *DescribeStreamDayPlayInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5661,8 +5661,8 @@ type DescribeStreamDayPlayInfoListResponse struct {
 }
 
 func (r *DescribeStreamDayPlayInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5699,8 +5699,8 @@ type DescribeStreamPlayInfoListRequest struct {
 }
 
 func (r *DescribeStreamPlayInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5735,8 +5735,8 @@ type DescribeStreamPlayInfoListResponse struct {
 }
 
 func (r *DescribeStreamPlayInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5765,8 +5765,8 @@ type DescribeStreamPushInfoListRequest struct {
 }
 
 func (r *DescribeStreamPushInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5800,8 +5800,8 @@ type DescribeStreamPushInfoListResponse struct {
 }
 
 func (r *DescribeStreamPushInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5840,8 +5840,8 @@ type DescribeTopClientIpSumInfoListRequest struct {
 }
 
 func (r *DescribeTopClientIpSumInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5893,8 +5893,8 @@ type DescribeTopClientIpSumInfoListResponse struct {
 }
 
 func (r *DescribeTopClientIpSumInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5923,8 +5923,8 @@ type DescribeUploadStreamNumsRequest struct {
 }
 
 func (r *DescribeUploadStreamNumsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5957,8 +5957,8 @@ type DescribeUploadStreamNumsResponse struct {
 }
 
 func (r *DescribeUploadStreamNumsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5997,8 +5997,8 @@ type DescribeVisitTopSumInfoListRequest struct {
 }
 
 func (r *DescribeVisitTopSumInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6026,12 +6026,12 @@ type DescribeVisitTopSumInfoListResponse struct {
 	Response *struct {
 
 		// 页号，
-	// 范围是[1,1000]，
-	// 默认值是1。
+		// 范围是[1,1000]，
+		// 默认值是1。
 		PageNum *uint64 `json:"PageNum,omitempty" name:"PageNum"`
 
 		// 每页个数，范围是[1,1000]，
-	// 默认值是20。
+		// 默认值是20。
 		PageSize *uint64 `json:"PageSize,omitempty" name:"PageSize"`
 
 		// 峰值指标，可选值包括”Domain”，”StreamId”。
@@ -6055,8 +6055,8 @@ type DescribeVisitTopSumInfoListResponse struct {
 }
 
 func (r *DescribeVisitTopSumInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6201,8 +6201,8 @@ type DropLiveStreamRequest struct {
 }
 
 func (r *DropLiveStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6231,8 +6231,8 @@ type DropLiveStreamResponse struct {
 }
 
 func (r *DropLiveStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6249,8 +6249,8 @@ type EnableLiveDomainRequest struct {
 }
 
 func (r *EnableLiveDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6277,8 +6277,8 @@ type EnableLiveDomainResponse struct {
 }
 
 func (r *EnableLiveDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6295,8 +6295,8 @@ type ForbidLiveDomainRequest struct {
 }
 
 func (r *ForbidLiveDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6323,8 +6323,8 @@ type ForbidLiveDomainResponse struct {
 }
 
 func (r *ForbidLiveDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6358,8 +6358,8 @@ type ForbidLiveStreamRequest struct {
 }
 
 func (r *ForbidLiveStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6390,8 +6390,8 @@ type ForbidLiveStreamResponse struct {
 }
 
 func (r *ForbidLiveStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6565,8 +6565,8 @@ type ModifyLiveCallbackTemplateRequest struct {
 }
 
 func (r *ModifyLiveCallbackTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6601,8 +6601,8 @@ type ModifyLiveCallbackTemplateResponse struct {
 }
 
 func (r *ModifyLiveCallbackTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6634,8 +6634,8 @@ type ModifyLiveCertRequest struct {
 }
 
 func (r *ModifyLiveCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6667,8 +6667,8 @@ type ModifyLiveCertResponse struct {
 }
 
 func (r *ModifyLiveCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6691,8 +6691,8 @@ type ModifyLiveDomainCertRequest struct {
 }
 
 func (r *ModifyLiveDomainCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6721,8 +6721,8 @@ type ModifyLiveDomainCertResponse struct {
 }
 
 func (r *ModifyLiveDomainCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6755,8 +6755,8 @@ type ModifyLivePlayAuthKeyRequest struct {
 }
 
 func (r *ModifyLivePlayAuthKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6787,8 +6787,8 @@ type ModifyLivePlayAuthKeyResponse struct {
 }
 
 func (r *ModifyLivePlayAuthKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6808,8 +6808,8 @@ type ModifyLivePlayDomainRequest struct {
 }
 
 func (r *ModifyLivePlayDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6837,8 +6837,8 @@ type ModifyLivePlayDomainResponse struct {
 }
 
 func (r *ModifyLivePlayDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6870,8 +6870,8 @@ type ModifyLivePushAuthKeyRequest struct {
 }
 
 func (r *ModifyLivePushAuthKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6902,8 +6902,8 @@ type ModifyLivePushAuthKeyResponse struct {
 }
 
 func (r *ModifyLivePushAuthKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6944,8 +6944,8 @@ type ModifyLiveRecordTemplateRequest struct {
 }
 
 func (r *ModifyLiveRecordTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6980,8 +6980,8 @@ type ModifyLiveRecordTemplateResponse struct {
 }
 
 func (r *ModifyLiveRecordTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7037,8 +7037,8 @@ type ModifyLiveSnapshotTemplateRequest struct {
 }
 
 func (r *ModifyLiveSnapshotTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7076,8 +7076,8 @@ type ModifyLiveSnapshotTemplateResponse struct {
 }
 
 func (r *ModifyLiveSnapshotTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7093,7 +7093,7 @@ type ModifyLiveTranscodeTemplateRequest struct {
 	TemplateId *int64 `json:"TemplateId,omitempty" name:"TemplateId"`
 
 	// 视频编码：h264/h265/origin，默认origin。
-	// 
+	//
 	// origin: 保持原始编码格式
 	Vcodec *string `json:"Vcodec,omitempty" name:"Vcodec"`
 
@@ -7160,7 +7160,7 @@ type ModifyLiveTranscodeTemplateRequest struct {
 
 	// 极速高清视频码率压缩比。
 	// 极速高清目标码率=VideoBitrate * (1-AdaptBitratePercent)
-	// 
+	//
 	// 取值范围：0.0到0.5
 	AdaptBitratePercent *float64 `json:"AdaptBitratePercent,omitempty" name:"AdaptBitratePercent"`
 
@@ -7169,8 +7169,8 @@ type ModifyLiveTranscodeTemplateRequest struct {
 }
 
 func (r *ModifyLiveTranscodeTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7215,8 +7215,8 @@ type ModifyLiveTranscodeTemplateResponse struct {
 }
 
 func (r *ModifyLiveTranscodeTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7273,7 +7273,7 @@ type ModifyPullStreamConfigRequest struct {
 	// 1. 结束时间必须大于开始时间；
 	// 2. 结束时间和开始时间必须大于当前时间；
 	// 3. 结束时间 和 开始时间 间隔必须小于七天。
-	// 
+	//
 	// 使用UTC格式时间，
 	// 例如：2019-01-08T10:00:00Z。
 	// 注意：北京时间值为 UTC 时间值 + 8 小时，格式按照 ISO 8601 标准表示，详见 [ISO 日期格式说明](https://cloud.tencent.com/document/product/266/11732#I)。
@@ -7281,8 +7281,8 @@ type ModifyPullStreamConfigRequest struct {
 }
 
 func (r *ModifyPullStreamConfigRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7315,8 +7315,8 @@ type ModifyPullStreamConfigResponse struct {
 }
 
 func (r *ModifyPullStreamConfigResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7336,8 +7336,8 @@ type ModifyPullStreamStatusRequest struct {
 }
 
 func (r *ModifyPullStreamStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7365,8 +7365,8 @@ type ModifyPullStreamStatusResponse struct {
 }
 
 func (r *ModifyPullStreamStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7534,7 +7534,7 @@ type PullStreamConfig struct {
 	StartTime *string `json:"StartTime,omitempty" name:"StartTime"`
 
 	// 结束时间。
-	// 
+	//
 	// UTC格式时间，例如：2019-01-08T10:00:00Z。
 	// 注意：北京时间值为 UTC 时间值 + 8 小时，格式按照 ISO 8601 标准表示，详见 [ISO 日期格式说明](https://cloud.tencent.com/document/product/266/11732#I)。
 	EndTime *string `json:"EndTime,omitempty" name:"EndTime"`
@@ -7721,7 +7721,7 @@ type RecordParam struct {
 	// {EndMinute}: 结束时间-分钟
 	// {EndSecond}: 结束时间-秒
 	// {EndMillisecond}: 结束时间-毫秒
-	// 
+	//
 	// 若未设置默认录制文件名为{StreamID}_{StartYear}-{StartMonth}-{StartDay}-{StartHour}-{StartMinute}-{StartSecond}_{EndYear}-{EndMonth}-{EndDay}-{EndHour}-{EndMinute}-{EndSecond}
 	VodFileName *string `json:"VodFileName,omitempty" name:"VodFileName"`
 }
@@ -7774,8 +7774,8 @@ type ResumeDelayLiveStreamRequest struct {
 }
 
 func (r *ResumeDelayLiveStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7804,8 +7804,8 @@ type ResumeDelayLiveStreamResponse struct {
 }
 
 func (r *ResumeDelayLiveStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7828,8 +7828,8 @@ type ResumeLiveStreamRequest struct {
 }
 
 func (r *ResumeLiveStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7858,8 +7858,8 @@ type ResumeLiveStreamResponse struct {
 }
 
 func (r *ResumeLiveStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7900,7 +7900,7 @@ type SnapshotTemplateInfo struct {
 	// 截图时间间隔，5-300秒。
 	SnapshotInterval *int64 `json:"SnapshotInterval,omitempty" name:"SnapshotInterval"`
 
-	// 截图宽度，范围：0-3000。 
+	// 截图宽度，范围：0-3000。
 	// 0：原始宽度并适配原始比例。
 	Width *int64 `json:"Width,omitempty" name:"Width"`
 
@@ -7943,8 +7943,8 @@ type StopLiveRecordRequest struct {
 }
 
 func (r *StopLiveRecordRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7972,8 +7972,8 @@ type StopLiveRecordResponse struct {
 }
 
 func (r *StopLiveRecordResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7990,8 +7990,8 @@ type StopRecordTaskRequest struct {
 }
 
 func (r *StopRecordTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8018,8 +8018,8 @@ type StopRecordTaskResponse struct {
 }
 
 func (r *StopRecordTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8110,7 +8110,7 @@ type StreamOnlineInfo struct {
 type TemplateInfo struct {
 
 	// 视频编码：h264/h265/origin，默认h264。
-	// 
+	//
 	// origin: 保持原始编码格式
 	Vcodec *string `json:"Vcodec,omitempty" name:"Vcodec"`
 
@@ -8189,7 +8189,7 @@ type TemplateInfo struct {
 
 	// 极速高清视频码率压缩比。
 	// 极速高清目标码率=VideoBitrate * (1-AdaptBitratePercent)
-	// 
+	//
 	// 取值范围：0.0到0.5
 	AdaptBitratePercent *float64 `json:"AdaptBitratePercent,omitempty" name:"AdaptBitratePercent"`
 
@@ -8251,8 +8251,8 @@ type UnBindLiveDomainCertRequest struct {
 }
 
 func (r *UnBindLiveDomainCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8279,8 +8279,8 @@ type UnBindLiveDomainCertResponse struct {
 }
 
 func (r *UnBindLiveDomainCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8319,8 +8319,8 @@ type UpdateLiveWatermarkRequest struct {
 }
 
 func (r *UpdateLiveWatermarkRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8353,8 +8353,8 @@ type UpdateLiveWatermarkResponse struct {
 }
 
 func (r *UpdateLiveWatermarkResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

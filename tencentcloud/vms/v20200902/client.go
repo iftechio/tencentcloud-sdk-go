@@ -15,80 +15,79 @@
 package v20200902
 
 import (
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/profile"
 )
 
 const APIVersion = "2020-09-02"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewSendCodeVoiceRequest() (request *SendCodeVoiceRequest) {
-    request = &SendCodeVoiceRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("vms", APIVersion, "SendCodeVoice")
-    return
+	request = &SendCodeVoiceRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("vms", APIVersion, "SendCodeVoice")
+	return
 }
 
 func NewSendCodeVoiceResponse() (response *SendCodeVoiceResponse) {
-    response = &SendCodeVoiceResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &SendCodeVoiceResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 给用户发语音验证码（仅支持数字）。
 func (c *Client) SendCodeVoice(request *SendCodeVoiceRequest) (response *SendCodeVoiceResponse, err error) {
-    if request == nil {
-        request = NewSendCodeVoiceRequest()
-    }
-    response = NewSendCodeVoiceResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewSendCodeVoiceRequest()
+	}
+	response = NewSendCodeVoiceResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewSendTtsVoiceRequest() (request *SendTtsVoiceRequest) {
-    request = &SendTtsVoiceRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("vms", APIVersion, "SendTtsVoice")
-    return
+	request = &SendTtsVoiceRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("vms", APIVersion, "SendTtsVoice")
+	return
 }
 
 func NewSendTtsVoiceResponse() (response *SendTtsVoiceResponse) {
-    response = &SendTtsVoiceResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &SendTtsVoiceResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 给用户发送指定模板的语音通知。
 func (c *Client) SendTtsVoice(request *SendTtsVoiceRequest) (response *SendTtsVoiceResponse, err error) {
-    if request == nil {
-        request = NewSendTtsVoiceRequest()
-    }
-    response = NewSendTtsVoiceResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewSendTtsVoiceRequest()
+	}
+	response = NewSendTtsVoiceResponse()
+	err = c.Send(request, response)
+	return
 }

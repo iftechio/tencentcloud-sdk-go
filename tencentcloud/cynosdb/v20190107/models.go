@@ -15,10 +15,10 @@
 package v20190107
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type Account struct {
@@ -72,7 +72,7 @@ type AddInstancesRequest struct {
 	// 是否自动选择代金券 1是 0否 默认为0
 	AutoVoucher *int64 `json:"AutoVoucher,omitempty" name:"AutoVoucher"`
 
-	// 数据库类型，取值范围: 
+	// 数据库类型，取值范围:
 	// <li> MYSQL </li>
 	DbType *string `json:"DbType,omitempty" name:"DbType"`
 
@@ -81,8 +81,8 @@ type AddInstancesRequest struct {
 }
 
 func (r *AddInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -115,19 +115,19 @@ type AddInstancesResponse struct {
 	Response *struct {
 
 		// 冻结流水，一次开通一个冻结流水。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TranId *string `json:"TranId,omitempty" name:"TranId"`
 
 		// 后付费订单号。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DealNames []*string `json:"DealNames,omitempty" name:"DealNames" list`
 
 		// 发货资源id列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ResourceIds []*string `json:"ResourceIds,omitempty" name:"ResourceIds" list`
 
 		// 大订单号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BigDealIds []*string `json:"BigDealIds,omitempty" name:"BigDealIds" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -136,8 +136,8 @@ type AddInstancesResponse struct {
 }
 
 func (r *AddInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -233,11 +233,11 @@ type CreateClustersRequest struct {
 	// 所属子网ID
 	SubnetId *string `json:"SubnetId,omitempty" name:"SubnetId"`
 
-	// 数据库类型，取值范围: 
+	// 数据库类型，取值范围:
 	// <li> MYSQL </li>
 	DbType *string `json:"DbType,omitempty" name:"DbType"`
 
-	// 数据库版本，取值范围: 
+	// 数据库版本，取值范围:
 	// <li> MYSQL可选值：5.7 </li>
 	DbVersion *string `json:"DbVersion,omitempty" name:"DbVersion"`
 
@@ -339,8 +339,8 @@ type CreateClustersRequest struct {
 }
 
 func (r *CreateClustersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -394,23 +394,23 @@ type CreateClustersResponse struct {
 	Response *struct {
 
 		// 冻结流水ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TranId *string `json:"TranId,omitempty" name:"TranId"`
 
 		// 订单号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DealNames []*string `json:"DealNames,omitempty" name:"DealNames" list`
 
 		// 资源ID列表（异步发货可能无法返回该字段, 强烈建议使用dealNames字段查询接口DescribeResourcesByDealName获取异步发货的资源ID）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ResourceIds []*string `json:"ResourceIds,omitempty" name:"ResourceIds" list`
 
 		// 集群ID列表（异步发货可能不返回该字段, 强烈建议使用dealNames查询接口DescribeResourcesByDealName获取异步发货的集群ID）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ClusterIds []*string `json:"ClusterIds,omitempty" name:"ClusterIds" list`
 
 		// 大订单号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BigDealIds []*string `json:"BigDealIds,omitempty" name:"BigDealIds" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -419,8 +419,8 @@ type CreateClustersResponse struct {
 }
 
 func (r *CreateClustersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -868,14 +868,14 @@ type DescribeAccountsRequest struct {
 	// 需要过滤的账户列表
 	AccountNames []*string `json:"AccountNames,omitempty" name:"AccountNames" list`
 
-	// 数据库类型，取值范围: 
+	// 数据库类型，取值范围:
 	// <li> MYSQL </li>
 	DbType *string `json:"DbType,omitempty" name:"DbType"`
 }
 
 func (r *DescribeAccountsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -907,8 +907,8 @@ type DescribeAccountsResponse struct {
 }
 
 func (r *DescribeAccountsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -925,8 +925,8 @@ type DescribeBackupConfigRequest struct {
 }
 
 func (r *DescribeBackupConfigRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -957,11 +957,11 @@ type DescribeBackupConfigResponse struct {
 		ReserveDuration *uint64 `json:"ReserveDuration,omitempty" name:"ReserveDuration"`
 
 		// 备份频率，长度为7的数组，分别对应周一到周日的备份方式，full-全量备份，increment-增量备份
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BackupFreq []*string `json:"BackupFreq,omitempty" name:"BackupFreq" list`
 
 		// 备份方式，logic-逻辑备份，snapshot-快照备份
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BackupType *string `json:"BackupType,omitempty" name:"BackupType"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -970,8 +970,8 @@ type DescribeBackupConfigResponse struct {
 }
 
 func (r *DescribeBackupConfigResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -994,8 +994,8 @@ type DescribeBackupListRequest struct {
 }
 
 func (r *DescribeBackupListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1030,8 +1030,8 @@ type DescribeBackupListResponse struct {
 }
 
 func (r *DescribeBackupListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1048,8 +1048,8 @@ type DescribeClusterDetailRequest struct {
 }
 
 func (r *DescribeClusterDetailRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1079,8 +1079,8 @@ type DescribeClusterDetailResponse struct {
 }
 
 func (r *DescribeClusterDetailResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1097,8 +1097,8 @@ type DescribeClusterInstanceGrpsRequest struct {
 }
 
 func (r *DescribeClusterInstanceGrpsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1131,8 +1131,8 @@ type DescribeClusterInstanceGrpsResponse struct {
 }
 
 func (r *DescribeClusterInstanceGrpsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1168,8 +1168,8 @@ type DescribeClustersRequest struct {
 }
 
 func (r *DescribeClustersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1207,8 +1207,8 @@ type DescribeClustersResponse struct {
 }
 
 func (r *DescribeClustersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1225,8 +1225,8 @@ type DescribeDBSecurityGroupsRequest struct {
 }
 
 func (r *DescribeDBSecurityGroupsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1256,8 +1256,8 @@ type DescribeDBSecurityGroupsResponse struct {
 }
 
 func (r *DescribeDBSecurityGroupsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1274,8 +1274,8 @@ type DescribeInstanceDetailRequest struct {
 }
 
 func (r *DescribeInstanceDetailRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1305,8 +1305,8 @@ type DescribeInstanceDetailResponse struct {
 }
 
 func (r *DescribeInstanceDetailResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1318,14 +1318,14 @@ func (r *DescribeInstanceDetailResponse) FromJsonString(s string) error {
 type DescribeInstanceSpecsRequest struct {
 	*tchttp.BaseRequest
 
-	// 数据库类型，取值范围: 
+	// 数据库类型，取值范围:
 	// <li> MYSQL </li>
 	DbType *string `json:"DbType,omitempty" name:"DbType"`
 }
 
 func (r *DescribeInstanceSpecsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1355,8 +1355,8 @@ type DescribeInstanceSpecsResponse struct {
 }
 
 func (r *DescribeInstanceSpecsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1398,8 +1398,8 @@ type DescribeInstancesRequest struct {
 }
 
 func (r *DescribeInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1439,8 +1439,8 @@ type DescribeInstancesResponse struct {
 }
 
 func (r *DescribeInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1457,8 +1457,8 @@ type DescribeMaintainPeriodRequest struct {
 }
 
 func (r *DescribeMaintainPeriodRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1494,8 +1494,8 @@ type DescribeMaintainPeriodResponse struct {
 }
 
 func (r *DescribeMaintainPeriodResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1512,8 +1512,8 @@ type DescribeProjectSecurityGroupsRequest struct {
 }
 
 func (r *DescribeProjectSecurityGroupsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1543,8 +1543,8 @@ type DescribeProjectSecurityGroupsResponse struct {
 }
 
 func (r *DescribeProjectSecurityGroupsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1561,8 +1561,8 @@ type DescribeResourcesByDealNameRequest struct {
 }
 
 func (r *DescribeResourcesByDealNameRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1592,8 +1592,8 @@ type DescribeResourcesByDealNameResponse struct {
 }
 
 func (r *DescribeResourcesByDealNameResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1610,8 +1610,8 @@ type DescribeRollbackTimeRangeRequest struct {
 }
 
 func (r *DescribeRollbackTimeRangeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1644,8 +1644,8 @@ type DescribeRollbackTimeRangeResponse struct {
 }
 
 func (r *DescribeRollbackTimeRangeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1668,8 +1668,8 @@ type DescribeRollbackTimeValidityRequest struct {
 }
 
 func (r *DescribeRollbackTimeValidityRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1710,8 +1710,8 @@ type DescribeRollbackTimeValidityResponse struct {
 }
 
 func (r *DescribeRollbackTimeValidityResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1741,14 +1741,14 @@ type IsolateClusterRequest struct {
 	// 集群ID
 	ClusterId *string `json:"ClusterId,omitempty" name:"ClusterId"`
 
-	// 数据库类型，取值范围: 
+	// 数据库类型，取值范围:
 	// <li> MYSQL </li>
 	DbType *string `json:"DbType,omitempty" name:"DbType"`
 }
 
 func (r *IsolateClusterRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1771,11 +1771,11 @@ type IsolateClusterResponse struct {
 	Response *struct {
 
 		// 任务流ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FlowId *int64 `json:"FlowId,omitempty" name:"FlowId"`
 
 		// 退款订单号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DealNames []*string `json:"DealNames,omitempty" name:"DealNames" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1784,8 +1784,8 @@ type IsolateClusterResponse struct {
 }
 
 func (r *IsolateClusterResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1803,14 +1803,14 @@ type IsolateInstanceRequest struct {
 	// 实例ID数组
 	InstanceIdList []*string `json:"InstanceIdList,omitempty" name:"InstanceIdList" list`
 
-	// 数据库类型，取值范围: 
+	// 数据库类型，取值范围:
 	// <li> MYSQL </li>
 	DbType *string `json:"DbType,omitempty" name:"DbType"`
 }
 
 func (r *IsolateInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1837,7 +1837,7 @@ type IsolateInstanceResponse struct {
 		FlowId *int64 `json:"FlowId,omitempty" name:"FlowId"`
 
 		// 隔离实例的订单id（预付费实例）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DealNames []*string `json:"DealNames,omitempty" name:"DealNames" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1846,8 +1846,8 @@ type IsolateInstanceResponse struct {
 }
 
 func (r *IsolateInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1879,8 +1879,8 @@ type ModifyBackupConfigRequest struct {
 }
 
 func (r *ModifyBackupConfigRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1912,8 +1912,8 @@ type ModifyBackupConfigResponse struct {
 }
 
 func (r *ModifyBackupConfigResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1936,8 +1936,8 @@ type ModifyDBInstanceSecurityGroupsRequest struct {
 }
 
 func (r *ModifyDBInstanceSecurityGroupsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1966,8 +1966,8 @@ type ModifyDBInstanceSecurityGroupsResponse struct {
 }
 
 func (r *ModifyDBInstanceSecurityGroupsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1993,8 +1993,8 @@ type ModifyMaintainPeriodConfigRequest struct {
 }
 
 func (r *ModifyMaintainPeriodConfigRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2024,8 +2024,8 @@ type ModifyMaintainPeriodConfigResponse struct {
 }
 
 func (r *ModifyMaintainPeriodConfigResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2065,8 +2065,8 @@ type OfflineClusterRequest struct {
 }
 
 func (r *OfflineClusterRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2096,8 +2096,8 @@ type OfflineClusterResponse struct {
 }
 
 func (r *OfflineClusterResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2117,8 +2117,8 @@ type OfflineInstanceRequest struct {
 }
 
 func (r *OfflineInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2149,8 +2149,8 @@ type OfflineInstanceResponse struct {
 }
 
 func (r *OfflineInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2236,8 +2236,8 @@ type SetRenewFlagRequest struct {
 }
 
 func (r *SetRenewFlagRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2268,8 +2268,8 @@ type SetRenewFlagResponse struct {
 }
 
 func (r *SetRenewFlagResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2308,14 +2308,14 @@ type UpgradeInstanceRequest struct {
 	// 是否自动选择代金券 1是 0否 默认为0
 	AutoVoucher *int64 `json:"AutoVoucher,omitempty" name:"AutoVoucher"`
 
-	// 数据库类型，取值范围: 
+	// 数据库类型，取值范围:
 	// <li> MYSQL </li>
 	DbType *string `json:"DbType,omitempty" name:"DbType"`
 }
 
 func (r *UpgradeInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2343,11 +2343,11 @@ type UpgradeInstanceResponse struct {
 	Response *struct {
 
 		// 冻结流水ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TranId *string `json:"TranId,omitempty" name:"TranId"`
 
 		// 大订单号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BigDealIds []*string `json:"BigDealIds,omitempty" name:"BigDealIds" list`
 
 		// 订单号
@@ -2359,8 +2359,8 @@ type UpgradeInstanceResponse struct {
 }
 
 func (r *UpgradeInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

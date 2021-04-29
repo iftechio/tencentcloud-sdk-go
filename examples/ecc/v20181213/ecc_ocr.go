@@ -2,10 +2,11 @@
 
 import (
 	"fmt"
-	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
-	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
-	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/errors"
-	ecc "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/ecc/v20181213"
+
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/errors"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/profile"
+	ecc "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/ecc/v20181213"
 )
 
 func main() {

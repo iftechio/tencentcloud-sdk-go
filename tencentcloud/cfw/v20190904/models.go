@@ -15,10 +15,10 @@
 package v20190904
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type AcListsData struct {
@@ -146,8 +146,8 @@ type CreateAcRulesRequest struct {
 }
 
 func (r *CreateAcRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -179,7 +179,7 @@ type CreateAcRulesResponse struct {
 		Status *int64 `json:"Status,omitempty" name:"Status"`
 
 		// 返回多余的信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Info *string `json:"Info,omitempty" name:"Info"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -188,8 +188,8 @@ type CreateAcRulesResponse struct {
 }
 
 func (r *CreateAcRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -215,8 +215,8 @@ type CreateSecurityGroupApiRulesRequest struct {
 }
 
 func (r *CreateSecurityGroupApiRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -249,8 +249,8 @@ type CreateSecurityGroupApiRulesResponse struct {
 }
 
 func (r *CreateSecurityGroupApiRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -276,8 +276,8 @@ type DeleteAcRuleRequest struct {
 }
 
 func (r *DeleteAcRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -305,7 +305,7 @@ type DeleteAcRuleResponse struct {
 		Status *int64 `json:"Status,omitempty" name:"Status"`
 
 		// 返回多余的信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Info *string `json:"Info,omitempty" name:"Info"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -314,8 +314,8 @@ type DeleteAcRuleResponse struct {
 }
 
 func (r *DeleteAcRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -338,8 +338,8 @@ type DeleteAllAccessControlRuleRequest struct {
 }
 
 func (r *DeleteAllAccessControlRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -366,7 +366,7 @@ type DeleteAllAccessControlRuleResponse struct {
 		Status *int64 `json:"Status,omitempty" name:"Status"`
 
 		// 删除了几条访问控制规则
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Info *int64 `json:"Info,omitempty" name:"Info"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -375,8 +375,8 @@ type DeleteAllAccessControlRuleResponse struct {
 }
 
 func (r *DeleteAllAccessControlRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -396,8 +396,8 @@ type DeleteSecurityGroupAllRuleRequest struct {
 }
 
 func (r *DeleteSecurityGroupAllRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -423,7 +423,7 @@ type DeleteSecurityGroupAllRuleResponse struct {
 		Status *int64 `json:"Status,omitempty" name:"Status"`
 
 		// 返回数据的json字符串
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Info *int64 `json:"Info,omitempty" name:"Info"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -432,8 +432,8 @@ type DeleteSecurityGroupAllRuleResponse struct {
 }
 
 func (r *DeleteSecurityGroupAllRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -459,8 +459,8 @@ type DeleteSecurityGroupRuleRequest struct {
 }
 
 func (r *DeleteSecurityGroupRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -488,7 +488,7 @@ type DeleteSecurityGroupRuleResponse struct {
 		Status *int64 `json:"Status,omitempty" name:"Status"`
 
 		// 返回多余的信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Info *string `json:"Info,omitempty" name:"Info"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -497,8 +497,8 @@ type DeleteSecurityGroupRuleResponse struct {
 }
 
 func (r *DeleteSecurityGroupRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -542,8 +542,8 @@ type DescribeAcListsRequest struct {
 }
 
 func (r *DescribeAcListsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -583,7 +583,7 @@ type DescribeAcListsResponse struct {
 		AllTotal *uint64 `json:"AllTotal,omitempty" name:"AllTotal"`
 
 		// 访问控制规则全部启用/全部停用
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Enable *uint64 `json:"Enable,omitempty" name:"Enable"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -592,8 +592,8 @@ type DescribeAcListsResponse struct {
 }
 
 func (r *DescribeAcListsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -631,8 +631,8 @@ type DescribeAssociatedInstanceListRequest struct {
 }
 
 func (r *DescribeAssociatedInstanceListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -661,11 +661,11 @@ type DescribeAssociatedInstanceListResponse struct {
 	Response *struct {
 
 		// 实例数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Total *uint64 `json:"Total,omitempty" name:"Total"`
 
 		// 实例列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*AssociatedInstanceInfo `json:"Data,omitempty" name:"Data" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -674,8 +674,8 @@ type DescribeAssociatedInstanceListResponse struct {
 }
 
 func (r *DescribeAssociatedInstanceListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -698,8 +698,8 @@ type DescribeCfwEipsRequest struct {
 }
 
 func (r *DescribeCfwEipsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -731,8 +731,8 @@ type DescribeCfwEipsResponse struct {
 }
 
 func (r *DescribeCfwEipsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -767,8 +767,8 @@ type DescribeNatRuleOverviewRequest struct {
 }
 
 func (r *DescribeNatRuleOverviewRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -820,8 +820,8 @@ type DescribeNatRuleOverviewResponse struct {
 }
 
 func (r *DescribeNatRuleOverviewResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -838,8 +838,8 @@ type DescribeRuleOverviewRequest struct {
 }
 
 func (r *DescribeRuleOverviewRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -861,23 +861,23 @@ type DescribeRuleOverviewResponse struct {
 	Response *struct {
 
 		// 规则总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AllTotal *uint64 `json:"AllTotal,omitempty" name:"AllTotal"`
 
 		// 阻断策略规则数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StrategyNum *uint64 `json:"StrategyNum,omitempty" name:"StrategyNum"`
 
 		// 启用规则数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StartRuleNum *uint64 `json:"StartRuleNum,omitempty" name:"StartRuleNum"`
 
 		// 停用规则数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StopRuleNum *uint64 `json:"StopRuleNum,omitempty" name:"StopRuleNum"`
 
 		// 剩余配额
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RemainingNum *int64 `json:"RemainingNum,omitempty" name:"RemainingNum"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -886,8 +886,8 @@ type DescribeRuleOverviewResponse struct {
 }
 
 func (r *DescribeRuleOverviewResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -922,8 +922,8 @@ type DescribeSecurityGroupListRequest struct {
 }
 
 func (r *DescribeSecurityGroupListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -960,7 +960,7 @@ type DescribeSecurityGroupListResponse struct {
 		AllTotal *uint64 `json:"AllTotal,omitempty" name:"AllTotal"`
 
 		// 访问控制规则全部启用/全部停用
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Enable *uint64 `json:"Enable,omitempty" name:"Enable"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -969,8 +969,8 @@ type DescribeSecurityGroupListResponse struct {
 }
 
 func (r *DescribeSecurityGroupListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1008,8 +1008,8 @@ type DescribeSwitchListsRequest struct {
 }
 
 func (r *DescribeSwitchListsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1047,11 +1047,11 @@ type DescribeSwitchListsResponse struct {
 		AreaLists []*string `json:"AreaLists,omitempty" name:"AreaLists" list`
 
 		// 打开个数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OnNum *uint64 `json:"OnNum,omitempty" name:"OnNum"`
 
 		// 关闭个数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OffNum *uint64 `json:"OffNum,omitempty" name:"OffNum"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1060,8 +1060,8 @@ type DescribeSwitchListsResponse struct {
 }
 
 func (r *DescribeSwitchListsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1078,8 +1078,8 @@ type DescribeSyncAssetStatusRequest struct {
 }
 
 func (r *DescribeSyncAssetStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1109,8 +1109,8 @@ type DescribeSyncAssetStatusResponse struct {
 }
 
 func (r *DescribeSyncAssetStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1136,8 +1136,8 @@ type DescribeTableStatusRequest struct {
 }
 
 func (r *DescribeTableStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1162,7 +1162,7 @@ type DescribeTableStatusResponse struct {
 	Response *struct {
 
 		// 0：正常，其它：不正常
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Status *int64 `json:"Status,omitempty" name:"Status"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1171,8 +1171,8 @@ type DescribeTableStatusResponse struct {
 }
 
 func (r *DescribeTableStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1189,8 +1189,8 @@ type DescribeVpcRuleOverviewRequest struct {
 }
 
 func (r *DescribeVpcRuleOverviewRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1212,11 +1212,11 @@ type DescribeVpcRuleOverviewResponse struct {
 	Response *struct {
 
 		// 阻断策略规则数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StrategyNum *uint64 `json:"StrategyNum,omitempty" name:"StrategyNum"`
 
 		// 启用规则数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StartRuleNum *uint64 `json:"StartRuleNum,omitempty" name:"StartRuleNum"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1225,8 +1225,8 @@ type DescribeVpcRuleOverviewResponse struct {
 }
 
 func (r *DescribeVpcRuleOverviewResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1249,8 +1249,8 @@ type ExpandCfwVerticalRequest struct {
 }
 
 func (r *ExpandCfwVerticalRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1279,8 +1279,8 @@ type ExpandCfwVerticalResponse struct {
 }
 
 func (r *ExpandCfwVerticalResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1318,8 +1318,8 @@ type ModifyAcRuleRequest struct {
 }
 
 func (r *ModifyAcRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1347,7 +1347,7 @@ type ModifyAcRuleResponse struct {
 		Status *int64 `json:"Status,omitempty" name:"Status"`
 
 		// 返回多余的信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Info *string `json:"Info,omitempty" name:"Info"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1356,8 +1356,8 @@ type ModifyAcRuleResponse struct {
 }
 
 func (r *ModifyAcRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1383,8 +1383,8 @@ type ModifyAllRuleStatusRequest struct {
 }
 
 func (r *ModifyAllRuleStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1409,7 +1409,7 @@ type ModifyAllRuleStatusResponse struct {
 	Response *struct {
 
 		// 0: 修改成功, 其他: 修改失败
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Status *int64 `json:"Status,omitempty" name:"Status"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1418,8 +1418,8 @@ type ModifyAllRuleStatusResponse struct {
 }
 
 func (r *ModifyAllRuleStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1448,8 +1448,8 @@ type ModifyAllSwitchStatusRequest struct {
 }
 
 func (r *ModifyAllSwitchStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1483,8 +1483,8 @@ type ModifyAllSwitchStatusResponse struct {
 }
 
 func (r *ModifyAllSwitchStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1513,8 +1513,8 @@ type ModifyBlockIgnoreListRequest struct {
 }
 
 func (r *ModifyBlockIgnoreListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1551,8 +1551,8 @@ type ModifyBlockIgnoreListResponse struct {
 }
 
 func (r *ModifyBlockIgnoreListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1575,8 +1575,8 @@ type ModifyItemSwitchStatusRequest struct {
 }
 
 func (r *ModifyItemSwitchStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1608,8 +1608,8 @@ type ModifyItemSwitchStatusResponse struct {
 }
 
 func (r *ModifyItemSwitchStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1635,8 +1635,8 @@ type ModifySecurityGroupAllRuleStatusRequest struct {
 }
 
 func (r *ModifySecurityGroupAllRuleStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1661,7 +1661,7 @@ type ModifySecurityGroupAllRuleStatusResponse struct {
 	Response *struct {
 
 		// 0: 修改成功, 其他: 修改失败
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Status *int64 `json:"Status,omitempty" name:"Status"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1670,8 +1670,8 @@ type ModifySecurityGroupAllRuleStatusResponse struct {
 }
 
 func (r *ModifySecurityGroupAllRuleStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1697,8 +1697,8 @@ type ModifySequenceRulesRequest struct {
 }
 
 func (r *ModifySequenceRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1723,7 +1723,7 @@ type ModifySequenceRulesResponse struct {
 	Response *struct {
 
 		// 0: 修改成功, 非0: 修改失败
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Status *int64 `json:"Status,omitempty" name:"Status"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1732,8 +1732,8 @@ type ModifySequenceRulesResponse struct {
 }
 
 func (r *ModifySequenceRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1759,8 +1759,8 @@ type ModifyTableStatusRequest struct {
 }
 
 func (r *ModifyTableStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1785,7 +1785,7 @@ type ModifyTableStatusResponse struct {
 	Response *struct {
 
 		// 0：正常，-1：不正常
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Status *int64 `json:"Status,omitempty" name:"Status"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1794,8 +1794,8 @@ type ModifyTableStatusResponse struct {
 }
 
 func (r *ModifyTableStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1883,8 +1883,8 @@ type RunSyncAssetRequest struct {
 }
 
 func (r *RunSyncAssetRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1914,8 +1914,8 @@ type RunSyncAssetResponse struct {
 }
 
 func (r *RunSyncAssetResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2055,8 +2055,8 @@ type SetNatFwDnatRuleRequest struct {
 }
 
 func (r *SetNatFwDnatRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2088,8 +2088,8 @@ type SetNatFwDnatRuleResponse struct {
 }
 
 func (r *SetNatFwDnatRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

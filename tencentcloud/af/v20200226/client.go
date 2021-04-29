@@ -15,57 +15,56 @@
 package v20200226
 
 import (
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/profile"
 )
 
 const APIVersion = "2020-02-26"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewQueryAntiFraudRequest() (request *QueryAntiFraudRequest) {
-    request = &QueryAntiFraudRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("af", APIVersion, "QueryAntiFraud")
-    return
+	request = &QueryAntiFraudRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("af", APIVersion, "QueryAntiFraud")
+	return
 }
 
 func NewQueryAntiFraudResponse() (response *QueryAntiFraudResponse) {
-    response = &QueryAntiFraudResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &QueryAntiFraudResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 天御反欺诈服务，主要应用于银行、证券、保险、消费金融等金融行业客户，通过腾讯的大数据风控能力，
 // 可以准确识别恶意用户信息，解决客户在支付、活动、理财，风控等业务环节遇到的欺诈威胁，降低企业
 // 的损失。
 func (c *Client) QueryAntiFraud(request *QueryAntiFraudRequest) (response *QueryAntiFraudResponse, err error) {
-    if request == nil {
-        request = NewQueryAntiFraudRequest()
-    }
-    response = NewQueryAntiFraudResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewQueryAntiFraudRequest()
+	}
+	response = NewQueryAntiFraudResponse()
+	err = c.Send(request, response)
+	return
 }

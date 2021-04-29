@@ -15,10 +15,10 @@
 package v20200902
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type SendCodeVoiceRequest struct {
@@ -42,8 +42,8 @@ type SendCodeVoiceRequest struct {
 }
 
 func (r *SendCodeVoiceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -77,8 +77,8 @@ type SendCodeVoiceResponse struct {
 }
 
 func (r *SendCodeVoiceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -122,8 +122,8 @@ type SendTtsVoiceRequest struct {
 }
 
 func (r *SendTtsVoiceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -158,8 +158,8 @@ type SendTtsVoiceResponse struct {
 }
 
 func (r *SendTtsVoiceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

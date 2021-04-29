@@ -15,10 +15,10 @@
 package v20180408
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type Container struct {
@@ -161,8 +161,8 @@ type CreateContainerInstanceRequest struct {
 }
 
 func (r *CreateContainerInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -197,8 +197,8 @@ type CreateContainerInstanceResponse struct {
 }
 
 func (r *CreateContainerInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -215,8 +215,8 @@ type DeleteContainerInstanceRequest struct {
 }
 
 func (r *DeleteContainerInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -246,8 +246,8 @@ type DeleteContainerInstanceResponse struct {
 }
 
 func (r *DeleteContainerInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -264,8 +264,8 @@ type DescribeContainerInstanceEventsRequest struct {
 }
 
 func (r *DescribeContainerInstanceEventsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -295,8 +295,8 @@ type DescribeContainerInstanceEventsResponse struct {
 }
 
 func (r *DescribeContainerInstanceEventsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -313,8 +313,8 @@ type DescribeContainerInstanceRequest struct {
 }
 
 func (r *DescribeContainerInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -344,8 +344,8 @@ type DescribeContainerInstanceResponse struct {
 }
 
 func (r *DescribeContainerInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -371,8 +371,8 @@ type DescribeContainerInstancesRequest struct {
 }
 
 func (r *DescribeContainerInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -407,8 +407,8 @@ type DescribeContainerInstancesResponse struct {
 }
 
 func (r *DescribeContainerInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -434,8 +434,8 @@ type DescribeContainerLogRequest struct {
 }
 
 func (r *DescribeContainerLogRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -468,8 +468,8 @@ type DescribeContainerLogResponse struct {
 }
 
 func (r *DescribeContainerLogResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -531,8 +531,8 @@ type InquiryPriceCreateCisRequest struct {
 }
 
 func (r *InquiryPriceCreateCisRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -564,8 +564,8 @@ type InquiryPriceCreateCisResponse struct {
 }
 
 func (r *InquiryPriceCreateCisResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

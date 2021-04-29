@@ -15,10 +15,10 @@
 package v20200226
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type QueryAntiFraudRequest struct {
@@ -106,8 +106,8 @@ type QueryAntiFraudRequest struct {
 }
 
 func (r *QueryAntiFraudRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -162,7 +162,7 @@ type QueryAntiFraudResponse struct {
 		RiskInfo []*RiskDetail `json:"RiskInfo,omitempty" name:"RiskInfo" list`
 
 		// 业务侧错误码。成功时返回Success，错误时返回具体业务错误原因。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CodeDesc *string `json:"CodeDesc,omitempty" name:"CodeDesc"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -171,8 +171,8 @@ type QueryAntiFraudResponse struct {
 }
 
 func (r *QueryAntiFraudResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

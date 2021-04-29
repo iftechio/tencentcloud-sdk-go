@@ -15,10 +15,10 @@
 package v20200217
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type BindCluster struct {
@@ -162,8 +162,8 @@ type CreateClusterRequest struct {
 }
 
 func (r *CreateClusterRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -196,8 +196,8 @@ type CreateClusterResponse struct {
 }
 
 func (r *CreateClusterResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -223,8 +223,8 @@ type CreateEnvironmentRequest struct {
 }
 
 func (r *CreateEnvironmentRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -255,7 +255,7 @@ type CreateEnvironmentResponse struct {
 		MsgTTL *uint64 `json:"MsgTTL,omitempty" name:"MsgTTL"`
 
 		// 说明，128个字符以内。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Remark *string `json:"Remark,omitempty" name:"Remark"`
 
 		// 命名空间ID
@@ -267,8 +267,8 @@ type CreateEnvironmentResponse struct {
 }
 
 func (r *CreateEnvironmentResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -303,8 +303,8 @@ type CreateSubscriptionRequest struct {
 }
 
 func (r *CreateSubscriptionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -340,8 +340,8 @@ type CreateSubscriptionResponse struct {
 }
 
 func (r *CreateSubscriptionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -378,8 +378,8 @@ type CreateTopicRequest struct {
 }
 
 func (r *CreateTopicRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -415,16 +415,16 @@ type CreateTopicResponse struct {
 		Partitions *uint64 `json:"Partitions,omitempty" name:"Partitions"`
 
 		// 备注，128字符以内。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Remark *string `json:"Remark,omitempty" name:"Remark"`
 
 		// 0： 普通消息；
-	// 1 ：全局顺序消息；
-	// 2 ：局部顺序消息；
-	// 3 ：重试队列；
-	// 4 ：死信队列；
-	// 5 ：事务消息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 1 ：全局顺序消息；
+		// 2 ：局部顺序消息；
+		// 3 ：重试队列；
+		// 4 ：死信队列；
+		// 5 ：事务消息。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TopicType *uint64 `json:"TopicType,omitempty" name:"TopicType"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -433,8 +433,8 @@ type CreateTopicResponse struct {
 }
 
 func (r *CreateTopicResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -451,8 +451,8 @@ type DeleteClusterRequest struct {
 }
 
 func (r *DeleteClusterRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -482,8 +482,8 @@ type DeleteClusterResponse struct {
 }
 
 func (r *DeleteClusterResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -503,8 +503,8 @@ type DeleteEnvironmentsRequest struct {
 }
 
 func (r *DeleteEnvironmentsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -535,8 +535,8 @@ type DeleteEnvironmentsResponse struct {
 }
 
 func (r *DeleteEnvironmentsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -559,8 +559,8 @@ type DeleteSubscriptionsRequest struct {
 }
 
 func (r *DeleteSubscriptionsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -592,8 +592,8 @@ type DeleteSubscriptionsResponse struct {
 }
 
 func (r *DeleteSubscriptionsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -616,8 +616,8 @@ type DeleteTopicsRequest struct {
 }
 
 func (r *DeleteTopicsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -649,8 +649,8 @@ type DeleteTopicsResponse struct {
 }
 
 func (r *DeleteTopicsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -664,8 +664,8 @@ type DescribeBindClustersRequest struct {
 }
 
 func (r *DescribeBindClustersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -697,8 +697,8 @@ type DescribeBindClustersResponse struct {
 }
 
 func (r *DescribeBindClustersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -721,8 +721,8 @@ type DescribeBindVpcsRequest struct {
 }
 
 func (r *DescribeBindVpcsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -757,8 +757,8 @@ type DescribeBindVpcsResponse struct {
 }
 
 func (r *DescribeBindVpcsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -775,8 +775,8 @@ type DescribeClusterDetailRequest struct {
 }
 
 func (r *DescribeClusterDetailRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -806,8 +806,8 @@ type DescribeClusterDetailResponse struct {
 }
 
 func (r *DescribeClusterDetailResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -827,8 +827,8 @@ type DescribeClustersRequest struct {
 }
 
 func (r *DescribeClustersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -862,8 +862,8 @@ type DescribeClustersResponse struct {
 }
 
 func (r *DescribeClustersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -883,8 +883,8 @@ type DescribeEnvironmentAttributesRequest struct {
 }
 
 func (r *DescribeEnvironmentAttributesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -936,8 +936,8 @@ type DescribeEnvironmentAttributesResponse struct {
 }
 
 func (r *DescribeEnvironmentAttributesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -966,8 +966,8 @@ type DescribeEnvironmentRolesRequest struct {
 }
 
 func (r *DescribeEnvironmentRolesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1004,8 +1004,8 @@ type DescribeEnvironmentRolesResponse struct {
 }
 
 func (r *DescribeEnvironmentRolesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1031,8 +1031,8 @@ type DescribeEnvironmentsRequest struct {
 }
 
 func (r *DescribeEnvironmentsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1068,8 +1068,8 @@ type DescribeEnvironmentsResponse struct {
 }
 
 func (r *DescribeEnvironmentsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1101,8 +1101,8 @@ type DescribeProducersRequest struct {
 }
 
 func (r *DescribeProducersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1140,8 +1140,8 @@ type DescribeProducersResponse struct {
 }
 
 func (r *DescribeProducersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1176,8 +1176,8 @@ type DescribeSubscriptionsRequest struct {
 }
 
 func (r *DescribeSubscriptionsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1216,8 +1216,8 @@ type DescribeSubscriptionsResponse struct {
 }
 
 func (r *DescribeSubscriptionsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1255,8 +1255,8 @@ type DescribeTopicsRequest struct {
 }
 
 func (r *DescribeTopicsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1294,8 +1294,8 @@ type DescribeTopicsResponse struct {
 }
 
 func (r *DescribeTopicsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1375,8 +1375,8 @@ type ModifyClusterRequest struct {
 }
 
 func (r *ModifyClusterRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1408,8 +1408,8 @@ type ModifyClusterResponse struct {
 }
 
 func (r *ModifyClusterResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1435,8 +1435,8 @@ type ModifyEnvironmentAttributesRequest struct {
 }
 
 func (r *ModifyEnvironmentAttributesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1467,11 +1467,11 @@ type ModifyEnvironmentAttributesResponse struct {
 		MsgTTL *uint64 `json:"MsgTTL,omitempty" name:"MsgTTL"`
 
 		// 备注，字符串最长不超过128。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Remark *string `json:"Remark,omitempty" name:"Remark"`
 
 		// 命名空间ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		NamespaceId *string `json:"NamespaceId,omitempty" name:"NamespaceId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1480,8 +1480,8 @@ type ModifyEnvironmentAttributesResponse struct {
 }
 
 func (r *ModifyEnvironmentAttributesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1510,8 +1510,8 @@ type ModifyTopicRequest struct {
 }
 
 func (r *ModifyTopicRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1548,8 +1548,8 @@ type ModifyTopicResponse struct {
 }
 
 func (r *ModifyTopicResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1650,8 +1650,8 @@ type ResetMsgSubOffsetByTimestampRequest struct {
 }
 
 func (r *ResetMsgSubOffsetByTimestampRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1677,7 +1677,7 @@ type ResetMsgSubOffsetByTimestampResponse struct {
 	Response *struct {
 
 		// 结果。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Result *bool `json:"Result,omitempty" name:"Result"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1686,8 +1686,8 @@ type ResetMsgSubOffsetByTimestampResponse struct {
 }
 
 func (r *ResetMsgSubOffsetByTimestampResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1728,8 +1728,8 @@ type SendBatchMessagesRequest struct {
 }
 
 func (r *SendBatchMessagesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1759,11 +1759,11 @@ type SendBatchMessagesResponse struct {
 	Response *struct {
 
 		// 消息的唯一标识
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		MessageId *string `json:"MessageId,omitempty" name:"MessageId"`
 
 		// 错误消息，返回为 ""，代表没有错误
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ErrorMsg *string `json:"ErrorMsg,omitempty" name:"ErrorMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1772,8 +1772,8 @@ type SendBatchMessagesResponse struct {
 }
 
 func (r *SendBatchMessagesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1805,8 +1805,8 @@ type SendMessagesRequest struct {
 }
 
 func (r *SendMessagesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1833,11 +1833,11 @@ type SendMessagesResponse struct {
 	Response *struct {
 
 		// 消息的messageID, 是全局唯一的，用来标识消息的元数据信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		MessageId *string `json:"MessageId,omitempty" name:"MessageId"`
 
 		// 返回的错误消息，如果返回为 “”，说明没有错误
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ErrorMsg *string `json:"ErrorMsg,omitempty" name:"ErrorMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1846,8 +1846,8 @@ type SendMessagesResponse struct {
 }
 
 func (r *SendMessagesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

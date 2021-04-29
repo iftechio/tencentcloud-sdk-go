@@ -15,10 +15,10 @@
 package v20190823
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type ClearTablesRequest struct {
@@ -32,8 +32,8 @@ type ClearTablesRequest struct {
 }
 
 func (r *ClearTablesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -67,8 +67,8 @@ type ClearTablesResponse struct {
 }
 
 func (r *ClearTablesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -172,8 +172,8 @@ type CompareIdlFilesRequest struct {
 }
 
 func (r *CompareIdlFilesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -212,8 +212,8 @@ type CompareIdlFilesResponse struct {
 }
 
 func (r *CompareIdlFilesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -236,8 +236,8 @@ type CreateBackupRequest struct {
 }
 
 func (r *CreateBackupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -269,8 +269,8 @@ type CreateBackupResponse struct {
 }
 
 func (r *CreateBackupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -314,8 +314,8 @@ type CreateClusterRequest struct {
 }
 
 func (r *CreateClusterRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -354,8 +354,8 @@ type CreateClusterResponse struct {
 }
 
 func (r *CreateClusterResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -375,8 +375,8 @@ type CreateSnapshotsRequest struct {
 }
 
 func (r *CreateSnapshotsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -410,8 +410,8 @@ type CreateSnapshotsResponse struct {
 }
 
 func (r *CreateSnapshotsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -437,8 +437,8 @@ type CreateTableGroupRequest struct {
 }
 
 func (r *CreateTableGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -471,8 +471,8 @@ type CreateTableGroupResponse struct {
 }
 
 func (r *CreateTableGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -498,8 +498,8 @@ type CreateTablesRequest struct {
 }
 
 func (r *CreateTablesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -535,8 +535,8 @@ type CreateTablesResponse struct {
 }
 
 func (r *CreateTablesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -553,8 +553,8 @@ type DeleteClusterRequest struct {
 }
 
 func (r *DeleteClusterRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -584,8 +584,8 @@ type DeleteClusterResponse struct {
 }
 
 func (r *DeleteClusterResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -605,8 +605,8 @@ type DeleteIdlFilesRequest struct {
 }
 
 func (r *DeleteIdlFilesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -640,8 +640,8 @@ type DeleteIdlFilesResponse struct {
 }
 
 func (r *DeleteIdlFilesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -661,8 +661,8 @@ type DeleteSnapshotsRequest struct {
 }
 
 func (r *DeleteSnapshotsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -696,8 +696,8 @@ type DeleteSnapshotsResponse struct {
 }
 
 func (r *DeleteSnapshotsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -717,8 +717,8 @@ type DeleteTableGroupRequest struct {
 }
 
 func (r *DeleteTableGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -749,8 +749,8 @@ type DeleteTableGroupResponse struct {
 }
 
 func (r *DeleteTableGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -770,8 +770,8 @@ type DeleteTableIndexRequest struct {
 }
 
 func (r *DeleteTableIndexRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -805,8 +805,8 @@ type DeleteTableIndexResponse struct {
 }
 
 func (r *DeleteTableIndexResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -826,8 +826,8 @@ type DeleteTablesRequest struct {
 }
 
 func (r *DeleteTablesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -861,8 +861,8 @@ type DeleteTablesResponse struct {
 }
 
 func (r *DeleteTablesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -879,8 +879,8 @@ type DescribeClusterTagsRequest struct {
 }
 
 func (r *DescribeClusterTagsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -902,11 +902,11 @@ type DescribeClusterTagsResponse struct {
 	Response *struct {
 
 		// 集群标签信息列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Rows []*TagsInfoOfCluster `json:"Rows,omitempty" name:"Rows" list`
 
 		// 返回结果个数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -915,8 +915,8 @@ type DescribeClusterTagsResponse struct {
 }
 
 func (r *DescribeClusterTagsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -945,8 +945,8 @@ type DescribeClustersRequest struct {
 }
 
 func (r *DescribeClustersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -983,8 +983,8 @@ type DescribeClustersResponse struct {
 }
 
 func (r *DescribeClustersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1013,8 +1013,8 @@ type DescribeIdlFileInfosRequest struct {
 }
 
 func (r *DescribeIdlFileInfosRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1051,8 +1051,8 @@ type DescribeIdlFileInfosResponse struct {
 }
 
 func (r *DescribeIdlFileInfosResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1069,8 +1069,8 @@ type DescribeMachineRequest struct {
 }
 
 func (r *DescribeMachineRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1100,8 +1100,8 @@ type DescribeMachineResponse struct {
 }
 
 func (r *DescribeMachineResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1115,8 +1115,8 @@ type DescribeRegionsRequest struct {
 }
 
 func (r *DescribeRegionsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1148,8 +1148,8 @@ type DescribeRegionsResponse struct {
 }
 
 func (r *DescribeRegionsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1175,8 +1175,8 @@ type DescribeSnapshotsRequest struct {
 }
 
 func (r *DescribeSnapshotsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1212,8 +1212,8 @@ type DescribeSnapshotsResponse struct {
 }
 
 func (r *DescribeSnapshotsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1233,8 +1233,8 @@ type DescribeTableGroupTagsRequest struct {
 }
 
 func (r *DescribeTableGroupTagsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1257,11 +1257,11 @@ type DescribeTableGroupTagsResponse struct {
 	Response *struct {
 
 		// 表格组标签信息列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Rows []*TagsInfoOfTableGroup `json:"Rows,omitempty" name:"Rows" list`
 
 		// 返回结果个数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1270,8 +1270,8 @@ type DescribeTableGroupTagsResponse struct {
 }
 
 func (r *DescribeTableGroupTagsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1300,8 +1300,8 @@ type DescribeTableGroupsRequest struct {
 }
 
 func (r *DescribeTableGroupsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1338,8 +1338,8 @@ type DescribeTableGroupsResponse struct {
 }
 
 func (r *DescribeTableGroupsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1359,8 +1359,8 @@ type DescribeTableTagsRequest struct {
 }
 
 func (r *DescribeTableTagsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1394,8 +1394,8 @@ type DescribeTableTagsResponse struct {
 }
 
 func (r *DescribeTableTagsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1424,8 +1424,8 @@ type DescribeTablesInRecycleRequest struct {
 }
 
 func (r *DescribeTablesInRecycleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1462,8 +1462,8 @@ type DescribeTablesInRecycleResponse struct {
 }
 
 func (r *DescribeTablesInRecycleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1495,8 +1495,8 @@ type DescribeTablesRequest struct {
 }
 
 func (r *DescribeTablesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1534,8 +1534,8 @@ type DescribeTablesResponse struct {
 }
 
 func (r *DescribeTablesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1564,8 +1564,8 @@ type DescribeTasksRequest struct {
 }
 
 func (r *DescribeTasksRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1602,8 +1602,8 @@ type DescribeTasksResponse struct {
 }
 
 func (r *DescribeTasksResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1617,8 +1617,8 @@ type DescribeUinInWhitelistRequest struct {
 }
 
 func (r *DescribeUinInWhitelistRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1647,8 +1647,8 @@ type DescribeUinInWhitelistResponse struct {
 }
 
 func (r *DescribeUinInWhitelistResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1665,8 +1665,8 @@ type DisableRestProxyRequest struct {
 }
 
 func (r *DisableRestProxyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1699,8 +1699,8 @@ type DisableRestProxyResponse struct {
 }
 
 func (r *DisableRestProxyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1717,8 +1717,8 @@ type EnableRestProxyRequest struct {
 }
 
 func (r *EnableRestProxyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1751,8 +1751,8 @@ type EnableRestProxyResponse struct {
 }
 
 func (r *EnableRestProxyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1870,8 +1870,8 @@ type ImportSnapshotsRequest struct {
 }
 
 func (r *ImportSnapshotsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1899,7 +1899,7 @@ type ImportSnapshotsResponse struct {
 	Response *struct {
 
 		// TaskId由 AppInstanceId-taskId 组成，以区分不同集群的任务
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TaskId *string `json:"TaskId,omitempty" name:"TaskId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1908,8 +1908,8 @@ type ImportSnapshotsResponse struct {
 }
 
 func (r *ImportSnapshotsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1959,8 +1959,8 @@ type ModifyClusterMachineRequest struct {
 }
 
 func (r *ModifyClusterMachineRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1993,8 +1993,8 @@ type ModifyClusterMachineResponse struct {
 }
 
 func (r *ModifyClusterMachineResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2014,8 +2014,8 @@ type ModifyClusterNameRequest struct {
 }
 
 func (r *ModifyClusterNameRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2043,8 +2043,8 @@ type ModifyClusterNameResponse struct {
 }
 
 func (r *ModifyClusterNameResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2073,8 +2073,8 @@ type ModifyClusterPasswordRequest struct {
 }
 
 func (r *ModifyClusterPasswordRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2105,8 +2105,8 @@ type ModifyClusterPasswordResponse struct {
 }
 
 func (r *ModifyClusterPasswordResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2129,8 +2129,8 @@ type ModifyClusterTagsRequest struct {
 }
 
 func (r *ModifyClusterTagsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2154,7 +2154,7 @@ type ModifyClusterTagsResponse struct {
 	Response *struct {
 
 		// 任务ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TaskId *string `json:"TaskId,omitempty" name:"TaskId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2163,8 +2163,8 @@ type ModifyClusterTagsResponse struct {
 }
 
 func (r *ModifyClusterTagsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2184,8 +2184,8 @@ type ModifySnapshotsRequest struct {
 }
 
 func (r *ModifySnapshotsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2219,8 +2219,8 @@ type ModifySnapshotsResponse struct {
 }
 
 func (r *ModifySnapshotsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2243,8 +2243,8 @@ type ModifyTableGroupNameRequest struct {
 }
 
 func (r *ModifyTableGroupNameRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2273,8 +2273,8 @@ type ModifyTableGroupNameResponse struct {
 }
 
 func (r *ModifyTableGroupNameResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2300,8 +2300,8 @@ type ModifyTableGroupTagsRequest struct {
 }
 
 func (r *ModifyTableGroupTagsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2326,7 +2326,7 @@ type ModifyTableGroupTagsResponse struct {
 	Response *struct {
 
 		// 任务ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TaskId *string `json:"TaskId,omitempty" name:"TaskId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2335,8 +2335,8 @@ type ModifyTableGroupTagsResponse struct {
 }
 
 func (r *ModifyTableGroupTagsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2356,8 +2356,8 @@ type ModifyTableMemosRequest struct {
 }
 
 func (r *ModifyTableMemosRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2391,8 +2391,8 @@ type ModifyTableMemosResponse struct {
 }
 
 func (r *ModifyTableMemosResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2412,8 +2412,8 @@ type ModifyTableQuotasRequest struct {
 }
 
 func (r *ModifyTableQuotasRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2447,8 +2447,8 @@ type ModifyTableQuotasResponse struct {
 }
 
 func (r *ModifyTableQuotasResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2474,8 +2474,8 @@ type ModifyTableTagsRequest struct {
 }
 
 func (r *ModifyTableTagsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2511,8 +2511,8 @@ type ModifyTableTagsResponse struct {
 }
 
 func (r *ModifyTableTagsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2535,8 +2535,8 @@ type ModifyTablesRequest struct {
 }
 
 func (r *ModifyTablesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2571,8 +2571,8 @@ type ModifyTablesResponse struct {
 }
 
 func (r *ModifyTablesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2712,8 +2712,8 @@ type RecoverRecycleTablesRequest struct {
 }
 
 func (r *RecoverRecycleTablesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2747,8 +2747,8 @@ type RecoverRecycleTablesResponse struct {
 }
 
 func (r *RecoverRecycleTablesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2789,8 +2789,8 @@ type RollbackTablesRequest struct {
 }
 
 func (r *RollbackTablesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2826,8 +2826,8 @@ type RollbackTablesResponse struct {
 }
 
 func (r *RollbackTablesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2946,8 +2946,8 @@ type SetTableIndexRequest struct {
 }
 
 func (r *SetTableIndexRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2981,8 +2981,8 @@ type SetTableIndexResponse struct {
 }
 
 func (r *SetTableIndexResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3395,8 +3395,8 @@ type VerifyIdlFilesRequest struct {
 }
 
 func (r *VerifyIdlFilesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3435,8 +3435,8 @@ type VerifyIdlFilesResponse struct {
 }
 
 func (r *VerifyIdlFilesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

@@ -15,10 +15,10 @@
 package v20201028
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type AutomationAgentInfo struct {
@@ -133,8 +133,8 @@ type CreateCommandRequest struct {
 }
 
 func (r *CreateCommandRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -171,8 +171,8 @@ type CreateCommandResponse struct {
 }
 
 func (r *CreateCommandResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -189,8 +189,8 @@ type DeleteCommandRequest struct {
 }
 
 func (r *DeleteCommandRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -217,8 +217,8 @@ type DeleteCommandResponse struct {
 }
 
 func (r *DeleteCommandResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -244,8 +244,8 @@ type DescribeAutomationAgentStatusRequest struct {
 }
 
 func (r *DescribeAutomationAgentStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -281,8 +281,8 @@ type DescribeAutomationAgentStatusResponse struct {
 }
 
 func (r *DescribeAutomationAgentStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -308,8 +308,8 @@ type DescribeCommandsRequest struct {
 }
 
 func (r *DescribeCommandsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -345,8 +345,8 @@ type DescribeCommandsResponse struct {
 }
 
 func (r *DescribeCommandsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -375,8 +375,8 @@ type DescribeInvocationTasksRequest struct {
 }
 
 func (r *DescribeInvocationTasksRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -413,8 +413,8 @@ type DescribeInvocationTasksResponse struct {
 }
 
 func (r *DescribeInvocationTasksResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -440,8 +440,8 @@ type DescribeInvocationsRequest struct {
 }
 
 func (r *DescribeInvocationsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -477,8 +477,8 @@ type DescribeInvocationsResponse struct {
 }
 
 func (r *DescribeInvocationsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -492,8 +492,8 @@ type DescribeRegionsRequest struct {
 }
 
 func (r *DescribeRegionsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -525,8 +525,8 @@ type DescribeRegionsResponse struct {
 }
 
 func (r *DescribeRegionsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -553,7 +553,7 @@ type Invocation struct {
 	CommandId *string `json:"CommandId,omitempty" name:"CommandId"`
 
 	// 执行任务状态。取值范围：
-	// <li> PENDING：等待下发 
+	// <li> PENDING：等待下发
 	// <li> RUNNING：命令运行中
 	// <li> SUCCESS：命令成功
 	// <li> FAILED：命令失败
@@ -598,9 +598,9 @@ type InvocationTask struct {
 	CommandId *string `json:"CommandId,omitempty" name:"CommandId"`
 
 	// 执行任务状态。取值范围：
-	// <li> PENDING：等待下发 
+	// <li> PENDING：等待下发
 	// <li> DELIVERING：下发中
-	// <li> DELIVER_DELAYED：延时下发 
+	// <li> DELIVER_DELAYED：延时下发
 	// <li> DELIVER_FAILED：下发失败
 	// <li> RUNNING：命令运行中
 	// <li> SUCCESS：命令成功
@@ -637,9 +637,9 @@ type InvocationTaskBasicInfo struct {
 	InvocationTaskId *string `json:"InvocationTaskId,omitempty" name:"InvocationTaskId"`
 
 	// 执行任务状态。取值范围：
-	// <li> PENDING：等待下发 
+	// <li> PENDING：等待下发
 	// <li> DELIVERING：下发中
-	// <li> DELIVER_DELAYED：延时下发 
+	// <li> DELIVER_DELAYED：延时下发
 	// <li> DELIVER_FAILED：下发失败
 	// <li> RUNNING：命令运行中
 	// <li> SUCCESS：命令成功
@@ -670,8 +670,8 @@ type InvokeCommandRequest struct {
 }
 
 func (r *InvokeCommandRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -703,8 +703,8 @@ type InvokeCommandResponse struct {
 }
 
 func (r *InvokeCommandResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -747,8 +747,8 @@ type ModifyCommandRequest struct {
 }
 
 func (r *ModifyCommandRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -782,8 +782,8 @@ type ModifyCommandResponse struct {
 }
 
 func (r *ModifyCommandResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -812,8 +812,8 @@ type PreviewReplacedCommandContentRequest struct {
 }
 
 func (r *PreviewReplacedCommandContentRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -845,8 +845,8 @@ type PreviewReplacedCommandContentResponse struct {
 }
 
 func (r *PreviewReplacedCommandContentResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -920,8 +920,8 @@ type RunCommandRequest struct {
 }
 
 func (r *RunCommandRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -964,8 +964,8 @@ type RunCommandResponse struct {
 }
 
 func (r *RunCommandResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

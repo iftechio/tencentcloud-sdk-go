@@ -15,10 +15,10 @@
 package v20190605
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type CertInfo struct {
@@ -99,8 +99,8 @@ type CreateDomainRequest struct {
 }
 
 func (r *CreateDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -132,8 +132,8 @@ type CreateDomainResponse struct {
 }
 
 func (r *CreateDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -171,8 +171,8 @@ type DeleteDomainRequest struct {
 }
 
 func (r *DeleteDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -199,8 +199,8 @@ type DeleteDomainResponse struct {
 }
 
 func (r *DeleteDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -214,8 +214,8 @@ type DescribeDashboardRequest struct {
 }
 
 func (r *DescribeDashboardRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -236,7 +236,7 @@ type DescribeDashboardResponse struct {
 	Response *struct {
 
 		// dashboard面板数据
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *DashboardResult `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -245,8 +245,8 @@ type DescribeDashboardResponse struct {
 }
 
 func (r *DescribeDashboardResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -263,8 +263,8 @@ type DescribeDomainCertsRequest struct {
 }
 
 func (r *DescribeDomainCertsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -294,8 +294,8 @@ type DescribeDomainCertsResponse struct {
 }
 
 func (r *DescribeDomainCertsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -309,8 +309,8 @@ type DescribeDomainTagsRequest struct {
 }
 
 func (r *DescribeDomainTagsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -339,8 +339,8 @@ type DescribeDomainTagsResponse struct {
 }
 
 func (r *DescribeDomainTagsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -406,8 +406,8 @@ type DescribeDomainsRequest struct {
 }
 
 func (r *DescribeDomainsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -446,8 +446,8 @@ type DescribeDomainsResponse struct {
 }
 
 func (r *DescribeDomainsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -461,8 +461,8 @@ type DescribeNoticeInfoRequest struct {
 }
 
 func (r *DescribeNoticeInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -491,8 +491,8 @@ type DescribeNoticeInfoResponse struct {
 }
 
 func (r *DescribeNoticeInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -567,8 +567,8 @@ type ModifyDomainTagsRequest struct {
 }
 
 func (r *ModifyDomainTagsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -596,8 +596,8 @@ type ModifyDomainTagsResponse struct {
 }
 
 func (r *ModifyDomainTagsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -626,8 +626,8 @@ type RefreshDomainRequest struct {
 }
 
 func (r *RefreshDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -654,8 +654,8 @@ type RefreshDomainResponse struct {
 }
 
 func (r *RefreshDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -672,8 +672,8 @@ type ResolveDomainRequest struct {
 }
 
 func (r *ResolveDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -703,8 +703,8 @@ type ResolveDomainResponse struct {
 }
 
 func (r *ResolveDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

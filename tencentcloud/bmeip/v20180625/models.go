@@ -15,10 +15,10 @@
 package v20180625
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type BindEipAclsRequest struct {
@@ -29,8 +29,8 @@ type BindEipAclsRequest struct {
 }
 
 func (r *BindEipAclsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -57,8 +57,8 @@ type BindEipAclsResponse struct {
 }
 
 func (r *BindEipAclsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -78,8 +78,8 @@ type BindHostedRequest struct {
 }
 
 func (r *BindHostedRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -110,8 +110,8 @@ type BindHostedResponse struct {
 }
 
 func (r *BindHostedResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -131,8 +131,8 @@ type BindRsRequest struct {
 }
 
 func (r *BindRsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -163,8 +163,8 @@ type BindRsResponse struct {
 }
 
 func (r *BindRsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -187,8 +187,8 @@ type BindVpcIpRequest struct {
 }
 
 func (r *BindVpcIpRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -220,8 +220,8 @@ type BindVpcIpResponse struct {
 }
 
 func (r *BindVpcIpResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -241,8 +241,8 @@ type CreateEipAclRequest struct {
 }
 
 func (r *CreateEipAclRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -282,8 +282,8 @@ type CreateEipAclResponse struct {
 }
 
 func (r *CreateEipAclResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -318,8 +318,8 @@ type CreateEipRequest struct {
 }
 
 func (r *CreateEipRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -358,8 +358,8 @@ type CreateEipResponse struct {
 }
 
 func (r *CreateEipResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -376,8 +376,8 @@ type DeleteEipAclRequest struct {
 }
 
 func (r *DeleteEipAclRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -404,8 +404,8 @@ type DeleteEipAclResponse struct {
 }
 
 func (r *DeleteEipAclResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -422,8 +422,8 @@ type DeleteEipRequest struct {
 }
 
 func (r *DeleteEipRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -453,8 +453,8 @@ type DeleteEipResponse struct {
 }
 
 func (r *DeleteEipResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -498,8 +498,8 @@ type DescribeEipAclsRequest struct {
 }
 
 func (r *DescribeEipAclsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -541,8 +541,8 @@ type DescribeEipAclsResponse struct {
 }
 
 func (r *DescribeEipAclsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -556,8 +556,8 @@ type DescribeEipQuotaRequest struct {
 }
 
 func (r *DescribeEipQuotaRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -598,8 +598,8 @@ type DescribeEipQuotaResponse struct {
 }
 
 func (r *DescribeEipQuotaResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -616,8 +616,8 @@ type DescribeEipTaskRequest struct {
 }
 
 func (r *DescribeEipTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -647,8 +647,8 @@ type DescribeEipTaskResponse struct {
 }
 
 func (r *DescribeEipTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -707,8 +707,8 @@ type DescribeEipsRequest struct {
 }
 
 func (r *DescribeEipsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -755,8 +755,8 @@ type DescribeEipsResponse struct {
 }
 
 func (r *DescribeEipsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -932,8 +932,8 @@ type ModifyEipAclRequest struct {
 }
 
 func (r *ModifyEipAclRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -964,8 +964,8 @@ type ModifyEipAclResponse struct {
 }
 
 func (r *ModifyEipAclResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -988,8 +988,8 @@ type ModifyEipChargeRequest struct {
 }
 
 func (r *ModifyEipChargeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1021,8 +1021,8 @@ type ModifyEipChargeResponse struct {
 }
 
 func (r *ModifyEipChargeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1042,8 +1042,8 @@ type ModifyEipNameRequest struct {
 }
 
 func (r *ModifyEipNameRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1071,8 +1071,8 @@ type ModifyEipNameResponse struct {
 }
 
 func (r *ModifyEipNameResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1089,8 +1089,8 @@ type UnbindEipAclsRequest struct {
 }
 
 func (r *UnbindEipAclsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1117,8 +1117,8 @@ type UnbindEipAclsResponse struct {
 }
 
 func (r *UnbindEipAclsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1141,8 +1141,8 @@ type UnbindHostedRequest struct {
 }
 
 func (r *UnbindHostedRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1174,8 +1174,8 @@ type UnbindHostedResponse struct {
 }
 
 func (r *UnbindHostedResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1192,8 +1192,8 @@ type UnbindRsListRequest struct {
 }
 
 func (r *UnbindRsListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1223,8 +1223,8 @@ type UnbindRsListResponse struct {
 }
 
 func (r *UnbindRsListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1244,8 +1244,8 @@ type UnbindRsRequest struct {
 }
 
 func (r *UnbindRsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1276,8 +1276,8 @@ type UnbindRsResponse struct {
 }
 
 func (r *UnbindRsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1300,8 +1300,8 @@ type UnbindVpcIpRequest struct {
 }
 
 func (r *UnbindVpcIpRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1333,8 +1333,8 @@ type UnbindVpcIpResponse struct {
 }
 
 func (r *UnbindVpcIpResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

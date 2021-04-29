@@ -1,9 +1,9 @@
 package cns
 
 import (
-	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
-	tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
-	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/profile"
 )
 
 const APIVersion = "2019-05-28"

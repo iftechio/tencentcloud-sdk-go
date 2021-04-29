@@ -15,10 +15,10 @@
 package v20180125
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type AddCustomRuleRequest struct {
@@ -53,8 +53,8 @@ type AddCustomRuleRequest struct {
 }
 
 func (r *AddCustomRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -87,7 +87,7 @@ type AddCustomRuleResponse struct {
 		Success *ResponseCode `json:"Success,omitempty" name:"Success"`
 
 		// 添加成功的规则ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RuleId *int64 `json:"RuleId,omitempty" name:"RuleId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -96,8 +96,8 @@ type AddCustomRuleResponse struct {
 }
 
 func (r *AddCustomRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -138,8 +138,8 @@ type CreateAttackDownloadTaskRequest struct {
 }
 
 func (r *CreateAttackDownloadTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -177,8 +177,8 @@ type CreateAttackDownloadTaskResponse struct {
 }
 
 func (r *CreateAttackDownloadTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -195,8 +195,8 @@ type DeleteAttackDownloadRecordRequest struct {
 }
 
 func (r *DeleteAttackDownloadRecordRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -223,8 +223,8 @@ type DeleteAttackDownloadRecordResponse struct {
 }
 
 func (r *DeleteAttackDownloadRecordResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -241,8 +241,8 @@ type DeleteDownloadRecordRequest struct {
 }
 
 func (r *DeleteDownloadRecordRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -269,8 +269,8 @@ type DeleteDownloadRecordResponse struct {
 }
 
 func (r *DeleteDownloadRecordResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -290,8 +290,8 @@ type DeleteSessionRequest struct {
 }
 
 func (r *DeleteSessionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -314,7 +314,7 @@ type DeleteSessionResponse struct {
 	Response *struct {
 
 		// 结果
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *string `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -323,8 +323,8 @@ type DeleteSessionResponse struct {
 }
 
 func (r *DeleteSessionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -362,8 +362,8 @@ type DescribeCustomRulesRequest struct {
 }
 
 func (r *DescribeCustomRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -400,8 +400,8 @@ type DescribeCustomRulesResponse struct {
 }
 
 func (r *DescribeCustomRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -448,8 +448,8 @@ type DescribeUserClbWafRegionsRequest struct {
 }
 
 func (r *DescribeUserClbWafRegionsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -470,7 +470,7 @@ type DescribeUserClbWafRegionsResponse struct {
 	Response *struct {
 
 		// 地域（标准的ap-格式）列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*string `json:"Data,omitempty" name:"Data" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -479,8 +479,8 @@ type DescribeUserClbWafRegionsResponse struct {
 }
 
 func (r *DescribeUserClbWafRegionsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -506,8 +506,8 @@ type ModifyCustomRuleStatusRequest struct {
 }
 
 func (r *ModifyCustomRuleStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -540,8 +540,8 @@ type ModifyCustomRuleStatusResponse struct {
 }
 
 func (r *ModifyCustomRuleStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

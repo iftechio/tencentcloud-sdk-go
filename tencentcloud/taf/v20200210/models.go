@@ -15,10 +15,10 @@
 package v20200210
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type DetectFraudKOLRequest struct {
@@ -29,8 +29,8 @@ type DetectFraudKOLRequest struct {
 }
 
 func (r *DetectFraudKOLRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -52,7 +52,7 @@ type DetectFraudKOLResponse struct {
 	Response *struct {
 
 		// 回包数据
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *OutputKolData `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -61,8 +61,8 @@ type DetectFraudKOLResponse struct {
 }
 
 func (r *DetectFraudKOLResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -79,8 +79,8 @@ type EnhanceTaDegreeRequest struct {
 }
 
 func (r *EnhanceTaDegreeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -102,7 +102,7 @@ type EnhanceTaDegreeResponse struct {
 	Response *struct {
 
 		// 回包数据
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *OutputTaData `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -111,8 +111,8 @@ type EnhanceTaDegreeResponse struct {
 }
 
 func (r *EnhanceTaDegreeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -488,8 +488,8 @@ type RecognizeCustomizedAudienceRequest struct {
 }
 
 func (r *RecognizeCustomizedAudienceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -511,7 +511,7 @@ type RecognizeCustomizedAudienceResponse struct {
 	Response *struct {
 
 		// 业务出参
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *OutputRecognizeTargetAudience `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -520,8 +520,8 @@ type RecognizeCustomizedAudienceResponse struct {
 }
 
 func (r *RecognizeCustomizedAudienceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -538,8 +538,8 @@ type RecognizeEffectiveFlowRequest struct {
 }
 
 func (r *RecognizeEffectiveFlowRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -569,8 +569,8 @@ type RecognizeEffectiveFlowResponse struct {
 }
 
 func (r *RecognizeEffectiveFlowResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -587,8 +587,8 @@ type RecognizePreciseTargetAudienceRequest struct {
 }
 
 func (r *RecognizePreciseTargetAudienceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -610,7 +610,7 @@ type RecognizePreciseTargetAudienceResponse struct {
 	Response *struct {
 
 		// 回包数据
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *OutputRecognizeTargetAudience `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -619,8 +619,8 @@ type RecognizePreciseTargetAudienceResponse struct {
 }
 
 func (r *RecognizePreciseTargetAudienceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -637,8 +637,8 @@ type RecognizeTargetAudienceRequest struct {
 }
 
 func (r *RecognizeTargetAudienceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -660,7 +660,7 @@ type RecognizeTargetAudienceResponse struct {
 	Response *struct {
 
 		// 回包数据
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *OutputRecognizeTargetAudience `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -669,8 +669,8 @@ type RecognizeTargetAudienceResponse struct {
 }
 
 func (r *RecognizeTargetAudienceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -687,8 +687,8 @@ type SendTrafficSecuritySmsMessageRequest struct {
 }
 
 func (r *SendTrafficSecuritySmsMessageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -710,7 +710,7 @@ type SendTrafficSecuritySmsMessageResponse struct {
 	Response *struct {
 
 		// 返回结果
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *OutputSendTrafficSecuritySmsMsg `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -719,8 +719,8 @@ type SendTrafficSecuritySmsMessageResponse struct {
 }
 
 func (r *SendTrafficSecuritySmsMessageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

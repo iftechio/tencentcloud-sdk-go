@@ -15,10 +15,10 @@
 package v20191209
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type DevInfoQ struct {
@@ -57,8 +57,8 @@ type GetOpenIdRequest struct {
 }
 
 func (r *GetOpenIdRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -84,11 +84,11 @@ type GetOpenIdResponse struct {
 	Response *struct {
 
 		// 设备ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OpenId *string `json:"OpenId,omitempty" name:"OpenId"`
 
 		// 设备风险
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RiskInfo []*RiskInfo `json:"RiskInfo,omitempty" name:"RiskInfo" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -97,8 +97,8 @@ type GetOpenIdResponse struct {
 }
 
 func (r *GetOpenIdResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -130,8 +130,8 @@ type GetTokenRequest struct {
 }
 
 func (r *GetTokenRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -169,8 +169,8 @@ type GetTokenResponse struct {
 }
 
 func (r *GetTokenResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -256,8 +256,8 @@ type QueryDevAndRiskRequest struct {
 }
 
 func (r *QueryDevAndRiskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -305,11 +305,11 @@ type QueryDevAndRiskResponse struct {
 		Found *int64 `json:"Found,omitempty" name:"Found"`
 
 		// 匹配数量级别
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AllCnt *int64 `json:"AllCnt,omitempty" name:"AllCnt"`
 
 		// 匹配到的设备信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Matches []*DevInfoQ `json:"Matches,omitempty" name:"Matches" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -318,8 +318,8 @@ type QueryDevAndRiskResponse struct {
 }
 
 func (r *QueryDevAndRiskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

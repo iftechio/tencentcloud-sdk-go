@@ -15,80 +15,79 @@
 package v20201106
 
 import (
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/profile"
 )
 
 const APIVersion = "2020-11-06"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewDescribeRegionsRequest() (request *DescribeRegionsRequest) {
-    request = &DescribeRegionsRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("api", APIVersion, "DescribeRegions")
-    return
+	request = &DescribeRegionsRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("api", APIVersion, "DescribeRegions")
+	return
 }
 
 func NewDescribeRegionsResponse() (response *DescribeRegionsResponse) {
-    response = &DescribeRegionsResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeRegionsResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 本接口(DescribeRegions)用于查询各个产品支持地域信息，当前只支持cvm。
 func (c *Client) DescribeRegions(request *DescribeRegionsRequest) (response *DescribeRegionsResponse, err error) {
-    if request == nil {
-        request = NewDescribeRegionsRequest()
-    }
-    response = NewDescribeRegionsResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeRegionsRequest()
+	}
+	response = NewDescribeRegionsResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeZonesRequest() (request *DescribeZonesRequest) {
-    request = &DescribeZonesRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("api", APIVersion, "DescribeZones")
-    return
+	request = &DescribeZonesRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("api", APIVersion, "DescribeZones")
+	return
 }
 
 func NewDescribeZonesResponse() (response *DescribeZonesResponse) {
-    response = &DescribeZonesResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeZonesResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 本接口(DescribeZones)用于查询产品可用区信息，当前只支持cvm。
 func (c *Client) DescribeZones(request *DescribeZonesRequest) (response *DescribeZonesResponse, err error) {
-    if request == nil {
-        request = NewDescribeZonesRequest()
-    }
-    response = NewDescribeZonesResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeZonesRequest()
+	}
+	response = NewDescribeZonesResponse()
+	err = c.Send(request, response)
+	return
 }

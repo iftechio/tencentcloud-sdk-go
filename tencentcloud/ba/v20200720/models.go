@@ -15,10 +15,10 @@
 package v20200720
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type CreateWeappQRUrlRequest struct {
@@ -29,8 +29,8 @@ type CreateWeappQRUrlRequest struct {
 }
 
 func (r *CreateWeappQRUrlRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -60,8 +60,8 @@ type CreateWeappQRUrlResponse struct {
 }
 
 func (r *CreateWeappQRUrlResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

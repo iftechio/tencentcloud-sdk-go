@@ -15,10 +15,10 @@
 package v20200324
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type ApplyInstanceSnapshotRequest struct {
@@ -32,8 +32,8 @@ type ApplyInstanceSnapshotRequest struct {
 }
 
 func (r *ApplyInstanceSnapshotRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -61,8 +61,8 @@ type ApplyInstanceSnapshotResponse struct {
 }
 
 func (r *ApplyInstanceSnapshotResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -106,7 +106,7 @@ type Blueprint struct {
 	// 镜像状态。
 	BlueprintState *string `json:"BlueprintState,omitempty" name:"BlueprintState"`
 
-	// 创建时间。按照 ISO8601 标准表示，并且使用 UTC 时间。 
+	// 创建时间。按照 ISO8601 标准表示，并且使用 UTC 时间。
 	// 格式为： YYYY-MM-DDThh:mm:ssZ。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	CreatedTime *string `json:"CreatedTime,omitempty" name:"CreatedTime"`
@@ -130,7 +130,7 @@ type Bundle struct {
 	Memory *int64 `json:"Memory,omitempty" name:"Memory"`
 
 	// 系统盘类型。
-	// 取值范围： 
+	// 取值范围：
 	// <li> LOCAL_BASIC：本地硬盘</li><li> LOCAL_SSD：本地 SSD 硬盘</li><li> CLOUD_BASIC：普通云硬盘</li><li> CLOUD_SSD：SSD 云硬盘</li><li> CLOUD_PREMIUM：高性能云硬盘</li>
 	SystemDiskType *string `json:"SystemDiskType,omitempty" name:"SystemDiskType"`
 
@@ -188,8 +188,8 @@ type CreateBlueprintRequest struct {
 }
 
 func (r *CreateBlueprintRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -221,8 +221,8 @@ type CreateBlueprintResponse struct {
 }
 
 func (r *CreateBlueprintResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -245,8 +245,8 @@ type CreateFirewallRulesRequest struct {
 }
 
 func (r *CreateFirewallRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -275,8 +275,8 @@ type CreateFirewallRulesResponse struct {
 }
 
 func (r *CreateFirewallRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -296,8 +296,8 @@ type CreateInstanceSnapshotRequest struct {
 }
 
 func (r *CreateInstanceSnapshotRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -328,8 +328,8 @@ type CreateInstanceSnapshotResponse struct {
 }
 
 func (r *CreateInstanceSnapshotResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -346,8 +346,8 @@ type DeleteBlueprintsRequest struct {
 }
 
 func (r *DeleteBlueprintsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -374,8 +374,8 @@ type DeleteBlueprintsResponse struct {
 }
 
 func (r *DeleteBlueprintsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -398,8 +398,8 @@ type DeleteFirewallRulesRequest struct {
 }
 
 func (r *DeleteFirewallRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -428,8 +428,8 @@ type DeleteFirewallRulesResponse struct {
 }
 
 func (r *DeleteFirewallRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -446,8 +446,8 @@ type DeleteSnapshotsRequest struct {
 }
 
 func (r *DeleteSnapshotsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -474,8 +474,8 @@ type DeleteSnapshotsResponse struct {
 }
 
 func (r *DeleteSnapshotsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -513,8 +513,8 @@ type DescribeBlueprintsRequest struct {
 }
 
 func (r *DescribeBlueprintsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -550,8 +550,8 @@ type DescribeBlueprintsResponse struct {
 }
 
 func (r *DescribeBlueprintsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -585,8 +585,8 @@ type DescribeBundlesRequest struct {
 }
 
 func (r *DescribeBundlesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -622,8 +622,8 @@ type DescribeBundlesResponse struct {
 }
 
 func (r *DescribeBundlesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -646,8 +646,8 @@ type DescribeFirewallRulesRequest struct {
 }
 
 func (r *DescribeFirewallRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -685,8 +685,8 @@ type DescribeFirewallRulesResponse struct {
 }
 
 func (r *DescribeFirewallRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -722,8 +722,8 @@ type DescribeInstancesRequest struct {
 }
 
 func (r *DescribeInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -759,8 +759,8 @@ type DescribeInstancesResponse struct {
 }
 
 func (r *DescribeInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -783,8 +783,8 @@ type DescribeInstancesTrafficPackagesRequest struct {
 }
 
 func (r *DescribeInstancesTrafficPackagesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -819,8 +819,8 @@ type DescribeInstancesTrafficPackagesResponse struct {
 }
 
 func (r *DescribeInstancesTrafficPackagesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -860,8 +860,8 @@ type DescribeSnapshotsRequest struct {
 }
 
 func (r *DescribeSnapshotsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -897,8 +897,8 @@ type DescribeSnapshotsResponse struct {
 }
 
 func (r *DescribeSnapshotsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -975,33 +975,33 @@ type Instance struct {
 	// 实例名称。
 	InstanceName *string `json:"InstanceName,omitempty" name:"InstanceName"`
 
-	// 实例计费模式。取值范围： 
+	// 实例计费模式。取值范围：
 	// PREPAID：表示预付费，即包年包月。
 	InstanceChargeType *string `json:"InstanceChargeType,omitempty" name:"InstanceChargeType"`
 
 	// 实例系统盘信息。
 	SystemDisk *SystemDisk `json:"SystemDisk,omitempty" name:"SystemDisk"`
 
-	// 实例主网卡的内网 IP。 
+	// 实例主网卡的内网 IP。
 	// 注意：此字段可能返回 空，表示取不到有效值。
 	PrivateAddresses []*string `json:"PrivateAddresses,omitempty" name:"PrivateAddresses" list`
 
-	// 实例主网卡的公网 IP。 
+	// 实例主网卡的公网 IP。
 	// 注意：此字段可能返回 空，表示取不到有效值。
 	PublicAddresses []*string `json:"PublicAddresses,omitempty" name:"PublicAddresses" list`
 
 	// 实例带宽信息。
 	InternetAccessible *InternetAccessible `json:"InternetAccessible,omitempty" name:"InternetAccessible"`
 
-	// 自动续费标识。取值范围： 
-	// NOTIFY_AND_MANUAL_RENEW：表示通知即将过期，但不自动续费  
+	// 自动续费标识。取值范围：
+	// NOTIFY_AND_MANUAL_RENEW：表示通知即将过期，但不自动续费
 	// NOTIFY_AND_AUTO_RENEW：表示通知即将过期，而且自动续费 。
 	RenewFlag *string `json:"RenewFlag,omitempty" name:"RenewFlag"`
 
 	// 实例登录设置。
 	LoginSettings *LoginSettings `json:"LoginSettings,omitempty" name:"LoginSettings"`
 
-	// 实例状态。取值范围： 
+	// 实例状态。取值范围：
 	// <li>PENDING：表示创建中</li><li>LAUNCH_FAILED：表示创建失败</li><li>RUNNING：表示运行中</li><li>STOPPED：表示关机</li><li>STARTING：表示开机中</li><li>STOPPING：表示关机中</li><li>REBOOTING：表示重启中</li><li>SHUTDOWN：表示停止待销毁</li><li>TERMINATING：表示销毁中</li>
 	InstanceState *string `json:"InstanceState,omitempty" name:"InstanceState"`
 
@@ -1011,28 +1011,28 @@ type Instance struct {
 	// 实例的最新操作。例：StopInstances、ResetInstance。注意：此字段可能返回 空值，表示取不到有效值。
 	LatestOperation *string `json:"LatestOperation,omitempty" name:"LatestOperation"`
 
-	// 实例的最新操作状态。取值范围： 
-	// SUCCESS：表示操作成功 
-	// OPERATING：表示操作执行中 
-	// FAILED：表示操作失败 
+	// 实例的最新操作状态。取值范围：
+	// SUCCESS：表示操作成功
+	// OPERATING：表示操作执行中
+	// FAILED：表示操作失败
 	// 注意：此字段可能返回 空值，表示取不到有效值。
 	LatestOperationState *string `json:"LatestOperationState,omitempty" name:"LatestOperationState"`
 
-	// 实例最新操作的唯一请求 ID。 
+	// 实例最新操作的唯一请求 ID。
 	// 注意：此字段可能返回 空值，表示取不到有效值。
 	LatestOperationRequestId *string `json:"LatestOperationRequestId,omitempty" name:"LatestOperationRequestId"`
 
-	// 隔离时间。按照 ISO8601 标准表示，并且使用 UTC 时间。 
+	// 隔离时间。按照 ISO8601 标准表示，并且使用 UTC 时间。
 	// 格式为： YYYY-MM-DDThh:mm:ssZ。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	IsolatedTime *string `json:"IsolatedTime,omitempty" name:"IsolatedTime"`
 
-	// 创建时间。按照 ISO8601 标准表示，并且使用 UTC 时间。 
+	// 创建时间。按照 ISO8601 标准表示，并且使用 UTC 时间。
 	// 格式为： YYYY-MM-DDThh:mm:ssZ。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	CreatedTime *string `json:"CreatedTime,omitempty" name:"CreatedTime"`
 
-	// 到期时间。按照 ISO8601 标准表示，并且使用 UTC 时间。 
+	// 到期时间。按照 ISO8601 标准表示，并且使用 UTC 时间。
 	// 格式为： YYYY-MM-DDThh:mm:ssZ 。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	ExpiredTime *string `json:"ExpiredTime,omitempty" name:"ExpiredTime"`
@@ -1103,8 +1103,8 @@ type ModifyBlueprintAttributeRequest struct {
 }
 
 func (r *ModifyBlueprintAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1133,8 +1133,8 @@ type ModifyBlueprintAttributeResponse struct {
 }
 
 func (r *ModifyBlueprintAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1154,8 +1154,8 @@ type ModifySnapshotAttributeRequest struct {
 }
 
 func (r *ModifySnapshotAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1183,8 +1183,8 @@ type ModifySnapshotAttributeResponse struct {
 }
 
 func (r *ModifySnapshotAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1207,8 +1207,8 @@ type RebootInstancesRequest struct {
 }
 
 func (r *RebootInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1235,8 +1235,8 @@ type RebootInstancesResponse struct {
 }
 
 func (r *RebootInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1256,8 +1256,8 @@ type ResetInstanceRequest struct {
 }
 
 func (r *ResetInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1285,8 +1285,8 @@ type ResetInstanceResponse struct {
 }
 
 func (r *ResetInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1350,8 +1350,8 @@ type StartInstancesRequest struct {
 }
 
 func (r *StartInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1378,8 +1378,8 @@ type StartInstancesResponse struct {
 }
 
 func (r *StartInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1396,8 +1396,8 @@ type StopInstancesRequest struct {
 }
 
 func (r *StopInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1424,8 +1424,8 @@ type StopInstancesResponse struct {
 }
 
 func (r *StopInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1437,7 +1437,7 @@ func (r *StopInstancesResponse) FromJsonString(s string) error {
 type SystemDisk struct {
 
 	// 系统盘类型。
-	// 取值范围： 
+	// 取值范围：
 	// <li> LOCAL_BASIC：本地硬盘</li><li> LOCAL_SSD：本地 SSD 硬盘</li><li> CLOUD_BASIC：普通云硬盘</li><li> CLOUD_SSD：SSD 云硬盘</li><li> CLOUD_PREMIUM：高性能云硬盘</li>
 	DiskType *string `json:"DiskType,omitempty" name:"DiskType"`
 
@@ -1466,17 +1466,17 @@ type TrafficPackage struct {
 	// 流量包生效周期内超出流量包额度的流量，单位字节。
 	TrafficOverflow *int64 `json:"TrafficOverflow,omitempty" name:"TrafficOverflow"`
 
-	// 流量包生效周期开始时间。按照 ISO8601 标准表示，并且使用 UTC 时间。 
+	// 流量包生效周期开始时间。按照 ISO8601 标准表示，并且使用 UTC 时间。
 	// 格式为： YYYY-MM-DDThh:mm:ssZ。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	StartTime *string `json:"StartTime,omitempty" name:"StartTime"`
 
-	// 流量包生效周期结束时间。按照 ISO8601 标准表示，并且使用 UTC 时间。 
+	// 流量包生效周期结束时间。按照 ISO8601 标准表示，并且使用 UTC 时间。
 	// 格式为： YYYY-MM-DDThh:mm:ssZ。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	EndTime *string `json:"EndTime,omitempty" name:"EndTime"`
 
-	// 流量包到期时间。按照 ISO8601 标准表示，并且使用 UTC 时间。 
+	// 流量包到期时间。按照 ISO8601 标准表示，并且使用 UTC 时间。
 	// 格式为： YYYY-MM-DDThh:mm:ssZ。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Deadline *string `json:"Deadline,omitempty" name:"Deadline"`

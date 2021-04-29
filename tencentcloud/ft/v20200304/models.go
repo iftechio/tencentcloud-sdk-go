@@ -15,10 +15,10 @@
 package v20200304
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type AgeInfo struct {
@@ -26,7 +26,7 @@ type AgeInfo struct {
 	// 变化到的人脸年龄 [10,80]。
 	Age *int64 `json:"Age,omitempty" name:"Age"`
 
-	// 人脸框位置。若不输入则选择 Image 或 Url 中面积最大的人脸。  
+	// 人脸框位置。若不输入则选择 Image 或 Url 中面积最大的人脸。
 	// 您可以通过 [人脸检测与分析](https://cloud.tencent.com/document/api/867/32800)  接口获取人脸框位置信息。
 	FaceRect *FaceRect `json:"FaceRect,omitempty" name:"FaceRect"`
 }
@@ -39,8 +39,8 @@ type CancelFaceMorphJobRequest struct {
 }
 
 func (r *CancelFaceMorphJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -67,8 +67,8 @@ type CancelFaceMorphJobResponse struct {
 }
 
 func (r *CancelFaceMorphJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -80,18 +80,18 @@ func (r *CancelFaceMorphJobResponse) FromJsonString(s string) error {
 type ChangeAgePicRequest struct {
 	*tchttp.BaseRequest
 
-	// 人脸变老变年轻信息。 
+	// 人脸变老变年轻信息。
 	// 您可以输入最多3个 AgeInfo 来实现给一张图中的最多3张人脸变老变年轻。
 	AgeInfos []*AgeInfo `json:"AgeInfos,omitempty" name:"AgeInfos" list`
 
-	// 图片 base64 数据，base64 编码后大小不可超过5M。 
+	// 图片 base64 数据，base64 编码后大小不可超过5M。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Image *string `json:"Image,omitempty" name:"Image"`
 
-	// 图片的 Url ，对应图片 base64 编码后大小不可超过5M。 
-	// 图片的 Url、Image必须提供一个，如果都提供，只使用 Url。 
-	// 图片存储于腾讯云的 Url 可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
-	// 非腾讯云存储的Url速度和稳定性可能受一定影响。 
+	// 图片的 Url ，对应图片 base64 编码后大小不可超过5M。
+	// 图片的 Url、Image必须提供一个，如果都提供，只使用 Url。
+	// 图片存储于腾讯云的 Url 可保障更高下载速度和稳定性，建议图片存储于腾讯云。
+	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Url *string `json:"Url,omitempty" name:"Url"`
 
@@ -100,8 +100,8 @@ type ChangeAgePicRequest struct {
 }
 
 func (r *ChangeAgePicRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -137,8 +137,8 @@ type ChangeAgePicResponse struct {
 }
 
 func (r *ChangeAgePicResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -169,8 +169,8 @@ type FaceCartoonPicRequest struct {
 }
 
 func (r *FaceCartoonPicRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -206,8 +206,8 @@ type FaceCartoonPicResponse struct {
 }
 
 func (r *FaceCartoonPicResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -251,7 +251,7 @@ type GenderInfo struct {
 	// 选择转换方向，0：男变女，1：女变男。
 	Gender *int64 `json:"Gender,omitempty" name:"Gender"`
 
-	// 人脸框位置。若不输入则选择 Image 或 Url 中面积最大的人脸。  
+	// 人脸框位置。若不输入则选择 Image 或 Url 中面积最大的人脸。
 	// 您可以通过 [人脸检测与分析](https://cloud.tencent.com/document/api/867/32800)  接口获取人脸框位置信息。
 	FaceRect *FaceRect `json:"FaceRect,omitempty" name:"FaceRect"`
 }
@@ -268,18 +268,18 @@ type GradientInfo struct {
 type MorphFaceRequest struct {
 	*tchttp.BaseRequest
 
-	// 图片 base64 数据，base64 编码后大小不可超过5M。 
-	// jpg格式长边像素不可超过4000，其他格式图片长边像素不可超2000。 
-	// 人员人脸总数量至少2张，不可超过5张。 
-	// 若图片中包含多张人脸，只选取其中人脸面积最大的人脸。 
+	// 图片 base64 数据，base64 编码后大小不可超过5M。
+	// jpg格式长边像素不可超过4000，其他格式图片长边像素不可超2000。
+	// 人员人脸总数量至少2张，不可超过5张。
+	// 若图片中包含多张人脸，只选取其中人脸面积最大的人脸。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Images []*string `json:"Images,omitempty" name:"Images" list`
 
-	// 图片的 Url 。对应图片 base64 编码后大小不可超过5M。jpg格式长边像素不可超过4000，其他格式图片长边像素不可超2000。 
-	// Url、Image必须提供一个，如果都提供，只使用 Url。图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
-	// 非腾讯云存储的Url速度和稳定性可能受一定影响。 
-	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。 
-	// 人员人脸总数量不可超过5张。 
+	// 图片的 Url 。对应图片 base64 编码后大小不可超过5M。jpg格式长边像素不可超过4000，其他格式图片长边像素不可超2000。
+	// Url、Image必须提供一个，如果都提供，只使用 Url。图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。
+	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
+	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
+	// 人员人脸总数量不可超过5张。
 	// 若图片中包含多张人脸，只选取其中人脸面积最大的人脸。
 	Urls []*string `json:"Urls,omitempty" name:"Urls" list`
 
@@ -300,8 +300,8 @@ type MorphFaceRequest struct {
 }
 
 func (r *MorphFaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -340,8 +340,8 @@ type MorphFaceResponse struct {
 }
 
 func (r *MorphFaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -358,8 +358,8 @@ type QueryFaceMorphJobRequest struct {
 }
 
 func (r *QueryFaceMorphJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -384,7 +384,7 @@ type QueryFaceMorphJobResponse struct {
 		JobStatus *string `json:"JobStatus,omitempty" name:"JobStatus"`
 
 		// 人像渐变输出的结果信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FaceMorphOutput *FaceMorphOutput `json:"FaceMorphOutput,omitempty" name:"FaceMorphOutput"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -393,8 +393,8 @@ type QueryFaceMorphJobResponse struct {
 }
 
 func (r *QueryFaceMorphJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -406,18 +406,18 @@ func (r *QueryFaceMorphJobResponse) FromJsonString(s string) error {
 type SwapGenderPicRequest struct {
 	*tchttp.BaseRequest
 
-	// 人脸转化性别信息。 
+	// 人脸转化性别信息。
 	// 您可以输入最多3个 GenderInfo 来实现给一张图中的最多3张人脸转换性别。
 	GenderInfos []*GenderInfo `json:"GenderInfos,omitempty" name:"GenderInfos" list`
 
-	// 图片 base64 数据，base64 编码后大小不可超过5M。 
+	// 图片 base64 数据，base64 编码后大小不可超过5M。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Image *string `json:"Image,omitempty" name:"Image"`
 
-	// 图片的 Url ，对应图片 base64 编码后大小不可超过5M。 
-	// 图片的 Url、Image必须提供一个，如果都提供，只使用 Url。 
-	// 图片存储于腾讯云的 Url 可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
-	// 非腾讯云存储的Url速度和稳定性可能受一定影响。 
+	// 图片的 Url ，对应图片 base64 编码后大小不可超过5M。
+	// 图片的 Url、Image必须提供一个，如果都提供，只使用 Url。
+	// 图片存储于腾讯云的 Url 可保障更高下载速度和稳定性，建议图片存储于腾讯云。
+	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Url *string `json:"Url,omitempty" name:"Url"`
 
@@ -426,8 +426,8 @@ type SwapGenderPicRequest struct {
 }
 
 func (r *SwapGenderPicRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -463,8 +463,8 @@ type SwapGenderPicResponse struct {
 }
 
 func (r *SwapGenderPicResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

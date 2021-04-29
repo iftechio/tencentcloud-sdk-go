@@ -15,10 +15,10 @@
 package v20180416
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type CosBackup struct {
@@ -127,8 +127,8 @@ type CreateInstanceRequest struct {
 }
 
 func (r *CreateInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -185,8 +185,8 @@ type CreateInstanceResponse struct {
 }
 
 func (r *CreateInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -203,8 +203,8 @@ type DeleteInstanceRequest struct {
 }
 
 func (r *DeleteInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -231,8 +231,8 @@ type DeleteInstanceResponse struct {
 }
 
 func (r *DeleteInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -276,8 +276,8 @@ type DescribeInstanceLogsRequest struct {
 }
 
 func (r *DescribeInstanceLogsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -317,8 +317,8 @@ type DescribeInstanceLogsResponse struct {
 }
 
 func (r *DescribeInstanceLogsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -347,8 +347,8 @@ type DescribeInstanceOperationsRequest struct {
 }
 
 func (r *DescribeInstanceOperationsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -385,8 +385,8 @@ type DescribeInstanceOperationsResponse struct {
 }
 
 func (r *DescribeInstanceOperationsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -427,8 +427,8 @@ type DescribeInstancesRequest struct {
 }
 
 func (r *DescribeInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -469,8 +469,8 @@ type DescribeInstancesResponse struct {
 }
 
 func (r *DescribeInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -535,8 +535,8 @@ type GetRequestTargetNodeTypesRequest struct {
 }
 
 func (r *GetRequestTargetNodeTypesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -566,8 +566,8 @@ type GetRequestTargetNodeTypesResponse struct {
 }
 
 func (r *GetRequestTargetNodeTypesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -894,8 +894,8 @@ type RestartInstanceRequest struct {
 }
 
 func (r *RestartInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -923,8 +923,8 @@ type RestartInstanceResponse struct {
 }
 
 func (r *RestartInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -941,8 +941,8 @@ type RestartKibanaRequest struct {
 }
 
 func (r *RestartKibanaRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -969,8 +969,8 @@ type RestartKibanaResponse struct {
 }
 
 func (r *RestartKibanaResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -993,8 +993,8 @@ type RestartNodesRequest struct {
 }
 
 func (r *RestartNodesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1023,8 +1023,8 @@ type RestartNodesResponse struct {
 }
 
 func (r *RestartNodesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1167,8 +1167,8 @@ type UpdateInstanceRequest struct {
 }
 
 func (r *UpdateInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1218,8 +1218,8 @@ type UpdateInstanceResponse struct {
 }
 
 func (r *UpdateInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1248,8 +1248,8 @@ type UpdatePluginsRequest struct {
 }
 
 func (r *UpdatePluginsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1280,8 +1280,8 @@ type UpdatePluginsResponse struct {
 }
 
 func (r *UpdatePluginsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1301,8 +1301,8 @@ type UpdateRequestTargetNodeTypesRequest struct {
 }
 
 func (r *UpdateRequestTargetNodeTypesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1330,8 +1330,8 @@ type UpdateRequestTargetNodeTypesResponse struct {
 }
 
 func (r *UpdateRequestTargetNodeTypesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1363,8 +1363,8 @@ type UpgradeInstanceRequest struct {
 }
 
 func (r *UpgradeInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1396,8 +1396,8 @@ type UpgradeInstanceResponse struct {
 }
 
 func (r *UpgradeInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1429,8 +1429,8 @@ type UpgradeLicenseRequest struct {
 }
 
 func (r *UpgradeLicenseRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1462,8 +1462,8 @@ type UpgradeLicenseResponse struct {
 }
 
 func (r *UpgradeLicenseResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

@@ -15,133 +15,132 @@
 package v20181213
 
 import (
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/profile"
 )
 
 const APIVersion = "2018-12-13"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewCorrectMultiImageRequest() (request *CorrectMultiImageRequest) {
-    request = &CorrectMultiImageRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("ecc", APIVersion, "CorrectMultiImage")
-    return
+	request = &CorrectMultiImageRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("ecc", APIVersion, "CorrectMultiImage")
+	return
 }
 
 func NewCorrectMultiImageResponse() (response *CorrectMultiImageResponse) {
-    response = &CorrectMultiImageResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &CorrectMultiImageResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // https://ecc.tencentcloudapi.com/?Action=CorrectMultiImage
 // 多图像识别批改接口
 func (c *Client) CorrectMultiImage(request *CorrectMultiImageRequest) (response *CorrectMultiImageResponse, err error) {
-    if request == nil {
-        request = NewCorrectMultiImageRequest()
-    }
-    response = NewCorrectMultiImageResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewCorrectMultiImageRequest()
+	}
+	response = NewCorrectMultiImageResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeTaskRequest() (request *DescribeTaskRequest) {
-    request = &DescribeTaskRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("ecc", APIVersion, "DescribeTask")
-    return
+	request = &DescribeTaskRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("ecc", APIVersion, "DescribeTask")
+	return
 }
 
 func NewDescribeTaskResponse() (response *DescribeTaskResponse) {
-    response = &DescribeTaskResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeTaskResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 异步任务结果查询接口
 func (c *Client) DescribeTask(request *DescribeTaskRequest) (response *DescribeTaskResponse, err error) {
-    if request == nil {
-        request = NewDescribeTaskRequest()
-    }
-    response = NewDescribeTaskResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeTaskRequest()
+	}
+	response = NewDescribeTaskResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewECCRequest() (request *ECCRequest) {
-    request = &ECCRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("ecc", APIVersion, "ECC")
-    return
+	request = &ECCRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("ecc", APIVersion, "ECC")
+	return
 }
 
 func NewECCResponse() (response *ECCResponse) {
-    response = &ECCResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ECCResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
-// 接口请求域名： ecc.tencentcloudapi.com 
+// 接口请求域名： ecc.tencentcloudapi.com
 // 纯文本英语作文批改
 func (c *Client) ECC(request *ECCRequest) (response *ECCResponse, err error) {
-    if request == nil {
-        request = NewECCRequest()
-    }
-    response = NewECCResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewECCRequest()
+	}
+	response = NewECCResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewEHOCRRequest() (request *EHOCRRequest) {
-    request = &EHOCRRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("ecc", APIVersion, "EHOCR")
-    return
+	request = &EHOCRRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("ecc", APIVersion, "EHOCR")
+	return
 }
 
 func NewEHOCRResponse() (response *EHOCRResponse) {
-    response = &EHOCRResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &EHOCRResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // https://ecc.tencentcloudapi.com/?Action=EHOCR
 // 图像识别批改接口
 func (c *Client) EHOCR(request *EHOCRRequest) (response *EHOCRResponse, err error) {
-    if request == nil {
-        request = NewEHOCRRequest()
-    }
-    response = NewEHOCRResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewEHOCRRequest()
+	}
+	response = NewEHOCRResponse()
+	err = c.Send(request, response)
+	return
 }

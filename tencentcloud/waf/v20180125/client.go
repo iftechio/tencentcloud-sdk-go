@@ -15,230 +15,229 @@
 package v20180125
 
 import (
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/profile"
 )
 
 const APIVersion = "2018-01-25"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewAddCustomRuleRequest() (request *AddCustomRuleRequest) {
-    request = &AddCustomRuleRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("waf", APIVersion, "AddCustomRule")
-    return
+	request = &AddCustomRuleRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("waf", APIVersion, "AddCustomRule")
+	return
 }
 
 func NewAddCustomRuleResponse() (response *AddCustomRuleResponse) {
-    response = &AddCustomRuleResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &AddCustomRuleResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 增加自定义策略
 func (c *Client) AddCustomRule(request *AddCustomRuleRequest) (response *AddCustomRuleResponse, err error) {
-    if request == nil {
-        request = NewAddCustomRuleRequest()
-    }
-    response = NewAddCustomRuleResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewAddCustomRuleRequest()
+	}
+	response = NewAddCustomRuleResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewCreateAttackDownloadTaskRequest() (request *CreateAttackDownloadTaskRequest) {
-    request = &CreateAttackDownloadTaskRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("waf", APIVersion, "CreateAttackDownloadTask")
-    return
+	request = &CreateAttackDownloadTaskRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("waf", APIVersion, "CreateAttackDownloadTask")
+	return
 }
 
 func NewCreateAttackDownloadTaskResponse() (response *CreateAttackDownloadTaskResponse) {
-    response = &CreateAttackDownloadTaskResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &CreateAttackDownloadTaskResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 创建攻击日志下载任务
 func (c *Client) CreateAttackDownloadTask(request *CreateAttackDownloadTaskRequest) (response *CreateAttackDownloadTaskResponse, err error) {
-    if request == nil {
-        request = NewCreateAttackDownloadTaskRequest()
-    }
-    response = NewCreateAttackDownloadTaskResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewCreateAttackDownloadTaskRequest()
+	}
+	response = NewCreateAttackDownloadTaskResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDeleteAttackDownloadRecordRequest() (request *DeleteAttackDownloadRecordRequest) {
-    request = &DeleteAttackDownloadRecordRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("waf", APIVersion, "DeleteAttackDownloadRecord")
-    return
+	request = &DeleteAttackDownloadRecordRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("waf", APIVersion, "DeleteAttackDownloadRecord")
+	return
 }
 
 func NewDeleteAttackDownloadRecordResponse() (response *DeleteAttackDownloadRecordResponse) {
-    response = &DeleteAttackDownloadRecordResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DeleteAttackDownloadRecordResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 删除攻击日志下载任务记录
 func (c *Client) DeleteAttackDownloadRecord(request *DeleteAttackDownloadRecordRequest) (response *DeleteAttackDownloadRecordResponse, err error) {
-    if request == nil {
-        request = NewDeleteAttackDownloadRecordRequest()
-    }
-    response = NewDeleteAttackDownloadRecordResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDeleteAttackDownloadRecordRequest()
+	}
+	response = NewDeleteAttackDownloadRecordResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDeleteDownloadRecordRequest() (request *DeleteDownloadRecordRequest) {
-    request = &DeleteDownloadRecordRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("waf", APIVersion, "DeleteDownloadRecord")
-    return
+	request = &DeleteDownloadRecordRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("waf", APIVersion, "DeleteDownloadRecord")
+	return
 }
 
 func NewDeleteDownloadRecordResponse() (response *DeleteDownloadRecordResponse) {
-    response = &DeleteDownloadRecordResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DeleteDownloadRecordResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 删除访问日志下载记录
 func (c *Client) DeleteDownloadRecord(request *DeleteDownloadRecordRequest) (response *DeleteDownloadRecordResponse, err error) {
-    if request == nil {
-        request = NewDeleteDownloadRecordRequest()
-    }
-    response = NewDeleteDownloadRecordResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDeleteDownloadRecordRequest()
+	}
+	response = NewDeleteDownloadRecordResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDeleteSessionRequest() (request *DeleteSessionRequest) {
-    request = &DeleteSessionRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("waf", APIVersion, "DeleteSession")
-    return
+	request = &DeleteSessionRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("waf", APIVersion, "DeleteSession")
+	return
 }
 
 func NewDeleteSessionResponse() (response *DeleteSessionResponse) {
-    response = &DeleteSessionResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DeleteSessionResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 删除CC攻击的session设置
 func (c *Client) DeleteSession(request *DeleteSessionRequest) (response *DeleteSessionResponse, err error) {
-    if request == nil {
-        request = NewDeleteSessionRequest()
-    }
-    response = NewDeleteSessionResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDeleteSessionRequest()
+	}
+	response = NewDeleteSessionResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeCustomRulesRequest() (request *DescribeCustomRulesRequest) {
-    request = &DescribeCustomRulesRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("waf", APIVersion, "DescribeCustomRules")
-    return
+	request = &DescribeCustomRulesRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("waf", APIVersion, "DescribeCustomRules")
+	return
 }
 
 func NewDescribeCustomRulesResponse() (response *DescribeCustomRulesResponse) {
-    response = &DescribeCustomRulesResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeCustomRulesResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 获取防护配置中的自定义策略列表
 func (c *Client) DescribeCustomRules(request *DescribeCustomRulesRequest) (response *DescribeCustomRulesResponse, err error) {
-    if request == nil {
-        request = NewDescribeCustomRulesRequest()
-    }
-    response = NewDescribeCustomRulesResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeCustomRulesRequest()
+	}
+	response = NewDescribeCustomRulesResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeUserClbWafRegionsRequest() (request *DescribeUserClbWafRegionsRequest) {
-    request = &DescribeUserClbWafRegionsRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("waf", APIVersion, "DescribeUserClbWafRegions")
-    return
+	request = &DescribeUserClbWafRegionsRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("waf", APIVersion, "DescribeUserClbWafRegions")
+	return
 }
 
 func NewDescribeUserClbWafRegionsResponse() (response *DescribeUserClbWafRegionsResponse) {
-    response = &DescribeUserClbWafRegionsResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeUserClbWafRegionsResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 在负载均衡型WAF的添加、编辑域名配置的时候，需要展示负载均衡型WAF（clb-waf)支持的地域列表，通过DescribeUserClbWafRegions既可以获得当前对客户已经开放的地域列表
 func (c *Client) DescribeUserClbWafRegions(request *DescribeUserClbWafRegionsRequest) (response *DescribeUserClbWafRegionsResponse, err error) {
-    if request == nil {
-        request = NewDescribeUserClbWafRegionsRequest()
-    }
-    response = NewDescribeUserClbWafRegionsResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeUserClbWafRegionsRequest()
+	}
+	response = NewDescribeUserClbWafRegionsResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewModifyCustomRuleStatusRequest() (request *ModifyCustomRuleStatusRequest) {
-    request = &ModifyCustomRuleStatusRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("waf", APIVersion, "ModifyCustomRuleStatus")
-    return
+	request = &ModifyCustomRuleStatusRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("waf", APIVersion, "ModifyCustomRuleStatus")
+	return
 }
 
 func NewModifyCustomRuleStatusResponse() (response *ModifyCustomRuleStatusResponse) {
-    response = &ModifyCustomRuleStatusResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ModifyCustomRuleStatusResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 开启或禁用自定义策略
 func (c *Client) ModifyCustomRuleStatus(request *ModifyCustomRuleStatusRequest) (response *ModifyCustomRuleStatusResponse, err error) {
-    if request == nil {
-        request = NewModifyCustomRuleStatusRequest()
-    }
-    response = NewModifyCustomRuleStatusResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewModifyCustomRuleStatusRequest()
+	}
+	response = NewModifyCustomRuleStatusResponse()
+	err = c.Send(request, response)
+	return
 }

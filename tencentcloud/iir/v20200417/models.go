@@ -15,10 +15,10 @@
 package v20200417
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type Location struct {
@@ -38,8 +38,8 @@ type Location struct {
 
 type ProductInfo struct {
 
-	// 1表示找到同款商品，以下字段为同款商品信息； 
-	// 0表示未找到同款商品， 具体商品信息为空（参考价格、名称、品牌等），仅提供商品类目。  
+	// 1表示找到同款商品，以下字段为同款商品信息；
+	// 0表示未找到同款商品， 具体商品信息为空（参考价格、名称、品牌等），仅提供商品类目。
 	// 是否找到同款的判断依据为Score分值，分值越大则同款的可能性越大。
 	FindSKU *int64 `json:"FindSKU,omitempty" name:"FindSKU"`
 
@@ -55,8 +55,8 @@ type ProductInfo struct {
 	// 参考价格，综合多个信息源，仅供参考。
 	Price *string `json:"Price,omitempty" name:"Price"`
 
-	// 识别结果的商品类目。 
-	// 包含：鞋、图书音像、箱包、美妆个护、服饰、家电数码、玩具乐器、食品饮料、珠宝、家居家装、药品、酒水、绿植园艺、其他商品、非商品等。 
+	// 识别结果的商品类目。
+	// 包含：鞋、图书音像、箱包、美妆个护、服饰、家电数码、玩具乐器、食品饮料、珠宝、家居家装、药品、酒水、绿植园艺、其他商品、非商品等。
 	// 当类别为“非商品”时，除Location、Score和本字段之外的商品信息为空。
 	ProductCategory *string `json:"ProductCategory,omitempty" name:"ProductCategory"`
 
@@ -70,19 +70,19 @@ type ProductInfo struct {
 type RecognizeProductRequest struct {
 	*tchttp.BaseRequest
 
-	// 图片限制：内测版仅支持jpg、jpeg，图片大小不超过1M，分辨率在25万到100万之间。 
+	// 图片限制：内测版仅支持jpg、jpeg，图片大小不超过1M，分辨率在25万到100万之间。
 	// 建议先对图片进行压缩，以便提升处理速度。
 	ImageUrl *string `json:"ImageUrl,omitempty" name:"ImageUrl"`
 
-	// 图片经过base64编码的内容。最大不超过1M，分辨率在25万到100万之间。 
+	// 图片经过base64编码的内容。最大不超过1M，分辨率在25万到100万之间。
 	// 与ImageUrl同时存在时优先使用ImageUrl字段。
 	// **注意：图片需要base64编码，并且要去掉编码头部。**
 	ImageBase64 *string `json:"ImageBase64,omitempty" name:"ImageBase64"`
 }
 
 func (r *RecognizeProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -104,13 +104,13 @@ type RecognizeProductResponse struct {
 	*tchttp.BaseResponse
 	Response *struct {
 
-		// 检测到的图片中的商品位置和品类预测。 
-	// 当图片中存在多个商品时，输出多组坐标，按照__显著性__排序（综合考虑面积、是否在中心、检测算法置信度）。 
-	// 最多可以输出__3组__检测结果。
+		// 检测到的图片中的商品位置和品类预测。
+		// 当图片中存在多个商品时，输出多组坐标，按照__显著性__排序（综合考虑面积、是否在中心、检测算法置信度）。
+		// 最多可以输出__3组__检测结果。
 		RegionDetected []*RegionDetected `json:"RegionDetected,omitempty" name:"RegionDetected" list`
 
-		// 图像识别出的商品的详细信息。 
-	// 当图像中检测到多个物品时，会对显著性最高的进行识别。
+		// 图像识别出的商品的详细信息。
+		// 当图像中检测到多个物品时，会对显著性最高的进行识别。
 		ProductInfo *ProductInfo `json:"ProductInfo,omitempty" name:"ProductInfo"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -119,8 +119,8 @@ type RecognizeProductResponse struct {
 }
 
 func (r *RecognizeProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -131,7 +131,7 @@ func (r *RecognizeProductResponse) FromJsonString(s string) error {
 
 type RegionDetected struct {
 
-	// 商品的品类预测结果。 
+	// 商品的品类预测结果。
 	// 包含：鞋、图书音像、箱包、美妆个护、服饰、家电数码、玩具乐器、食品饮料、珠宝、家居家装、药品、酒水、绿植园艺、其他商品、非商品等。
 	Category *string `json:"Category,omitempty" name:"Category"`
 

@@ -15,10 +15,10 @@
 package v20210303
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type CreateAudioDepositRequest struct {
@@ -50,8 +50,8 @@ type CreateAudioDepositRequest struct {
 }
 
 func (r *CreateAudioDepositRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -80,7 +80,7 @@ type CreateAudioDepositResponse struct {
 	Response *struct {
 
 		// 业务ID 透传 长度最大不超过64
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BusinessId *string `json:"BusinessId,omitempty" name:"BusinessId"`
 
 		// 请求成功，返回存证编码,用于查询存证后续业务数据
@@ -92,8 +92,8 @@ type CreateAudioDepositResponse struct {
 }
 
 func (r *CreateAudioDepositResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -125,8 +125,8 @@ type CreateDataDepositRequest struct {
 }
 
 func (r *CreateDataDepositRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -153,7 +153,7 @@ type CreateDataDepositResponse struct {
 	Response *struct {
 
 		// 业务ID 透传 长度最大不超过64
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BusinessId *string `json:"BusinessId,omitempty" name:"BusinessId"`
 
 		// 请求成功，返回存证编码,用于查询存证后续业务数据
@@ -165,8 +165,8 @@ type CreateDataDepositResponse struct {
 }
 
 func (r *CreateDataDepositResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -204,8 +204,8 @@ type CreateDocDepositRequest struct {
 }
 
 func (r *CreateDocDepositRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -234,7 +234,7 @@ type CreateDocDepositResponse struct {
 	Response *struct {
 
 		// 业务ID 透传 长度最大不超过64
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BusinessId *string `json:"BusinessId,omitempty" name:"BusinessId"`
 
 		// 请求成功，返回存证编码,用于查询存证后续业务数据
@@ -246,8 +246,8 @@ type CreateDocDepositResponse struct {
 }
 
 func (r *CreateDocDepositResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -273,8 +273,8 @@ type CreateHashDepositNoCertRequest struct {
 }
 
 func (r *CreateHashDepositNoCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -299,7 +299,7 @@ type CreateHashDepositNoCertResponse struct {
 	Response *struct {
 
 		// 透传字段
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BusinessId *string `json:"BusinessId,omitempty" name:"BusinessId"`
 
 		// 存证编码
@@ -320,8 +320,8 @@ type CreateHashDepositNoCertResponse struct {
 }
 
 func (r *CreateHashDepositNoCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -347,8 +347,8 @@ type CreateHashDepositNoSealRequest struct {
 }
 
 func (r *CreateHashDepositNoSealRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -373,7 +373,7 @@ type CreateHashDepositNoSealResponse struct {
 	Response *struct {
 
 		// 透传字段
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BusinessId *string `json:"BusinessId,omitempty" name:"BusinessId"`
 
 		// 存证编码
@@ -394,8 +394,8 @@ type CreateHashDepositNoSealResponse struct {
 }
 
 func (r *CreateHashDepositNoSealResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -424,8 +424,8 @@ type CreateHashDepositRequest struct {
 }
 
 func (r *CreateHashDepositRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -451,7 +451,7 @@ type CreateHashDepositResponse struct {
 	Response *struct {
 
 		// 透传字段
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BusinessId *string `json:"BusinessId,omitempty" name:"BusinessId"`
 
 		// 存证编码
@@ -463,8 +463,8 @@ type CreateHashDepositResponse struct {
 }
 
 func (r *CreateHashDepositResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -502,8 +502,8 @@ type CreateImageDepositRequest struct {
 }
 
 func (r *CreateImageDepositRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -532,7 +532,7 @@ type CreateImageDepositResponse struct {
 	Response *struct {
 
 		// 业务ID 透传 长度最大不超过64
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BusinessId *string `json:"BusinessId,omitempty" name:"BusinessId"`
 
 		// 请求成功，返回存证编码,用于查询存证后续业务数据
@@ -544,8 +544,8 @@ type CreateImageDepositResponse struct {
 }
 
 func (r *CreateImageDepositResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -583,8 +583,8 @@ type CreateVideoDepositRequest struct {
 }
 
 func (r *CreateVideoDepositRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -613,7 +613,7 @@ type CreateVideoDepositResponse struct {
 	Response *struct {
 
 		// 业务ID 透传 长度最大不超过64
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BusinessId *string `json:"BusinessId,omitempty" name:"BusinessId"`
 
 		// 请求成功，返回存证编码,用于查询存证后续业务数据
@@ -625,8 +625,8 @@ type CreateVideoDepositResponse struct {
 }
 
 func (r *CreateVideoDepositResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -655,8 +655,8 @@ type CreateWebpageDepositRequest struct {
 }
 
 func (r *CreateWebpageDepositRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -682,7 +682,7 @@ type CreateWebpageDepositResponse struct {
 	Response *struct {
 
 		// 业务ID 透传 长度最大不超过64
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BusinessId *string `json:"BusinessId,omitempty" name:"BusinessId"`
 
 		// 请求成功，返回存证编码,用于查询存证后续业务数据
@@ -694,8 +694,8 @@ type CreateWebpageDepositResponse struct {
 }
 
 func (r *CreateWebpageDepositResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -712,8 +712,8 @@ type GetDepositCertRequest struct {
 }
 
 func (r *GetDepositCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -746,8 +746,8 @@ type GetDepositCertResponse struct {
 }
 
 func (r *GetDepositCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -764,8 +764,8 @@ type GetDepositFileRequest struct {
 }
 
 func (r *GetDepositFileRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -798,8 +798,8 @@ type GetDepositFileResponse struct {
 }
 
 func (r *GetDepositFileResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -816,8 +816,8 @@ type GetDepositInfoRequest struct {
 }
 
 func (r *GetDepositInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -856,8 +856,8 @@ type GetDepositInfoResponse struct {
 }
 
 func (r *GetDepositInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

@@ -15,10 +15,10 @@
 package v20180416
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type ApplyUserCertRequest struct {
@@ -53,8 +53,8 @@ type ApplyUserCertRequest struct {
 }
 
 func (r *ApplyUserCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -95,8 +95,8 @@ type ApplyUserCertResponse struct {
 }
 
 func (r *ApplyUserCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -191,8 +191,8 @@ type BlockByNumberHandlerRequest struct {
 }
 
 func (r *BlockByNumberHandlerRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -225,8 +225,8 @@ type BlockByNumberHandlerResponse struct {
 }
 
 func (r *BlockByNumberHandlerResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -292,8 +292,8 @@ type CreateChaincodeAndInstallForUserRequest struct {
 }
 
 func (r *CreateChaincodeAndInstallForUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -328,8 +328,8 @@ type CreateChaincodeAndInstallForUserResponse struct {
 }
 
 func (r *CreateChaincodeAndInstallForUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -361,8 +361,8 @@ type DeployDynamicBcosContractRequest struct {
 }
 
 func (r *DeployDynamicBcosContractRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -397,8 +397,8 @@ type DeployDynamicBcosContractResponse struct {
 }
 
 func (r *DeployDynamicBcosContractResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -433,8 +433,8 @@ type DeployDynamicContractHandlerRequest struct {
 }
 
 func (r *DeployDynamicContractHandlerRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -470,8 +470,8 @@ type DeployDynamicContractHandlerResponse struct {
 }
 
 func (r *DeployDynamicContractHandlerResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -503,8 +503,8 @@ type DownloadUserCertRequest struct {
 }
 
 func (r *DownloadUserCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -542,8 +542,8 @@ type DownloadUserCertResponse struct {
 }
 
 func (r *DownloadUserCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -575,8 +575,8 @@ type GetBcosBlockByNumberRequest struct {
 }
 
 func (r *GetBcosBlockByNumberRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -608,8 +608,8 @@ type GetBcosBlockByNumberResponse struct {
 }
 
 func (r *GetBcosBlockByNumberResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -641,8 +641,8 @@ type GetBcosBlockListRequest struct {
 }
 
 func (r *GetBcosBlockListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -680,8 +680,8 @@ type GetBcosBlockListResponse struct {
 }
 
 func (r *GetBcosBlockListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -704,8 +704,8 @@ type GetBcosTransByHashRequest struct {
 }
 
 func (r *GetBcosTransByHashRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -737,8 +737,8 @@ type GetBcosTransByHashResponse struct {
 }
 
 func (r *GetBcosTransByHashResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -770,8 +770,8 @@ type GetBcosTransListRequest struct {
 }
 
 func (r *GetBcosTransListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -809,8 +809,8 @@ type GetBcosTransListResponse struct {
 }
 
 func (r *GetBcosTransListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -842,8 +842,8 @@ type GetBlockListHandlerRequest struct {
 }
 
 func (r *GetBlockListHandlerRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -884,8 +884,8 @@ type GetBlockListHandlerResponse struct {
 }
 
 func (r *GetBlockListHandlerResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -926,8 +926,8 @@ type GetBlockListRequest struct {
 }
 
 func (r *GetBlockListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -968,8 +968,8 @@ type GetBlockListResponse struct {
 }
 
 func (r *GetBlockListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1007,8 +1007,8 @@ type GetBlockTransactionListForUserRequest struct {
 }
 
 func (r *GetBlockTransactionListForUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1048,8 +1048,8 @@ type GetBlockTransactionListForUserResponse struct {
 }
 
 func (r *GetBlockTransactionListForUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1090,8 +1090,8 @@ type GetChaincodeCompileLogForUserRequest struct {
 }
 
 func (r *GetChaincodeCompileLogForUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1132,8 +1132,8 @@ type GetChaincodeCompileLogForUserResponse struct {
 }
 
 func (r *GetChaincodeCompileLogForUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1171,8 +1171,8 @@ type GetChaincodeInitializeResultForUserRequest struct {
 }
 
 func (r *GetChaincodeInitializeResultForUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1212,8 +1212,8 @@ type GetChaincodeInitializeResultForUserResponse struct {
 }
 
 func (r *GetChaincodeInitializeResultForUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1254,8 +1254,8 @@ type GetChaincodeLogForUserRequest struct {
 }
 
 func (r *GetChaincodeLogForUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1296,8 +1296,8 @@ type GetChaincodeLogForUserResponse struct {
 }
 
 func (r *GetChaincodeLogForUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1329,8 +1329,8 @@ type GetChannelListForUserRequest struct {
 }
 
 func (r *GetChannelListForUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1368,8 +1368,8 @@ type GetChannelListForUserResponse struct {
 }
 
 func (r *GetChannelListForUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1395,8 +1395,8 @@ type GetClusterListForUserRequest struct {
 }
 
 func (r *GetClusterListForUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1432,8 +1432,8 @@ type GetClusterListForUserResponse struct {
 }
 
 func (r *GetClusterListForUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1462,8 +1462,8 @@ type GetClusterSummaryRequest struct {
 }
 
 func (r *GetClusterSummaryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1539,8 +1539,8 @@ type GetClusterSummaryResponse struct {
 }
 
 func (r *GetClusterSummaryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1578,8 +1578,8 @@ type GetInvokeTxRequest struct {
 }
 
 func (r *GetInvokeTxRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1622,8 +1622,8 @@ type GetInvokeTxResponse struct {
 }
 
 func (r *GetInvokeTxResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1667,8 +1667,8 @@ type GetLatesdTransactionListRequest struct {
 }
 
 func (r *GetLatesdTransactionListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1710,8 +1710,8 @@ type GetLatesdTransactionListResponse struct {
 }
 
 func (r *GetLatesdTransactionListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1746,8 +1746,8 @@ type GetPeerLogForUserRequest struct {
 }
 
 func (r *GetPeerLogForUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1786,8 +1786,8 @@ type GetPeerLogForUserResponse struct {
 }
 
 func (r *GetPeerLogForUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1813,8 +1813,8 @@ type GetTransByHashHandlerRequest struct {
 }
 
 func (r *GetTransByHashHandlerRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1847,8 +1847,8 @@ type GetTransByHashHandlerResponse struct {
 }
 
 func (r *GetTransByHashHandlerResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1880,8 +1880,8 @@ type GetTransListHandlerRequest struct {
 }
 
 func (r *GetTransListHandlerRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1922,8 +1922,8 @@ type GetTransListHandlerResponse struct {
 }
 
 func (r *GetTransListHandlerResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1958,8 +1958,8 @@ type GetTransactionDetailForUserRequest struct {
 }
 
 func (r *GetTransactionDetailForUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2031,8 +2031,8 @@ type GetTransactionDetailForUserResponse struct {
 }
 
 func (r *GetTransactionDetailForUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2082,8 +2082,8 @@ type InitializeChaincodeForUserRequest struct {
 }
 
 func (r *InitializeChaincodeForUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2121,8 +2121,8 @@ type InitializeChaincodeForUserResponse struct {
 }
 
 func (r *InitializeChaincodeForUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2157,8 +2157,8 @@ type InvokeBcosTransRequest struct {
 }
 
 func (r *InvokeBcosTransRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2194,8 +2194,8 @@ type InvokeBcosTransResponse struct {
 }
 
 func (r *InvokeBcosTransResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2239,8 +2239,8 @@ type InvokeRequest struct {
 }
 
 func (r *InvokeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2282,8 +2282,8 @@ type InvokeResponse struct {
 }
 
 func (r *InvokeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2348,8 +2348,8 @@ type QueryRequest struct {
 }
 
 func (r *QueryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2387,8 +2387,8 @@ type QueryResponse struct {
 }
 
 func (r *QueryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2420,8 +2420,8 @@ type SendTransactionHandlerRequest struct {
 }
 
 func (r *SendTransactionHandlerRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2456,8 +2456,8 @@ type SendTransactionHandlerResponse struct {
 }
 
 func (r *SendTransactionHandlerResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2480,8 +2480,8 @@ type SrvInvokeRequest struct {
 }
 
 func (r *SrvInvokeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2519,8 +2519,8 @@ type SrvInvokeResponse struct {
 }
 
 func (r *SrvInvokeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2558,8 +2558,8 @@ type TransByDynamicContractHandlerRequest struct {
 }
 
 func (r *TransByDynamicContractHandlerRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2596,8 +2596,8 @@ type TransByDynamicContractHandlerResponse struct {
 }
 
 func (r *TransByDynamicContractHandlerResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

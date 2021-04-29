@@ -15,10 +15,10 @@
 package v20201014
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type ChangeRoomPlayerProfileRequest struct {
@@ -35,8 +35,8 @@ type ChangeRoomPlayerProfileRequest struct {
 }
 
 func (r *ChangeRoomPlayerProfileRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -68,8 +68,8 @@ type ChangeRoomPlayerProfileResponse struct {
 }
 
 func (r *ChangeRoomPlayerProfileResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -92,8 +92,8 @@ type ChangeRoomPlayerStatusRequest struct {
 }
 
 func (r *ChangeRoomPlayerStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -125,8 +125,8 @@ type ChangeRoomPlayerStatusResponse struct {
 }
 
 func (r *ChangeRoomPlayerStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -149,8 +149,8 @@ type DescribePlayerRequest struct {
 }
 
 func (r *DescribePlayerRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -182,8 +182,8 @@ type DescribePlayerResponse struct {
 }
 
 func (r *DescribePlayerResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -206,8 +206,8 @@ type DescribeRoomRequest struct {
 }
 
 func (r *DescribeRoomRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -239,8 +239,8 @@ type DescribeRoomResponse struct {
 }
 
 func (r *DescribeRoomResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -260,8 +260,8 @@ type DismissRoomRequest struct {
 }
 
 func (r *DismissRoomRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -289,8 +289,8 @@ type DismissRoomResponse struct {
 }
 
 func (r *DismissRoomResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -337,8 +337,8 @@ type ModifyRoomRequest struct {
 }
 
 func (r *ModifyRoomRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -378,8 +378,8 @@ type ModifyRoomResponse struct {
 }
 
 func (r *ModifyRoomResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -423,8 +423,8 @@ type RemoveRoomPlayerRequest struct {
 }
 
 func (r *RemoveRoomPlayerRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -455,8 +455,8 @@ type RemoveRoomPlayerResponse struct {
 }
 
 func (r *RemoveRoomPlayerResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

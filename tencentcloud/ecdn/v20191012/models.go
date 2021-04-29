@@ -15,10 +15,10 @@
 package v20191012
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type AddEcdnDomainRequest struct {
@@ -65,8 +65,8 @@ type AddEcdnDomainRequest struct {
 }
 
 func (r *AddEcdnDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -105,8 +105,8 @@ type AddEcdnDomainResponse struct {
 }
 
 func (r *AddEcdnDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -173,8 +173,8 @@ type DeleteEcdnDomainRequest struct {
 }
 
 func (r *DeleteEcdnDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -201,8 +201,8 @@ type DeleteEcdnDomainResponse struct {
 }
 
 func (r *DeleteEcdnDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -228,8 +228,8 @@ type DescribeDomainsConfigRequest struct {
 }
 
 func (r *DescribeDomainsConfigRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -265,8 +265,8 @@ type DescribeDomainsConfigResponse struct {
 }
 
 func (r *DescribeDomainsConfigResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -289,8 +289,8 @@ type DescribeDomainsRequest struct {
 }
 
 func (r *DescribeDomainsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -325,8 +325,8 @@ type DescribeDomainsResponse struct {
 }
 
 func (r *DescribeDomainsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -355,8 +355,8 @@ type DescribeEcdnDomainLogsRequest struct {
 }
 
 func (r *DescribeEcdnDomainLogsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -382,7 +382,7 @@ type DescribeEcdnDomainLogsResponse struct {
 	Response *struct {
 
 		// 日志链接列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DomainLogs []*DomainLogs `json:"DomainLogs,omitempty" name:"DomainLogs" list`
 
 		// 日志链接总条数。
@@ -394,8 +394,8 @@ type DescribeEcdnDomainLogsResponse struct {
 }
 
 func (r *DescribeEcdnDomainLogsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -443,8 +443,8 @@ type DescribeEcdnDomainStatisticsRequest struct {
 }
 
 func (r *DescribeEcdnDomainStatisticsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -484,8 +484,8 @@ type DescribeEcdnDomainStatisticsResponse struct {
 }
 
 func (r *DescribeEcdnDomainStatisticsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -514,14 +514,14 @@ type DescribeEcdnStatisticsRequest struct {
 	Metrics []*string `json:"Metrics,omitempty" name:"Metrics" list`
 
 	// 时间粒度，支持以下几种模式：
-	// 1 天	 1，5，15，30，60，120，240，1440 
+	// 1 天	 1，5，15，30，60，120，240，1440
 	// 2 ~ 3 天	15，30，60，120，240，1440
 	// 4 ~ 7 天	30，60，120，240，1440
 	// 8 ~ 90 天	 60，120，240，1440
 	Interval *int64 `json:"Interval,omitempty" name:"Interval"`
 
 	// 指定查询域名列表
-	// 
+	//
 	// 最多可一次性查询30个加速域名。
 	Domains []*string `json:"Domains,omitempty" name:"Domains" list`
 
@@ -538,8 +538,8 @@ type DescribeEcdnStatisticsRequest struct {
 }
 
 func (r *DescribeEcdnStatisticsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -575,8 +575,8 @@ type DescribeEcdnStatisticsResponse struct {
 }
 
 func (r *DescribeEcdnStatisticsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -599,8 +599,8 @@ type DescribeIpStatusRequest struct {
 }
 
 func (r *DescribeIpStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -634,8 +634,8 @@ type DescribeIpStatusResponse struct {
 }
 
 func (r *DescribeIpStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -649,8 +649,8 @@ type DescribePurgeQuotaRequest struct {
 }
 
 func (r *DescribePurgeQuotaRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -682,8 +682,8 @@ type DescribePurgeQuotaResponse struct {
 }
 
 func (r *DescribePurgeQuotaResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -721,8 +721,8 @@ type DescribePurgeTasksRequest struct {
 }
 
 func (r *DescribePurgeTasksRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -762,8 +762,8 @@ type DescribePurgeTasksResponse struct {
 }
 
 func (r *DescribePurgeTasksResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1129,8 +1129,8 @@ type PurgePathCacheRequest struct {
 }
 
 func (r *PurgePathCacheRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1161,8 +1161,8 @@ type PurgePathCacheResponse struct {
 }
 
 func (r *PurgePathCacheResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1200,8 +1200,8 @@ type PurgeUrlsCacheRequest struct {
 }
 
 func (r *PurgeUrlsCacheRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1231,8 +1231,8 @@ type PurgeUrlsCacheResponse struct {
 }
 
 func (r *PurgeUrlsCacheResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1326,8 +1326,8 @@ type StartEcdnDomainRequest struct {
 }
 
 func (r *StartEcdnDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1354,8 +1354,8 @@ type StartEcdnDomainResponse struct {
 }
 
 func (r *StartEcdnDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1372,8 +1372,8 @@ type StopEcdnDomainRequest struct {
 }
 
 func (r *StopEcdnDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1400,8 +1400,8 @@ type StopEcdnDomainResponse struct {
 }
 
 func (r *StopEcdnDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1472,8 +1472,8 @@ type UpdateDomainConfigRequest struct {
 }
 
 func (r *UpdateDomainConfigRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1511,8 +1511,8 @@ type UpdateDomainConfigResponse struct {
 }
 
 func (r *UpdateDomainConfigResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1524,7 +1524,7 @@ func (r *UpdateDomainConfigResponse) FromJsonString(s string) error {
 type WebSocket struct {
 
 	// WebSocket 超时配置开关, 开关为off时，平台仍支持WebSocket连接，此时超时时间默认为15秒，若需要调整超时时间，将开关置为on.
-	// 
+	//
 	// * WebSocket 为内测功能,如需使用,请联系腾讯云工程师开白.
 	Switch *string `json:"Switch,omitempty" name:"Switch"`
 

@@ -15,55 +15,54 @@
 package v20190929
 
 import (
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/profile"
 )
 
 const APIVersion = "2019-09-29"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewDismissRoomRequest() (request *DismissRoomRequest) {
-    request = &DismissRoomRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("mgobe", APIVersion, "DismissRoom")
-    return
+	request = &DismissRoomRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("mgobe", APIVersion, "DismissRoom")
+	return
 }
 
 func NewDismissRoomResponse() (response *DismissRoomResponse) {
-    response = &DismissRoomResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DismissRoomResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 通过game_id、room_id解散房间
 func (c *Client) DismissRoom(request *DismissRoomRequest) (response *DismissRoomResponse, err error) {
-    if request == nil {
-        request = NewDismissRoomRequest()
-    }
-    response = NewDismissRoomResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDismissRoomRequest()
+	}
+	response = NewDismissRoomResponse()
+	err = c.Send(request, response)
+	return
 }

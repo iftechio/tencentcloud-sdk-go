@@ -16,15 +16,16 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
-	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
-	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/errors"
-	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
-	soe "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/soe/v20180724"
 	"io/ioutil"
 	"math"
 	"math/rand"
 	"sync"
 	"time"
+
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/errors"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/profile"
+	soe "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/soe/v20180724"
 )
 
 const (

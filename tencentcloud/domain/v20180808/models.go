@@ -15,10 +15,10 @@
 package v20180808
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type BatchModifyDomainInfoRequest struct {
@@ -37,8 +37,8 @@ type BatchModifyDomainInfoRequest struct {
 }
 
 func (r *BatchModifyDomainInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -70,8 +70,8 @@ type BatchModifyDomainInfoResponse struct {
 }
 
 func (r *BatchModifyDomainInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -140,8 +140,8 @@ type CheckBatchStatusRequest struct {
 }
 
 func (r *CheckBatchStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -171,8 +171,8 @@ type CheckBatchStatusResponse struct {
 }
 
 func (r *CheckBatchStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -192,8 +192,8 @@ type CheckDomainRequest struct {
 }
 
 func (r *CheckDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -234,19 +234,19 @@ type CheckDomainResponse struct {
 		BlackWord *bool `json:"BlackWord,omitempty" name:"BlackWord"`
 
 		// 溢价词描述
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Describe *string `json:"Describe,omitempty" name:"Describe"`
 
 		// 溢价词的续费价格
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FeeRenew *uint64 `json:"FeeRenew,omitempty" name:"FeeRenew"`
 
 		// 域名真实价格
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RealPrice *uint64 `json:"RealPrice,omitempty" name:"RealPrice"`
 
 		// 溢价词的转入价格
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FeeTransfer *uint64 `json:"FeeTransfer,omitempty" name:"FeeTransfer"`
 
 		// 溢价词的赎回价格
@@ -264,8 +264,8 @@ type CheckDomainResponse struct {
 }
 
 func (r *CheckDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -350,8 +350,8 @@ type CreateDomainBatchRequest struct {
 }
 
 func (r *CreateDomainBatchRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -378,7 +378,7 @@ type CreateDomainBatchResponse struct {
 	Response *struct {
 
 		// 批量日志ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LogId *int64 `json:"LogId,omitempty" name:"LogId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -387,8 +387,8 @@ type CreateDomainBatchResponse struct {
 }
 
 func (r *CreateDomainBatchResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -408,8 +408,8 @@ type CreateTemplateRequest struct {
 }
 
 func (r *CreateTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -440,8 +440,8 @@ type CreateTemplateResponse struct {
 }
 
 func (r *CreateTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -458,8 +458,8 @@ type DeleteTemplateRequest struct {
 }
 
 func (r *DeleteTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -486,8 +486,8 @@ type DeleteTemplateResponse struct {
 }
 
 func (r *DeleteTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -510,8 +510,8 @@ type DescribeBatchOperationLogDetailsRequest struct {
 }
 
 func (r *DescribeBatchOperationLogDetailsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -538,7 +538,7 @@ type DescribeBatchOperationLogDetailsResponse struct {
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 日志详情列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DomainBatchDetailSet []*DomainBatchDetailSet `json:"DomainBatchDetailSet,omitempty" name:"DomainBatchDetailSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -547,8 +547,8 @@ type DescribeBatchOperationLogDetailsResponse struct {
 }
 
 func (r *DescribeBatchOperationLogDetailsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -568,8 +568,8 @@ type DescribeBatchOperationLogsRequest struct {
 }
 
 func (r *DescribeBatchOperationLogsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -595,7 +595,7 @@ type DescribeBatchOperationLogsResponse struct {
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 日志列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DomainBatchLogSet []*DomainBatchLogSet `json:"DomainBatchLogSet,omitempty" name:"DomainBatchLogSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -604,8 +604,8 @@ type DescribeBatchOperationLogsResponse struct {
 }
 
 func (r *DescribeBatchOperationLogsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -622,8 +622,8 @@ type DescribeDomainBaseInfoRequest struct {
 }
 
 func (r *DescribeDomainBaseInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -648,7 +648,7 @@ type DescribeDomainBaseInfoResponse struct {
 		DomainInfo *DomainBaseInfo `json:"DomainInfo,omitempty" name:"DomainInfo"`
 
 		// 用户Uin
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Uin *string `json:"Uin,omitempty" name:"Uin"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -657,8 +657,8 @@ type DescribeDomainBaseInfoResponse struct {
 }
 
 func (r *DescribeDomainBaseInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -678,8 +678,8 @@ type DescribeDomainNameListRequest struct {
 }
 
 func (r *DescribeDomainNameListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -702,7 +702,7 @@ type DescribeDomainNameListResponse struct {
 	Response *struct {
 
 		// 域名信息集合
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DomainSet []*DomainList `json:"DomainSet,omitempty" name:"DomainSet" list`
 
 		// 域名总数量
@@ -714,8 +714,8 @@ type DescribeDomainNameListResponse struct {
 }
 
 func (r *DescribeDomainNameListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -738,8 +738,8 @@ type DescribeDomainPriceListRequest struct {
 }
 
 func (r *DescribeDomainPriceListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -771,8 +771,8 @@ type DescribeDomainPriceListResponse struct {
 }
 
 func (r *DescribeDomainPriceListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -798,8 +798,8 @@ type DescribeTemplateListRequest struct {
 }
 
 func (r *DescribeTemplateListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -835,8 +835,8 @@ type DescribeTemplateListResponse struct {
 }
 
 func (r *DescribeTemplateListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -853,8 +853,8 @@ type DescribeTemplateRequest struct {
 }
 
 func (r *DescribeTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -884,8 +884,8 @@ type DescribeTemplateResponse struct {
 }
 
 func (r *DescribeTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -933,7 +933,7 @@ type DomainBaseInfo struct {
 
 	// 域名状态。
 	// ok：正常
-	// serverHold：注册局暂停解析 
+	// serverHold：注册局暂停解析
 	// clientHold：注册商暂停解析
 	// pendingTransfer：转移中
 	// renewingPeriod：续费期
@@ -1025,7 +1025,7 @@ type DomainBatchLogSet struct {
 type DomainList struct {
 
 	// 是否是溢价域名：
-	// ture 是    
+	// ture 是
 	// false 不是
 	IsPremium *bool `json:"IsPremium,omitempty" name:"IsPremium"`
 
@@ -1036,7 +1036,7 @@ type DomainList struct {
 	DomainName *string `json:"DomainName,omitempty" name:"DomainName"`
 
 	// 是否已设置自动续费 。
-	// 0：未设置 
+	// 0：未设置
 	// 1：已设置
 	AutoRenew *uint64 `json:"AutoRenew,omitempty" name:"AutoRenew"`
 
@@ -1079,8 +1079,8 @@ type ModifyDomainDNSBatchRequest struct {
 }
 
 func (r *ModifyDomainDNSBatchRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1111,8 +1111,8 @@ type ModifyDomainDNSBatchResponse struct {
 }
 
 func (r *ModifyDomainDNSBatchResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1132,8 +1132,8 @@ type ModifyDomainOwnerBatchRequest struct {
 }
 
 func (r *ModifyDomainOwnerBatchRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1164,8 +1164,8 @@ type ModifyDomainOwnerBatchResponse struct {
 }
 
 func (r *ModifyDomainOwnerBatchResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1212,8 +1212,8 @@ type RenewDomainBatchRequest struct {
 }
 
 func (r *RenewDomainBatchRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1246,8 +1246,8 @@ type RenewDomainBatchResponse struct {
 }
 
 func (r *RenewDomainBatchResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1270,8 +1270,8 @@ type SetDomainAutoRenewRequest struct {
 }
 
 func (r *SetDomainAutoRenewRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1299,8 +1299,8 @@ type SetDomainAutoRenewResponse struct {
 }
 
 func (r *SetDomainAutoRenewResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1372,8 +1372,8 @@ type TransferInDomainBatchRequest struct {
 }
 
 func (r *TransferInDomainBatchRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1408,8 +1408,8 @@ type TransferInDomainBatchResponse struct {
 }
 
 func (r *TransferInDomainBatchResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1431,8 +1431,8 @@ type TransferProhibitionBatchRequest struct {
 }
 
 func (r *TransferProhibitionBatchRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1463,8 +1463,8 @@ type TransferProhibitionBatchResponse struct {
 }
 
 func (r *TransferProhibitionBatchResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1486,8 +1486,8 @@ type UpdateProhibitionBatchRequest struct {
 }
 
 func (r *UpdateProhibitionBatchRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1518,8 +1518,8 @@ type UpdateProhibitionBatchResponse struct {
 }
 
 func (r *UpdateProhibitionBatchResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1536,8 +1536,8 @@ type UploadImageRequest struct {
 }
 
 func (r *UploadImageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1567,8 +1567,8 @@ type UploadImageResponse struct {
 }
 
 func (r *UploadImageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

@@ -15,10 +15,10 @@
 package v20180410
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type AcceptDirectConnectTunnelRequest struct {
@@ -29,8 +29,8 @@ type AcceptDirectConnectTunnelRequest struct {
 }
 
 func (r *AcceptDirectConnectTunnelRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -57,8 +57,8 @@ type AcceptDirectConnectTunnelResponse struct {
 }
 
 func (r *AcceptDirectConnectTunnelResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -122,8 +122,8 @@ type ApplyInternetAddressRequest struct {
 }
 
 func (r *ApplyInternetAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -147,7 +147,7 @@ type ApplyInternetAddressResponse struct {
 	Response *struct {
 
 		// 互联网公网地址ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InstanceId *string `json:"InstanceId,omitempty" name:"InstanceId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -156,8 +156,8 @@ type ApplyInternetAddressResponse struct {
 }
 
 func (r *ApplyInternetAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -259,8 +259,8 @@ type CreateDirectConnectRequest struct {
 }
 
 func (r *CreateDirectConnectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -306,8 +306,8 @@ type CreateDirectConnectResponse struct {
 }
 
 func (r *CreateDirectConnectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -378,8 +378,8 @@ type CreateDirectConnectTunnelRequest struct {
 }
 
 func (r *CreateDirectConnectTunnelRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -424,8 +424,8 @@ type CreateDirectConnectTunnelResponse struct {
 }
 
 func (r *CreateDirectConnectTunnelResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -442,8 +442,8 @@ type DeleteDirectConnectRequest struct {
 }
 
 func (r *DeleteDirectConnectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -470,8 +470,8 @@ type DeleteDirectConnectResponse struct {
 }
 
 func (r *DeleteDirectConnectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -488,8 +488,8 @@ type DeleteDirectConnectTunnelRequest struct {
 }
 
 func (r *DeleteDirectConnectTunnelRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -516,8 +516,8 @@ type DeleteDirectConnectTunnelResponse struct {
 }
 
 func (r *DeleteDirectConnectTunnelResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -530,7 +530,7 @@ type DescribeAccessPointsRequest struct {
 	*tchttp.BaseRequest
 
 	// 接入点所在的地域。使用DescribeRegions查询
-	// 
+	//
 	// 您可以通过调用 DescribeRegions接口获取地域ID。
 	RegionId *string `json:"RegionId,omitempty" name:"RegionId"`
 
@@ -542,8 +542,8 @@ type DescribeAccessPointsRequest struct {
 }
 
 func (r *DescribeAccessPointsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -578,8 +578,8 @@ type DescribeAccessPointsResponse struct {
 }
 
 func (r *DescribeAccessPointsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -596,8 +596,8 @@ type DescribeDirectConnectTunnelExtraRequest struct {
 }
 
 func (r *DescribeDirectConnectTunnelExtraRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -627,8 +627,8 @@ type DescribeDirectConnectTunnelExtraResponse struct {
 }
 
 func (r *DescribeDirectConnectTunnelExtraResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -658,8 +658,8 @@ type DescribeDirectConnectTunnelsRequest struct {
 }
 
 func (r *DescribeDirectConnectTunnelsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -695,8 +695,8 @@ type DescribeDirectConnectTunnelsResponse struct {
 }
 
 func (r *DescribeDirectConnectTunnelsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -722,8 +722,8 @@ type DescribeDirectConnectsRequest struct {
 }
 
 func (r *DescribeDirectConnectsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -754,7 +754,7 @@ type DescribeDirectConnectsResponse struct {
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 用户名下物理专线是否都签署了用户协议
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AllSignLaw *bool `json:"AllSignLaw,omitempty" name:"AllSignLaw"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -763,8 +763,8 @@ type DescribeDirectConnectsResponse struct {
 }
 
 func (r *DescribeDirectConnectsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -778,8 +778,8 @@ type DescribeInternetAddressQuotaRequest struct {
 }
 
 func (r *DescribeInternetAddressQuotaRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -800,23 +800,23 @@ type DescribeInternetAddressQuotaResponse struct {
 	Response *struct {
 
 		// IPv6互联网公网允许的最小前缀长度
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Ipv6PrefixLen *int64 `json:"Ipv6PrefixLen,omitempty" name:"Ipv6PrefixLen"`
 
 		// BGP类型IPv4互联网地址配额
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Ipv4BgpQuota *int64 `json:"Ipv4BgpQuota,omitempty" name:"Ipv4BgpQuota"`
 
 		// 非BGP类型IPv4互联网地址配额
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Ipv4OtherQuota *int64 `json:"Ipv4OtherQuota,omitempty" name:"Ipv4OtherQuota"`
 
 		// BGP类型IPv4互联网地址已使用数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Ipv4BgpNum *int64 `json:"Ipv4BgpNum,omitempty" name:"Ipv4BgpNum"`
 
 		// 非BGP类型互联网地址已使用数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Ipv4OtherNum *int64 `json:"Ipv4OtherNum,omitempty" name:"Ipv4OtherNum"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -825,8 +825,8 @@ type DescribeInternetAddressQuotaResponse struct {
 }
 
 func (r *DescribeInternetAddressQuotaResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -854,8 +854,8 @@ type DescribeInternetAddressRequest struct {
 }
 
 func (r *DescribeInternetAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -882,7 +882,7 @@ type DescribeInternetAddressResponse struct {
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 互联网公网地址列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Subnets []*InternetAddressDetail `json:"Subnets,omitempty" name:"Subnets" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -891,8 +891,8 @@ type DescribeInternetAddressResponse struct {
 }
 
 func (r *DescribeInternetAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -906,8 +906,8 @@ type DescribeInternetAddressStatisticsRequest struct {
 }
 
 func (r *DescribeInternetAddressStatisticsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -931,7 +931,7 @@ type DescribeInternetAddressStatisticsResponse struct {
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 互联网公网地址统计信息列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InternetAddressStatistics []*InternetAddressStatistics `json:"InternetAddressStatistics,omitempty" name:"InternetAddressStatistics" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -940,8 +940,8 @@ type DescribeInternetAddressStatisticsResponse struct {
 }
 
 func (r *DescribeInternetAddressStatisticsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -969,8 +969,8 @@ type DescribePublicDirectConnectTunnelRoutesRequest struct {
 }
 
 func (r *DescribePublicDirectConnectTunnelRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1006,8 +1006,8 @@ type DescribePublicDirectConnectTunnelRoutesResponse struct {
 }
 
 func (r *DescribePublicDirectConnectTunnelRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1028,12 +1028,12 @@ type DirectConnect struct {
 	AccessPointId *string `json:"AccessPointId,omitempty" name:"AccessPointId"`
 
 	// 物理专线的状态。
-	// 申请中：PENDING 
-	// 申请驳回：REJECTED   
-	// 待付款：TOPAY 
-	// 已付款：PAID 
-	// 建设中：ALLOCATED   
-	// 已开通：AVAILABLE  
+	// 申请中：PENDING
+	// 申请驳回：REJECTED
+	// 待付款：TOPAY
+	// 已付款：PAID
+	// 建设中：ALLOCATED
+	// 已开通：AVAILABLE
 	// 删除中 ：DELETING
 	// 已删除：DELETED 。
 	State *string `json:"State,omitempty" name:"State"`
@@ -1418,8 +1418,8 @@ type DisableInternetAddressRequest struct {
 }
 
 func (r *DisableInternetAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1446,8 +1446,8 @@ type DisableInternetAddressResponse struct {
 }
 
 func (r *DisableInternetAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1464,8 +1464,8 @@ type EnableInternetAddressRequest struct {
 }
 
 func (r *EnableInternetAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1492,8 +1492,8 @@ type EnableInternetAddressResponse struct {
 }
 
 func (r *EnableInternetAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1621,8 +1621,8 @@ type ModifyDirectConnectAttributeRequest struct {
 }
 
 func (r *ModifyDirectConnectAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1661,8 +1661,8 @@ type ModifyDirectConnectAttributeResponse struct {
 }
 
 func (r *ModifyDirectConnectAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1700,8 +1700,8 @@ type ModifyDirectConnectTunnelAttributeRequest struct {
 }
 
 func (r *ModifyDirectConnectTunnelAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1735,8 +1735,8 @@ type ModifyDirectConnectTunnelAttributeResponse struct {
 }
 
 func (r *ModifyDirectConnectTunnelAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1801,8 +1801,8 @@ type ModifyDirectConnectTunnelExtraRequest struct {
 }
 
 func (r *ModifyDirectConnectTunnelExtraRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1844,8 +1844,8 @@ type ModifyDirectConnectTunnelExtraResponse struct {
 }
 
 func (r *ModifyDirectConnectTunnelExtraResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1874,8 +1874,8 @@ type RejectDirectConnectTunnelRequest struct {
 }
 
 func (r *RejectDirectConnectTunnelRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1902,8 +1902,8 @@ type RejectDirectConnectTunnelResponse struct {
 }
 
 func (r *RejectDirectConnectTunnelResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1920,8 +1920,8 @@ type ReleaseInternetAddressRequest struct {
 }
 
 func (r *ReleaseInternetAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1948,8 +1948,8 @@ type ReleaseInternetAddressResponse struct {
 }
 
 func (r *ReleaseInternetAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

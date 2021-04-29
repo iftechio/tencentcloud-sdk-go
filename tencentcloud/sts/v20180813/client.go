@@ -15,130 +15,129 @@
 package v20180813
 
 import (
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
+	"github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/profile"
 )
 
 const APIVersion = "2018-08-13"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewAssumeRoleRequest() (request *AssumeRoleRequest) {
-    request = &AssumeRoleRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("sts", APIVersion, "AssumeRole")
-    return
+	request = &AssumeRoleRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("sts", APIVersion, "AssumeRole")
+	return
 }
 
 func NewAssumeRoleResponse() (response *AssumeRoleResponse) {
-    response = &AssumeRoleResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &AssumeRoleResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 申请扮演角色
 func (c *Client) AssumeRole(request *AssumeRoleRequest) (response *AssumeRoleResponse, err error) {
-    if request == nil {
-        request = NewAssumeRoleRequest()
-    }
-    response = NewAssumeRoleResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewAssumeRoleRequest()
+	}
+	response = NewAssumeRoleResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewAssumeRoleWithSAMLRequest() (request *AssumeRoleWithSAMLRequest) {
-    request = &AssumeRoleWithSAMLRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("sts", APIVersion, "AssumeRoleWithSAML")
-    return
+	request = &AssumeRoleWithSAMLRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("sts", APIVersion, "AssumeRoleWithSAML")
+	return
 }
 
 func NewAssumeRoleWithSAMLResponse() (response *AssumeRoleWithSAMLResponse) {
-    response = &AssumeRoleWithSAMLResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &AssumeRoleWithSAMLResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 本接口（AssumeRoleWithSAML）用于根据 SAML 断言申请角色临时凭证。
 func (c *Client) AssumeRoleWithSAML(request *AssumeRoleWithSAMLRequest) (response *AssumeRoleWithSAMLResponse, err error) {
-    if request == nil {
-        request = NewAssumeRoleWithSAMLRequest()
-    }
-    response = NewAssumeRoleWithSAMLResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewAssumeRoleWithSAMLRequest()
+	}
+	response = NewAssumeRoleWithSAMLResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewGetFederationTokenRequest() (request *GetFederationTokenRequest) {
-    request = &GetFederationTokenRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("sts", APIVersion, "GetFederationToken")
-    return
+	request = &GetFederationTokenRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("sts", APIVersion, "GetFederationToken")
+	return
 }
 
 func NewGetFederationTokenResponse() (response *GetFederationTokenResponse) {
-    response = &GetFederationTokenResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &GetFederationTokenResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 获取联合身份临时访问凭证
 func (c *Client) GetFederationToken(request *GetFederationTokenRequest) (response *GetFederationTokenResponse, err error) {
-    if request == nil {
-        request = NewGetFederationTokenRequest()
-    }
-    response = NewGetFederationTokenResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewGetFederationTokenRequest()
+	}
+	response = NewGetFederationTokenResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewQueryApiKeyRequest() (request *QueryApiKeyRequest) {
-    request = &QueryApiKeyRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("sts", APIVersion, "QueryApiKey")
-    return
+	request = &QueryApiKeyRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("sts", APIVersion, "QueryApiKey")
+	return
 }
 
 func NewQueryApiKeyResponse() (response *QueryApiKeyResponse) {
-    response = &QueryApiKeyResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &QueryApiKeyResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 拉取API密钥列表
 func (c *Client) QueryApiKey(request *QueryApiKeyRequest) (response *QueryApiKeyResponse, err error) {
-    if request == nil {
-        request = NewQueryApiKeyRequest()
-    }
-    response = NewQueryApiKeyResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewQueryApiKeyRequest()
+	}
+	response = NewQueryApiKeyResponse()
+	err = c.Send(request, response)
+	return
 }

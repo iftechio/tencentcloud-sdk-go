@@ -15,10 +15,10 @@
 package v20180614
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type Attribute struct {
@@ -62,8 +62,8 @@ type BindDevicesRequest struct {
 }
 
 func (r *BindDevicesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -94,8 +94,8 @@ type BindDevicesResponse struct {
 }
 
 func (r *BindDevicesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -130,8 +130,8 @@ type CancelDeviceFirmwareTaskRequest struct {
 }
 
 func (r *CancelDeviceFirmwareTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -161,8 +161,8 @@ type CancelDeviceFirmwareTaskResponse struct {
 }
 
 func (r *CancelDeviceFirmwareTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -179,8 +179,8 @@ type CancelTaskRequest struct {
 }
 
 func (r *CancelTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -207,8 +207,8 @@ type CancelTaskResponse struct {
 }
 
 func (r *CancelTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -252,8 +252,8 @@ type CreateDeviceRequest struct {
 }
 
 func (r *CreateDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -313,8 +313,8 @@ type CreateDeviceResponse struct {
 }
 
 func (r *CreateDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -352,8 +352,8 @@ type CreateLoraDeviceRequest struct {
 }
 
 func (r *CreateLoraDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -399,8 +399,8 @@ type CreateLoraDeviceResponse struct {
 }
 
 func (r *CreateLoraDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -420,8 +420,8 @@ type CreateMultiDeviceRequest struct {
 }
 
 func (r *CreateMultiDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -452,8 +452,8 @@ type CreateMultiDeviceResponse struct {
 }
 
 func (r *CreateMultiDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -485,8 +485,8 @@ type CreateMultiDevicesTaskRequest struct {
 }
 
 func (r *CreateMultiDevicesTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -521,8 +521,8 @@ type CreateMultiDevicesTaskResponse struct {
 }
 
 func (r *CreateMultiDevicesTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -545,8 +545,8 @@ type CreateProductRequest struct {
 }
 
 func (r *CreateProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -584,8 +584,8 @@ type CreateProductResponse struct {
 }
 
 func (r *CreateProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -602,8 +602,8 @@ type CreateTaskFileUrlRequest struct {
 }
 
 func (r *CreateTaskFileUrlRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -636,8 +636,8 @@ type CreateTaskFileUrlResponse struct {
 }
 
 func (r *CreateTaskFileUrlResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -669,8 +669,8 @@ type CreateTaskRequest struct {
 }
 
 func (r *CreateTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -705,8 +705,8 @@ type CreateTaskResponse struct {
 }
 
 func (r *CreateTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -732,8 +732,8 @@ type CreateTopicPolicyRequest struct {
 }
 
 func (r *CreateTopicPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -763,8 +763,8 @@ type CreateTopicPolicyResponse struct {
 }
 
 func (r *CreateTopicPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -784,8 +784,8 @@ type CreateTopicRuleRequest struct {
 }
 
 func (r *CreateTopicRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -813,8 +813,8 @@ type CreateTopicRuleResponse struct {
 }
 
 func (r *CreateTopicRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -837,8 +837,8 @@ type DeleteDeviceRequest struct {
 }
 
 func (r *DeleteDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -867,8 +867,8 @@ type DeleteDeviceResponse struct {
 }
 
 func (r *DeleteDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -888,8 +888,8 @@ type DeleteLoraDeviceRequest struct {
 }
 
 func (r *DeleteLoraDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -917,8 +917,8 @@ type DeleteLoraDeviceResponse struct {
 }
 
 func (r *DeleteLoraDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -938,8 +938,8 @@ type DeleteProductRequest struct {
 }
 
 func (r *DeleteProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -967,8 +967,8 @@ type DeleteProductResponse struct {
 }
 
 func (r *DeleteProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -985,8 +985,8 @@ type DeleteTopicRuleRequest struct {
 }
 
 func (r *DeleteTopicRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1013,8 +1013,8 @@ type DeleteTopicRuleResponse struct {
 }
 
 func (r *DeleteTopicRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1034,8 +1034,8 @@ type DescribeAllDevicesRequest struct {
 }
 
 func (r *DescribeAllDevicesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1069,8 +1069,8 @@ type DescribeAllDevicesResponse struct {
 }
 
 func (r *DescribeAllDevicesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1090,8 +1090,8 @@ type DescribeDeviceClientKeyRequest struct {
 }
 
 func (r *DescribeDeviceClientKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1122,8 +1122,8 @@ type DescribeDeviceClientKeyResponse struct {
 }
 
 func (r *DescribeDeviceClientKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1143,8 +1143,8 @@ type DescribeDeviceRequest struct {
 }
 
 func (r *DescribeDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1176,8 +1176,8 @@ type DescribeDeviceResourceRequest struct {
 }
 
 func (r *DescribeDeviceResourceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1209,8 +1209,8 @@ type DescribeDeviceResourceResponse struct {
 }
 
 func (r *DescribeDeviceResourceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1242,8 +1242,8 @@ type DescribeDeviceResourcesRequest struct {
 }
 
 func (r *DescribeDeviceResourcesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1273,7 +1273,7 @@ type DescribeDeviceResourcesResponse struct {
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 资源列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Result []*DeviceResourceInfo `json:"Result,omitempty" name:"Result" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1282,8 +1282,8 @@ type DescribeDeviceResourcesResponse struct {
 }
 
 func (r *DescribeDeviceResourcesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1342,39 +1342,39 @@ type DescribeDeviceResponse struct {
 		LoraMoteType *uint64 `json:"LoraMoteType,omitempty" name:"LoraMoteType"`
 
 		// 设备的sdk日志等级
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LogLevel *uint64 `json:"LogLevel,omitempty" name:"LogLevel"`
 
 		// 首次上线时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FirstOnlineTime *uint64 `json:"FirstOnlineTime,omitempty" name:"FirstOnlineTime"`
 
 		// 最近下线时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LastOfflineTime *uint64 `json:"LastOfflineTime,omitempty" name:"LastOfflineTime"`
 
 		// 设备创建时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CreateTime *uint64 `json:"CreateTime,omitempty" name:"CreateTime"`
 
 		// 设备证书获取状态，0 未获取过设备密钥, 1 已获取过设备密钥
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CertState *uint64 `json:"CertState,omitempty" name:"CertState"`
 
 		// 设备启用状态
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		EnableState *uint64 `json:"EnableState,omitempty" name:"EnableState"`
 
 		// 设备标签
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Labels []*DeviceLabel `json:"Labels,omitempty" name:"Labels" list`
 
 		// MQTT客户端IP地址
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ClientIP *string `json:"ClientIP,omitempty" name:"ClientIP"`
 
 		// 设备固件更新时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FirmwareUpdateTime *uint64 `json:"FirmwareUpdateTime,omitempty" name:"FirmwareUpdateTime"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1383,8 +1383,8 @@ type DescribeDeviceResponse struct {
 }
 
 func (r *DescribeDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1404,8 +1404,8 @@ type DescribeDeviceShadowRequest struct {
 }
 
 func (r *DescribeDeviceShadowRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1436,8 +1436,8 @@ type DescribeDeviceShadowResponse struct {
 }
 
 func (r *DescribeDeviceShadowResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1469,8 +1469,8 @@ type DescribeDevicesRequest struct {
 }
 
 func (r *DescribeDevicesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1508,8 +1508,8 @@ type DescribeDevicesResponse struct {
 }
 
 func (r *DescribeDevicesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1529,8 +1529,8 @@ type DescribeFirmwareRequest struct {
 }
 
 func (r *DescribeFirmwareRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1559,19 +1559,19 @@ type DescribeFirmwareResponse struct {
 		ProductId *string `json:"ProductId,omitempty" name:"ProductId"`
 
 		// 固件名称
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Name *string `json:"Name,omitempty" name:"Name"`
 
 		// 固件描述
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Description *string `json:"Description,omitempty" name:"Description"`
 
 		// 固件Md5值
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Md5sum *string `json:"Md5sum,omitempty" name:"Md5sum"`
 
 		// 固件上传的秒级时间戳
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Createtime *uint64 `json:"Createtime,omitempty" name:"Createtime"`
 
 		// 产品名称
@@ -1583,8 +1583,8 @@ type DescribeFirmwareResponse struct {
 }
 
 func (r *DescribeFirmwareResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1613,8 +1613,8 @@ type DescribeFirmwareTaskDevicesRequest struct {
 }
 
 func (r *DescribeFirmwareTaskDevicesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1640,11 +1640,11 @@ type DescribeFirmwareTaskDevicesResponse struct {
 	Response *struct {
 
 		// 固件升级任务的设备总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Total *uint64 `json:"Total,omitempty" name:"Total"`
 
 		// 固件升级任务的设备列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Devices []*DeviceUpdateStatus `json:"Devices,omitempty" name:"Devices" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1653,8 +1653,8 @@ type DescribeFirmwareTaskDevicesResponse struct {
 }
 
 func (r *DescribeFirmwareTaskDevicesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1677,8 +1677,8 @@ type DescribeFirmwareTaskDistributionRequest struct {
 }
 
 func (r *DescribeFirmwareTaskDistributionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1710,8 +1710,8 @@ type DescribeFirmwareTaskDistributionResponse struct {
 }
 
 func (r *DescribeFirmwareTaskDistributionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1734,8 +1734,8 @@ type DescribeFirmwareTaskRequest struct {
 }
 
 func (r *DescribeFirmwareTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1759,31 +1759,31 @@ type DescribeFirmwareTaskResponse struct {
 	Response *struct {
 
 		// 固件任务ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TaskId *uint64 `json:"TaskId,omitempty" name:"TaskId"`
 
 		// 固件任务状态
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Status *int64 `json:"Status,omitempty" name:"Status"`
 
 		// 固件任务创建时间，单位:秒
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CreateTime *int64 `json:"CreateTime,omitempty" name:"CreateTime"`
 
 		// 固件任务升级类型
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Type *int64 `json:"Type,omitempty" name:"Type"`
 
 		// 产品名称
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ProductName *string `json:"ProductName,omitempty" name:"ProductName"`
 
 		// 固件任务升级模式。originalVersion（按版本号升级）、filename（提交文件升级）、devicenames（按设备名称升级）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		UpgradeMode *string `json:"UpgradeMode,omitempty" name:"UpgradeMode"`
 
 		// 产品ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ProductId *string `json:"ProductId,omitempty" name:"ProductId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1792,8 +1792,8 @@ type DescribeFirmwareTaskResponse struct {
 }
 
 func (r *DescribeFirmwareTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1813,8 +1813,8 @@ type DescribeFirmwareTaskStatisticsRequest struct {
 }
 
 func (r *DescribeFirmwareTaskStatisticsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1837,15 +1837,15 @@ type DescribeFirmwareTaskStatisticsResponse struct {
 	Response *struct {
 
 		// 升级成功的设备总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SuccessTotal *uint64 `json:"SuccessTotal,omitempty" name:"SuccessTotal"`
 
 		// 升级失败的设备总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FailureTotal *uint64 `json:"FailureTotal,omitempty" name:"FailureTotal"`
 
 		// 正在升级的设备总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		UpgradingTotal *uint64 `json:"UpgradingTotal,omitempty" name:"UpgradingTotal"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1854,8 +1854,8 @@ type DescribeFirmwareTaskStatisticsResponse struct {
 }
 
 func (r *DescribeFirmwareTaskStatisticsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1884,8 +1884,8 @@ type DescribeFirmwareTasksRequest struct {
 }
 
 func (r *DescribeFirmwareTasksRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1911,11 +1911,11 @@ type DescribeFirmwareTasksResponse struct {
 	Response *struct {
 
 		// 固件升级任务列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TaskInfos []*FirmwareTaskInfo `json:"TaskInfos,omitempty" name:"TaskInfos" list`
 
 		// 固件升级任务总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Total *uint64 `json:"Total,omitempty" name:"Total"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1924,8 +1924,8 @@ type DescribeFirmwareTasksResponse struct {
 }
 
 func (r *DescribeFirmwareTasksResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1945,8 +1945,8 @@ type DescribeLoraDeviceRequest struct {
 }
 
 func (r *DescribeLoraDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1992,8 +1992,8 @@ type DescribeLoraDeviceResponse struct {
 }
 
 func (r *DescribeLoraDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2013,8 +2013,8 @@ type DescribeMultiDevTaskRequest struct {
 }
 
 func (r *DescribeMultiDevTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2048,8 +2048,8 @@ type DescribeMultiDevTaskResponse struct {
 }
 
 func (r *DescribeMultiDevTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2075,8 +2075,8 @@ type DescribeMultiDevicesRequest struct {
 }
 
 func (r *DescribeMultiDevicesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2115,8 +2115,8 @@ type DescribeMultiDevicesResponse struct {
 }
 
 func (r *DescribeMultiDevicesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2136,8 +2136,8 @@ type DescribeProductResourceRequest struct {
 }
 
 func (r *DescribeProductResourceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2160,7 +2160,7 @@ type DescribeProductResourceResponse struct {
 	Response *struct {
 
 		// 资源详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Result *ProductResourceInfo `json:"Result,omitempty" name:"Result"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2169,8 +2169,8 @@ type DescribeProductResourceResponse struct {
 }
 
 func (r *DescribeProductResourceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2196,8 +2196,8 @@ type DescribeProductResourcesRequest struct {
 }
 
 func (r *DescribeProductResourcesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2225,7 +2225,7 @@ type DescribeProductResourcesResponse struct {
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 资源详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Result []*ProductResourceInfo `json:"Result,omitempty" name:"Result" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2234,8 +2234,8 @@ type DescribeProductResourcesResponse struct {
 }
 
 func (r *DescribeProductResourcesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2255,8 +2255,8 @@ type DescribeProductTaskRequest struct {
 }
 
 func (r *DescribeProductTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2287,8 +2287,8 @@ type DescribeProductTaskResponse struct {
 }
 
 func (r *DescribeProductTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2311,8 +2311,8 @@ type DescribeProductTasksRequest struct {
 }
 
 func (r *DescribeProductTasksRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2347,8 +2347,8 @@ type DescribeProductTasksResponse struct {
 }
 
 func (r *DescribeProductTasksResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2368,8 +2368,8 @@ type DescribeProductsRequest struct {
 }
 
 func (r *DescribeProductsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2403,8 +2403,8 @@ type DescribeProductsResponse struct {
 }
 
 func (r *DescribeProductsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2424,8 +2424,8 @@ type DescribePushResourceTaskStatisticsRequest struct {
 }
 
 func (r *DescribePushResourceTaskStatisticsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2448,15 +2448,15 @@ type DescribePushResourceTaskStatisticsResponse struct {
 	Response *struct {
 
 		// 推送成功的设备总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SuccessTotal *uint64 `json:"SuccessTotal,omitempty" name:"SuccessTotal"`
 
 		// 推送失败的设备总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FailureTotal *uint64 `json:"FailureTotal,omitempty" name:"FailureTotal"`
 
 		// 正在推送的设备总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		UpgradingTotal *uint64 `json:"UpgradingTotal,omitempty" name:"UpgradingTotal"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2465,8 +2465,8 @@ type DescribePushResourceTaskStatisticsResponse struct {
 }
 
 func (r *DescribePushResourceTaskStatisticsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2495,8 +2495,8 @@ type DescribeResourceTasksRequest struct {
 }
 
 func (r *DescribeResourceTasksRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2522,11 +2522,11 @@ type DescribeResourceTasksResponse struct {
 	Response *struct {
 
 		// 资源任务列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TaskInfos []*FirmwareTaskInfo `json:"TaskInfos,omitempty" name:"TaskInfos" list`
 
 		// 资源任务总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Total *uint64 `json:"Total,omitempty" name:"Total"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2535,8 +2535,8 @@ type DescribeResourceTasksResponse struct {
 }
 
 func (r *DescribeResourceTasksResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2553,8 +2553,8 @@ type DescribeTaskRequest struct {
 }
 
 func (r *DescribeTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2620,8 +2620,8 @@ type DescribeTaskResponse struct {
 }
 
 func (r *DescribeTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2641,8 +2641,8 @@ type DescribeTasksRequest struct {
 }
 
 func (r *DescribeTasksRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2676,8 +2676,8 @@ type DescribeTasksResponse struct {
 }
 
 func (r *DescribeTasksResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2885,8 +2885,8 @@ type DisableTopicRuleRequest struct {
 }
 
 func (r *DisableTopicRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2913,8 +2913,8 @@ type DisableTopicRuleResponse struct {
 }
 
 func (r *DisableTopicRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2940,8 +2940,8 @@ type EditFirmwareRequest struct {
 }
 
 func (r *EditFirmwareRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2971,8 +2971,8 @@ type EditFirmwareResponse struct {
 }
 
 func (r *EditFirmwareResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2989,8 +2989,8 @@ type EnableTopicRuleRequest struct {
 }
 
 func (r *EnableTopicRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3017,8 +3017,8 @@ type EnableTopicRuleResponse struct {
 }
 
 func (r *EnableTopicRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3051,8 +3051,8 @@ type GetUserResourceInfoRequest struct {
 }
 
 func (r *GetUserResourceInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3084,8 +3084,8 @@ type GetUserResourceInfoResponse struct {
 }
 
 func (r *GetUserResourceInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3265,8 +3265,8 @@ type PublishAsDeviceRequest struct {
 }
 
 func (r *PublishAsDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3296,8 +3296,8 @@ type PublishAsDeviceResponse struct {
 }
 
 func (r *PublishAsDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3320,8 +3320,8 @@ type PublishBroadcastMessageRequest struct {
 }
 
 func (r *PublishBroadcastMessageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3353,8 +3353,8 @@ type PublishBroadcastMessageResponse struct {
 }
 
 func (r *PublishBroadcastMessageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3386,8 +3386,8 @@ type PublishMessageRequest struct {
 }
 
 func (r *PublishMessageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3419,8 +3419,8 @@ type PublishMessageResponse struct {
 }
 
 func (r *PublishMessageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3443,8 +3443,8 @@ type PublishRRPCMessageRequest struct {
 }
 
 func (r *PublishRRPCMessageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3479,8 +3479,8 @@ type PublishRRPCMessageResponse struct {
 }
 
 func (r *PublishRRPCMessageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3506,8 +3506,8 @@ type PublishToDeviceRequest struct {
 }
 
 func (r *PublishToDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3537,8 +3537,8 @@ type PublishToDeviceResponse struct {
 }
 
 func (r *PublishToDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3564,8 +3564,8 @@ type ReplaceTopicRuleRequest struct {
 }
 
 func (r *ReplaceTopicRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3595,8 +3595,8 @@ type ReplaceTopicRuleResponse struct {
 }
 
 func (r *ReplaceTopicRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3629,8 +3629,8 @@ type ResetDeviceStateRequest struct {
 }
 
 func (r *ResetDeviceStateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3664,8 +3664,8 @@ type ResetDeviceStateResponse struct {
 }
 
 func (r *ResetDeviceStateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3691,8 +3691,8 @@ type RetryDeviceFirmwareTaskRequest struct {
 }
 
 func (r *RetryDeviceFirmwareTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3722,8 +3722,8 @@ type RetryDeviceFirmwareTaskResponse struct {
 }
 
 func (r *RetryDeviceFirmwareTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3872,8 +3872,8 @@ type UnbindDevicesRequest struct {
 }
 
 func (r *UnbindDevicesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3904,8 +3904,8 @@ type UnbindDevicesResponse struct {
 }
 
 func (r *UnbindDevicesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3928,8 +3928,8 @@ type UpdateDeviceAvailableStateRequest struct {
 }
 
 func (r *UpdateDeviceAvailableStateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3958,8 +3958,8 @@ type UpdateDeviceAvailableStateResponse struct {
 }
 
 func (r *UpdateDeviceAvailableStateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3988,8 +3988,8 @@ type UpdateDeviceShadowRequest struct {
 }
 
 func (r *UpdateDeviceShadowRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4023,8 +4023,8 @@ type UpdateDeviceShadowResponse struct {
 }
 
 func (r *UpdateDeviceShadowResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4053,8 +4053,8 @@ type UpdateTopicPolicyRequest struct {
 }
 
 func (r *UpdateTopicPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4085,8 +4085,8 @@ type UpdateTopicPolicyResponse struct {
 }
 
 func (r *UpdateTopicPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4118,8 +4118,8 @@ type UploadFirmwareRequest struct {
 }
 
 func (r *UploadFirmwareRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4151,8 +4151,8 @@ type UploadFirmwareResponse struct {
 }
 
 func (r *UploadFirmwareResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

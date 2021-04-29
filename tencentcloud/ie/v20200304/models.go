@@ -15,10 +15,10 @@
 package v20200304
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type ArtifactReduction struct {
@@ -111,11 +111,11 @@ type ClassificationEditingInfo struct {
 
 type ClassificationTaskResult struct {
 
-	// 编辑任务状态。 
+	// 编辑任务状态。
 	// 1：执行中；2：成功；3：失败。
 	Status *int64 `json:"Status,omitempty" name:"Status"`
 
-	// 编辑任务失败错误码。 
+	// 编辑任务失败错误码。
 	// 0：成功；其他值：失败。
 	ErrCode *int64 `json:"ErrCode,omitempty" name:"ErrCode"`
 
@@ -149,9 +149,9 @@ type ColorEnhance struct {
 
 type CosAuthMode struct {
 
-	// 授权类型，可选值： 
-	// 0：bucket授权，需要将对应bucket授权给本服务帐号（3020447271），否则会读写cos失败； 
-	// 1：key托管，把cos的账号id和key托管于本服务，本服务会提供一个托管id； 
+	// 授权类型，可选值：
+	// 0：bucket授权，需要将对应bucket授权给本服务帐号（3020447271），否则会读写cos失败；
+	// 1：key托管，把cos的账号id和key托管于本服务，本服务会提供一个托管id；
 	// 3：临时key授权。
 	// 注意：目前智能编辑还不支持临时key授权；画质重生目前只支持bucket授权
 	Type *int64 `json:"Type,omitempty" name:"Type"`
@@ -177,8 +177,8 @@ type CosInfo struct {
 	// cos 存储桶，格式为BuketName-AppId。例如：test-123456。
 	Bucket *string `json:"Bucket,omitempty" name:"Bucket"`
 
-	// cos 路径。 
-	// 对于写表示目录，例如：/test； 
+	// cos 路径。
+	// 对于写表示目录，例如：/test；
 	// 对于读表示文件路径，例如：/test/test.mp4。
 	Path *string `json:"Path,omitempty" name:"Path"`
 
@@ -197,11 +197,11 @@ type CoverEditingInfo struct {
 
 type CoverTaskResult struct {
 
-	// 编辑任务状态。 
+	// 编辑任务状态。
 	// 1：执行中；2：成功；3：失败。
 	Status *int64 `json:"Status,omitempty" name:"Status"`
 
-	// 编辑任务失败错误码。 
+	// 编辑任务失败错误码。
 	// 0：成功；其他值：失败。
 	ErrCode *int64 `json:"ErrCode,omitempty" name:"ErrCode"`
 
@@ -239,8 +239,8 @@ type CreateEditingTaskRequest struct {
 }
 
 func (r *CreateEditingTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -273,8 +273,8 @@ type CreateEditingTaskResponse struct {
 }
 
 func (r *CreateEditingTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -300,8 +300,8 @@ type CreateMediaProcessTaskRequest struct {
 }
 
 func (r *CreateMediaProcessTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -326,7 +326,7 @@ type CreateMediaProcessTaskResponse struct {
 	Response *struct {
 
 		// 编辑任务 ID，可以通过该 ID 查询任务状态和结果。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TaskId *string `json:"TaskId,omitempty" name:"TaskId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -335,8 +335,8 @@ type CreateMediaProcessTaskResponse struct {
 }
 
 func (r *CreateMediaProcessTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -362,8 +362,8 @@ type CreateMediaQualityRestorationTaskRequest struct {
 }
 
 func (r *CreateMediaQualityRestorationTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -396,8 +396,8 @@ type CreateMediaQualityRestorationTaskResponse struct {
 }
 
 func (r *CreateMediaQualityRestorationTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -420,8 +420,8 @@ type CreateQualityControlTaskRequest struct {
 }
 
 func (r *CreateQualityControlTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -445,7 +445,7 @@ type CreateQualityControlTaskResponse struct {
 	Response *struct {
 
 		// 质检任务 ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TaskId *string `json:"TaskId,omitempty" name:"TaskId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -454,8 +454,8 @@ type CreateQualityControlTaskResponse struct {
 }
 
 func (r *CreateQualityControlTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -509,8 +509,8 @@ type DescribeEditingTaskResultRequest struct {
 }
 
 func (r *DescribeEditingTaskResultRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -540,8 +540,8 @@ type DescribeEditingTaskResultResponse struct {
 }
 
 func (r *DescribeEditingTaskResultResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -558,8 +558,8 @@ type DescribeMediaProcessTaskResultRequest struct {
 }
 
 func (r *DescribeMediaProcessTaskResultRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -581,7 +581,7 @@ type DescribeMediaProcessTaskResultResponse struct {
 	Response *struct {
 
 		// 任务处理结果。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TaskResult *MediaProcessTaskResult `json:"TaskResult,omitempty" name:"TaskResult"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -590,8 +590,8 @@ type DescribeMediaProcessTaskResultResponse struct {
 }
 
 func (r *DescribeMediaProcessTaskResultResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -608,8 +608,8 @@ type DescribeMediaQualityRestorationTaskRusultRequest struct {
 }
 
 func (r *DescribeMediaQualityRestorationTaskRusultRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -639,8 +639,8 @@ type DescribeMediaQualityRestorationTaskRusultResponse struct {
 }
 
 func (r *DescribeMediaQualityRestorationTaskRusultResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -657,8 +657,8 @@ type DescribeQualityControlTaskResultRequest struct {
 }
 
 func (r *DescribeQualityControlTaskResultRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -688,8 +688,8 @@ type DescribeQualityControlTaskResultResponse struct {
 }
 
 func (r *DescribeQualityControlTaskResultResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -700,8 +700,8 @@ func (r *DescribeQualityControlTaskResultResponse) FromJsonString(s string) erro
 
 type DownInfo struct {
 
-	// 下载类型，可选值： 
-	// 0：UrlInfo； 
+	// 下载类型，可选值：
+	// 0：UrlInfo；
 	// 1：CosInfo。
 	Type *int64 `json:"Type,omitempty" name:"Type"`
 
@@ -747,7 +747,7 @@ type EditingTaskResult struct {
 	// 编辑任务 ID。
 	TaskId *string `json:"TaskId,omitempty" name:"TaskId"`
 
-	// 编辑任务状态。 
+	// 编辑任务状态。
 	// 1：执行中；2：已完成。
 	Status *int64 `json:"Status,omitempty" name:"Status"`
 
@@ -879,11 +879,11 @@ type HighlightsEditingInfo struct {
 
 type HighlightsTaskResult struct {
 
-	// 编辑任务状态。 
+	// 编辑任务状态。
 	// 1：执行中；2：成功；3：失败。
 	Status *int64 `json:"Status,omitempty" name:"Status"`
 
-	// 编辑任务失败错误码。 
+	// 编辑任务失败错误码。
 	// 0：成功；其他值：失败。
 	ErrCode *int64 `json:"ErrCode,omitempty" name:"ErrCode"`
 
@@ -964,13 +964,13 @@ type MediaCuttingOutForm struct {
 	// Dynamic：动态图；
 	// Sprite：雪碧图；
 	// Video：视频。
-	// 
+	//
 	// 注1：不同类型时，对应的 TargetInfo.Format 格式支持如下：
 	// Static：jpg、png；
 	// Dynamic：gif；
 	// Sprite：jpg、png；
 	// Video：mp4。
-	// 
+	//
 	// 注2：当 Type=Sprite时，TargetInfo指定的尺寸表示小图的大小，最终结果尺寸以输出为准。
 	Type *string `json:"Type,omitempty" name:"Type"`
 
@@ -1169,7 +1169,7 @@ type MediaSourceInfo struct {
 type MediaTargetInfo struct {
 
 	// 目标文件名，不能带特殊字符（如/等），无需后缀名，最长200字符。
-	// 
+	//
 	// 注1：部分子服务支持占位符，形式为： {parameter}
 	// 预设parameter有：
 	// index：序号；
@@ -1207,11 +1207,11 @@ type OpeningEndingEditingInfo struct {
 
 type OpeningEndingTaskResult struct {
 
-	// 编辑任务状态。 
+	// 编辑任务状态。
 	// 1：执行中；2：成功；3：失败。
 	Status *int64 `json:"Status,omitempty" name:"Status"`
 
-	// 编辑任务失败错误码。 
+	// 编辑任务失败错误码。
 	// 0：成功；其他值：失败。
 	ErrCode *int64 `json:"ErrCode,omitempty" name:"ErrCode"`
 
@@ -1449,7 +1449,7 @@ type ResultVideoInfo struct {
 
 type SaveInfo struct {
 
-	// 存储类型，可选值： 
+	// 存储类型，可选值：
 	// 1：CosInfo。
 	Type *int64 `json:"Type,omitempty" name:"Type"`
 
@@ -1506,8 +1506,8 @@ type StopMediaProcessTaskRequest struct {
 }
 
 func (r *StopMediaProcessTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1534,8 +1534,8 @@ type StopMediaProcessTaskResponse struct {
 }
 
 func (r *StopMediaProcessTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1552,8 +1552,8 @@ type StopMediaQualityRestorationTaskRequest struct {
 }
 
 func (r *StopMediaQualityRestorationTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1580,8 +1580,8 @@ type StopMediaQualityRestorationTaskResponse struct {
 }
 
 func (r *StopMediaQualityRestorationTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1601,11 +1601,11 @@ type StripEditingInfo struct {
 
 type StripTaskResult struct {
 
-	// 编辑任务状态。 
+	// 编辑任务状态。
 	// 1：执行中；2：成功；3：失败。
 	Status *int64 `json:"Status,omitempty" name:"Status"`
 
-	// 编辑任务失败错误码。 
+	// 编辑任务失败错误码。
 	// 0：成功；其他值：失败。
 	ErrCode *int64 `json:"ErrCode,omitempty" name:"ErrCode"`
 
@@ -1773,11 +1773,11 @@ type TagItem struct {
 
 type TagTaskResult struct {
 
-	// 编辑任务状态。 
+	// 编辑任务状态。
 	// 1：执行中；2：成功；3：失败。
 	Status *int64 `json:"Status,omitempty" name:"Status"`
 
-	// 编辑任务失败错误码。 
+	// 编辑任务失败错误码。
 	// 0：成功；其他值：失败。
 	ErrCode *int64 `json:"ErrCode,omitempty" name:"ErrCode"`
 
@@ -1840,9 +1840,9 @@ type UrlInfo struct {
 	// 注意：编辑理解仅支持mp4、flv等格式的点播文件，不支持hls；
 	Url *string `json:"Url,omitempty" name:"Url"`
 
-	// 视频地址格式，可选值： 
+	// 视频地址格式，可选值：
 	// 0：音视频 ;
-	// 1：直播流。 
+	// 1：直播流。
 	// 默认为0。其他非0非1值默认为0。画质重生任务只支持0。
 	Format *int64 `json:"Format,omitempty" name:"Format"`
 

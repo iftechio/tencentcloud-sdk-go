@@ -15,10 +15,10 @@
 package v20190411
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type DescribeEntityRequest struct {
@@ -29,8 +29,8 @@ type DescribeEntityRequest struct {
 }
 
 func (r *DescribeEntityRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -60,8 +60,8 @@ type DescribeEntityResponse struct {
 }
 
 func (r *DescribeEntityResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -81,8 +81,8 @@ type DescribeRelationRequest struct {
 }
 
 func (r *DescribeRelationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -113,8 +113,8 @@ type DescribeRelationResponse struct {
 }
 
 func (r *DescribeRelationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -131,8 +131,8 @@ type DescribeTripleRequest struct {
 }
 
 func (r *DescribeTripleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -162,8 +162,8 @@ type DescribeTripleResponse struct {
 }
 
 func (r *DescribeTripleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

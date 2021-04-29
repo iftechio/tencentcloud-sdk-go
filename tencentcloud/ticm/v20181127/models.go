@@ -15,10 +15,10 @@
 package v20181127
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type Candidate struct {
@@ -38,8 +38,8 @@ type DescribeVideoTaskRequest struct {
 }
 
 func (r *DescribeVideoTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -61,9 +61,9 @@ type DescribeVideoTaskResponse struct {
 	Response *struct {
 
 		// 任务状态，取值：
-	// WAITING：等待中；
-	// PROCESSING：处理中；
-	// FINISH：已完成。
+		// WAITING：等待中；
+		// PROCESSING：处理中；
+		// FINISH：已完成。
 		Status *string `json:"Status,omitempty" name:"Status"`
 
 		// 任务开始执行的时间，采用 ISO 日期格式。
@@ -102,8 +102,8 @@ type DescribeVideoTaskResponse struct {
 }
 
 func (r *DescribeVideoTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -164,16 +164,16 @@ type ImageModerationRequest struct {
 	// 1. PORN，即色情识别
 	// 2. TERRORISM，即暴恐识别
 	// 3. POLITICS，即政治敏感识别
-	// 
+	//
 	// 支持多场景（Scenes）一起检测。例如，使用 Scenes=["PORN", "TERRORISM"]，即对一张图片同时进行色情识别和暴恐识别。
 	Scenes []*string `json:"Scenes,omitempty" name:"Scenes" list`
 
-	// 图片URL地址。 
-	// 图片限制： 
-	//  • 图片格式：PNG、JPG、JPEG。 
-	//  • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。 
-	//  • 图片像素：大于50*50像素，否则影响识别效果； 
-	//  • 长宽比：长边：短边<5； 
+	// 图片URL地址。
+	// 图片限制：
+	//  • 图片格式：PNG、JPG、JPEG。
+	//  • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。
+	//  • 图片像素：大于50*50像素，否则影响识别效果；
+	//  • 长宽比：长边：短边<5；
 	// 接口响应时间会受到图片下载时间的影响，建议使用更可靠的存储服务，推荐将图片存储在腾讯云COS。
 	ImageUrl *string `json:"ImageUrl,omitempty" name:"ImageUrl"`
 
@@ -188,8 +188,8 @@ type ImageModerationRequest struct {
 }
 
 func (r *ImageModerationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -215,28 +215,28 @@ type ImageModerationResponse struct {
 	Response *struct {
 
 		// 识别场景的审核结论：
-	// PASS：正常
-	// REVIEW：疑似
-	// BLOCK：违规
+		// PASS：正常
+		// REVIEW：疑似
+		// BLOCK：违规
 		Suggestion *string `json:"Suggestion,omitempty" name:"Suggestion"`
 
 		// 色情识别结果。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PornResult *PornResult `json:"PornResult,omitempty" name:"PornResult"`
 
 		// 暴恐识别结果。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TerrorismResult *TerrorismResult `json:"TerrorismResult,omitempty" name:"TerrorismResult"`
 
 		// 政治敏感识别结果。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PoliticsResult *PoliticsResult `json:"PoliticsResult,omitempty" name:"PoliticsResult"`
 
 		// 透传字段，透传简单信息。
 		Extra *string `json:"Extra,omitempty" name:"Extra"`
 
 		// 恶心内容识别结果。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DisgustResult *DisgustResult `json:"DisgustResult,omitempty" name:"DisgustResult"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -245,8 +245,8 @@ type ImageModerationResponse struct {
 }
 
 func (r *ImageModerationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -379,8 +379,8 @@ type VideoModerationRequest struct {
 }
 
 func (r *VideoModerationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -413,8 +413,8 @@ type VideoModerationResponse struct {
 }
 
 func (r *VideoModerationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -441,7 +441,7 @@ type VodAsrTextSegmentItem struct {
 	// pass。
 	// review。
 	// block。
-	// 
+	//
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Suggestion *string `json:"Suggestion,omitempty" name:"Suggestion"`
 
@@ -530,7 +530,7 @@ type VodOcrTextSegmentItem struct {
 	// pass。
 	// review。
 	// block。
-	// 
+	//
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Suggestion *string `json:"Suggestion,omitempty" name:"Suggestion"`
 
@@ -560,7 +560,7 @@ type VodPoliticalAsrReviewResult struct {
 	// pass。
 	// review。
 	// block。
-	// 
+	//
 	// Asr 文字涉政、敏感评分，分值为0到100。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Confidence *float64 `json:"Confidence,omitempty" name:"Confidence"`
@@ -569,7 +569,7 @@ type VodPoliticalAsrReviewResult struct {
 	// pass。
 	// review。
 	// block。
-	// 
+	//
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Suggestion *string `json:"Suggestion,omitempty" name:"Suggestion"`
 
@@ -626,14 +626,14 @@ type VodPoliticalReviewResult struct {
 	// pass。
 	// review。
 	// block。
-	// 
+	//
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Suggestion *string `json:"Suggestion,omitempty" name:"Suggestion"`
 
 	// 视频鉴政结果标签，取值范围：
 	// politician：政治人物。
 	// violation_photo：违规图标。
-	// 
+	//
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Label *string `json:"Label,omitempty" name:"Label"`
 
@@ -660,7 +660,7 @@ type VodPoliticalReviewSegmentItem struct {
 	// pass。
 	// review。
 	// block。
-	// 
+	//
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Suggestion *string `json:"Suggestion,omitempty" name:"Suggestion"`
 
@@ -707,7 +707,7 @@ type VodPornAsrReviewResult struct {
 	// pass。
 	// review。
 	// block。
-	// 
+	//
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Suggestion *string `json:"Suggestion,omitempty" name:"Suggestion"`
 
@@ -737,7 +737,7 @@ type VodPornOcrResult struct {
 	// pass。
 	// review。
 	// block。
-	// 
+	//
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Suggestion *string `json:"Suggestion,omitempty" name:"Suggestion"`
 
@@ -767,7 +767,7 @@ type VodPornReviewResult struct {
 	// pass。
 	// review。
 	// block。
-	// 
+	//
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Suggestion *string `json:"Suggestion,omitempty" name:"Suggestion"`
 
@@ -776,7 +776,7 @@ type VodPornReviewResult struct {
 	// sexy：性感。
 	// vulgar：低俗。
 	// intimacy：亲密行为。
-	// 
+	//
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Label *string `json:"Label,omitempty" name:"Label"`
 
@@ -807,7 +807,7 @@ type VodPornReviewSegmentItem struct {
 	// pass。
 	// review。
 	// block。
-	// 
+	//
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Suggestion *string `json:"Suggestion,omitempty" name:"Suggestion"`
 
@@ -831,7 +831,7 @@ type VodTerrorismReviewResult struct {
 	// pass。
 	// review。
 	// block。
-	// 
+	//
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Suggestion *string `json:"Suggestion,omitempty" name:"Suggestion"`
 
@@ -844,7 +844,7 @@ type VodTerrorismReviewResult struct {
 	// militant：武装分子。
 	// explosion：爆炸火灾。
 	// terrorists：暴恐人物。
-	// 
+	//
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Label *string `json:"Label,omitempty" name:"Label"`
 

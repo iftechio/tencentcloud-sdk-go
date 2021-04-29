@@ -15,10 +15,10 @@
 package v20170312
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type AcceptAttachCcnInstancesRequest struct {
@@ -32,8 +32,8 @@ type AcceptAttachCcnInstancesRequest struct {
 }
 
 func (r *AcceptAttachCcnInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -61,8 +61,8 @@ type AcceptAttachCcnInstancesResponse struct {
 }
 
 func (r *AcceptAttachCcnInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -100,8 +100,8 @@ type AddBandwidthPackageResourcesRequest struct {
 }
 
 func (r *AddBandwidthPackageResourcesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -132,8 +132,8 @@ type AddBandwidthPackageResourcesResponse struct {
 }
 
 func (r *AddBandwidthPackageResourcesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -156,8 +156,8 @@ type AddIp6RulesRequest struct {
 }
 
 func (r *AddIp6RulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -189,8 +189,8 @@ type AddIp6RulesResponse struct {
 }
 
 func (r *AddIp6RulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -384,8 +384,8 @@ type AllocateAddressesRequest struct {
 }
 
 func (r *AllocateAddressesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -428,8 +428,8 @@ type AllocateAddressesResponse struct {
 }
 
 func (r *AllocateAddressesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -455,8 +455,8 @@ type AllocateIp6AddressesBandwidthRequest struct {
 }
 
 func (r *AllocateIp6AddressesBandwidthRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -492,8 +492,8 @@ type AllocateIp6AddressesBandwidthResponse struct {
 }
 
 func (r *AllocateIp6AddressesBandwidthResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -516,8 +516,8 @@ type AssignIpv6AddressesRequest struct {
 }
 
 func (r *AssignIpv6AddressesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -549,8 +549,8 @@ type AssignIpv6AddressesResponse struct {
 }
 
 func (r *AssignIpv6AddressesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -567,8 +567,8 @@ type AssignIpv6CidrBlockRequest struct {
 }
 
 func (r *AssignIpv6CidrBlockRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -598,8 +598,8 @@ type AssignIpv6CidrBlockResponse struct {
 }
 
 func (r *AssignIpv6CidrBlockResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -619,8 +619,8 @@ type AssignIpv6SubnetCidrBlockRequest struct {
 }
 
 func (r *AssignIpv6SubnetCidrBlockRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -651,8 +651,8 @@ type AssignIpv6SubnetCidrBlockResponse struct {
 }
 
 func (r *AssignIpv6SubnetCidrBlockResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -675,8 +675,8 @@ type AssignPrivateIpAddressesRequest struct {
 }
 
 func (r *AssignPrivateIpAddressesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -708,8 +708,8 @@ type AssignPrivateIpAddressesResponse struct {
 }
 
 func (r *AssignPrivateIpAddressesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -751,8 +751,8 @@ type AssociateAddressRequest struct {
 }
 
 func (r *AssociateAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -785,8 +785,8 @@ type AssociateAddressResponse struct {
 }
 
 func (r *AssociateAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -806,8 +806,8 @@ type AssociateDhcpIpWithAddressIpRequest struct {
 }
 
 func (r *AssociateDhcpIpWithAddressIpRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -835,8 +835,8 @@ type AssociateDhcpIpWithAddressIpResponse struct {
 }
 
 func (r *AssociateDhcpIpWithAddressIpResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -859,8 +859,8 @@ type AssociateDirectConnectGatewayNatGatewayRequest struct {
 }
 
 func (r *AssociateDirectConnectGatewayNatGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -889,8 +889,8 @@ type AssociateDirectConnectGatewayNatGatewayResponse struct {
 }
 
 func (r *AssociateDirectConnectGatewayNatGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -916,8 +916,8 @@ type AssociateNatGatewayAddressRequest struct {
 }
 
 func (r *AssociateNatGatewayAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -947,8 +947,8 @@ type AssociateNatGatewayAddressResponse struct {
 }
 
 func (r *AssociateNatGatewayAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -968,8 +968,8 @@ type AssociateNetworkAclSubnetsRequest struct {
 }
 
 func (r *AssociateNetworkAclSubnetsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -997,8 +997,8 @@ type AssociateNetworkAclSubnetsResponse struct {
 }
 
 func (r *AssociateNetworkAclSubnetsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1018,8 +1018,8 @@ type AssociateNetworkInterfaceSecurityGroupsRequest struct {
 }
 
 func (r *AssociateNetworkInterfaceSecurityGroupsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1047,8 +1047,8 @@ type AssociateNetworkInterfaceSecurityGroupsResponse struct {
 }
 
 func (r *AssociateNetworkInterfaceSecurityGroupsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1071,8 +1071,8 @@ type AttachCcnInstancesRequest struct {
 }
 
 func (r *AttachCcnInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1101,8 +1101,8 @@ type AttachCcnInstancesResponse struct {
 }
 
 func (r *AttachCcnInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1122,8 +1122,8 @@ type AttachClassicLinkVpcRequest struct {
 }
 
 func (r *AttachClassicLinkVpcRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1151,8 +1151,8 @@ type AttachClassicLinkVpcResponse struct {
 }
 
 func (r *AttachClassicLinkVpcResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1172,8 +1172,8 @@ type AttachNetworkInterfaceRequest struct {
 }
 
 func (r *AttachNetworkInterfaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1201,8 +1201,8 @@ type AttachNetworkInterfaceResponse struct {
 }
 
 func (r *AttachNetworkInterfaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1225,8 +1225,8 @@ type AuditCrossBorderComplianceRequest struct {
 }
 
 func (r *AuditCrossBorderComplianceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1255,8 +1255,8 @@ type AuditCrossBorderComplianceResponse struct {
 }
 
 func (r *AuditCrossBorderComplianceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1508,8 +1508,8 @@ type CheckAssistantCidrRequest struct {
 }
 
 func (r *CheckAssistantCidrRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1541,8 +1541,8 @@ type CheckAssistantCidrResponse struct {
 }
 
 func (r *CheckAssistantCidrResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1559,8 +1559,8 @@ type CheckDefaultSubnetRequest struct {
 }
 
 func (r *CheckDefaultSubnetRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1590,8 +1590,8 @@ type CheckDefaultSubnetResponse struct {
 }
 
 func (r *CheckDefaultSubnetResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1636,8 +1636,8 @@ type CheckNetDetectStateRequest struct {
 }
 
 func (r *CheckNetDetectStateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1673,8 +1673,8 @@ type CheckNetDetectStateResponse struct {
 }
 
 func (r *CheckNetDetectStateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1723,8 +1723,8 @@ type CloneSecurityGroupRequest struct {
 }
 
 func (r *CloneSecurityGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1750,7 +1750,7 @@ type CloneSecurityGroupResponse struct {
 	Response *struct {
 
 		// 安全组对象。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SecurityGroup *SecurityGroup `json:"SecurityGroup,omitempty" name:"SecurityGroup"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1759,8 +1759,8 @@ type CloneSecurityGroupResponse struct {
 }
 
 func (r *CloneSecurityGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1801,8 +1801,8 @@ type CreateAddressTemplateGroupRequest struct {
 }
 
 func (r *CreateAddressTemplateGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1833,8 +1833,8 @@ type CreateAddressTemplateGroupResponse struct {
 }
 
 func (r *CreateAddressTemplateGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1854,8 +1854,8 @@ type CreateAddressTemplateRequest struct {
 }
 
 func (r *CreateAddressTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1886,8 +1886,8 @@ type CreateAddressTemplateResponse struct {
 }
 
 func (r *CreateAddressTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1928,8 +1928,8 @@ type CreateAndAttachNetworkInterfaceRequest struct {
 }
 
 func (r *CreateAndAttachNetworkInterfaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1967,8 +1967,8 @@ type CreateAndAttachNetworkInterfaceResponse struct {
 }
 
 func (r *CreateAndAttachNetworkInterfaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1988,8 +1988,8 @@ type CreateAssistantCidrRequest struct {
 }
 
 func (r *CreateAssistantCidrRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2012,7 +2012,7 @@ type CreateAssistantCidrResponse struct {
 	Response *struct {
 
 		// 辅助CIDR数组。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AssistantCidrSet []*AssistantCidr `json:"AssistantCidrSet,omitempty" name:"AssistantCidrSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2021,8 +2021,8 @@ type CreateAssistantCidrResponse struct {
 }
 
 func (r *CreateAssistantCidrResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2057,8 +2057,8 @@ type CreateBandwidthPackageRequest struct {
 }
 
 func (r *CreateBandwidthPackageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2097,8 +2097,8 @@ type CreateBandwidthPackageResponse struct {
 }
 
 func (r *CreateBandwidthPackageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2130,8 +2130,8 @@ type CreateCcnRequest struct {
 }
 
 func (r *CreateCcnRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2166,8 +2166,8 @@ type CreateCcnResponse struct {
 }
 
 func (r *CreateCcnResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2190,8 +2190,8 @@ type CreateCustomerGatewayRequest struct {
 }
 
 func (r *CreateCustomerGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2223,8 +2223,8 @@ type CreateCustomerGatewayResponse struct {
 }
 
 func (r *CreateCustomerGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2241,8 +2241,8 @@ type CreateDefaultSecurityGroupRequest struct {
 }
 
 func (r *CreateDefaultSecurityGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2272,8 +2272,8 @@ type CreateDefaultSecurityGroupResponse struct {
 }
 
 func (r *CreateDefaultSecurityGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2293,8 +2293,8 @@ type CreateDefaultVpcRequest struct {
 }
 
 func (r *CreateDefaultVpcRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2325,8 +2325,8 @@ type CreateDefaultVpcResponse struct {
 }
 
 func (r *CreateDefaultVpcResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2352,8 +2352,8 @@ type CreateDhcpIpRequest struct {
 }
 
 func (r *CreateDhcpIpRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2386,8 +2386,8 @@ type CreateDhcpIpResponse struct {
 }
 
 func (r *CreateDhcpIpResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2407,8 +2407,8 @@ type CreateDirectConnectGatewayCcnRoutesRequest struct {
 }
 
 func (r *CreateDirectConnectGatewayCcnRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2436,8 +2436,8 @@ type CreateDirectConnectGatewayCcnRoutesResponse struct {
 }
 
 func (r *CreateDirectConnectGatewayCcnRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2471,8 +2471,8 @@ type CreateDirectConnectGatewayRequest struct {
 }
 
 func (r *CreateDirectConnectGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2506,8 +2506,8 @@ type CreateDirectConnectGatewayResponse struct {
 }
 
 func (r *CreateDirectConnectGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2545,8 +2545,8 @@ type CreateFlowLogRequest struct {
 }
 
 func (r *CreateFlowLogRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2583,8 +2583,8 @@ type CreateFlowLogResponse struct {
 }
 
 func (r *CreateFlowLogResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2610,8 +2610,8 @@ type CreateHaVipRequest struct {
 }
 
 func (r *CreateHaVipRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2644,8 +2644,8 @@ type CreateHaVipResponse struct {
 }
 
 func (r *CreateHaVipResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2668,8 +2668,8 @@ type CreateIp6TranslatorsRequest struct {
 }
 
 func (r *CreateIp6TranslatorsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2701,8 +2701,8 @@ type CreateIp6TranslatorsResponse struct {
 }
 
 func (r *CreateIp6TranslatorsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2725,8 +2725,8 @@ type CreateLocalGatewayRequest struct {
 }
 
 func (r *CreateLocalGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2758,8 +2758,8 @@ type CreateLocalGatewayResponse struct {
 }
 
 func (r *CreateLocalGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2779,8 +2779,8 @@ type CreateNatGatewayDestinationIpPortTranslationNatRuleRequest struct {
 }
 
 func (r *CreateNatGatewayDestinationIpPortTranslationNatRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2808,8 +2808,8 @@ type CreateNatGatewayDestinationIpPortTranslationNatRuleResponse struct {
 }
 
 func (r *CreateNatGatewayDestinationIpPortTranslationNatRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2850,8 +2850,8 @@ type CreateNatGatewayRequest struct {
 }
 
 func (r *CreateNatGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2892,8 +2892,8 @@ type CreateNatGatewayResponse struct {
 }
 
 func (r *CreateNatGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2913,8 +2913,8 @@ type CreateNatGatewaySourceIpTranslationNatRuleRequest struct {
 }
 
 func (r *CreateNatGatewaySourceIpTranslationNatRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2942,8 +2942,8 @@ type CreateNatGatewaySourceIpTranslationNatRuleResponse struct {
 }
 
 func (r *CreateNatGatewaySourceIpTranslationNatRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2988,8 +2988,8 @@ type CreateNetDetectRequest struct {
 }
 
 func (r *CreateNetDetectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3025,8 +3025,8 @@ type CreateNetDetectResponse struct {
 }
 
 func (r *CreateNetDetectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3046,8 +3046,8 @@ type CreateNetworkAclRequest struct {
 }
 
 func (r *CreateNetworkAclRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3078,8 +3078,8 @@ type CreateNetworkAclResponse struct {
 }
 
 func (r *CreateNetworkAclResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3117,8 +3117,8 @@ type CreateNetworkInterfaceRequest struct {
 }
 
 func (r *CreateNetworkInterfaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3155,8 +3155,8 @@ type CreateNetworkInterfaceResponse struct {
 }
 
 func (r *CreateNetworkInterfaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3179,8 +3179,8 @@ type CreateRouteTableRequest struct {
 }
 
 func (r *CreateRouteTableRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3212,8 +3212,8 @@ type CreateRouteTableResponse struct {
 }
 
 func (r *CreateRouteTableResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3233,8 +3233,8 @@ type CreateRoutesRequest struct {
 }
 
 func (r *CreateRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3268,8 +3268,8 @@ type CreateRoutesResponse struct {
 }
 
 func (r *CreateRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3289,8 +3289,8 @@ type CreateSecurityGroupPoliciesRequest struct {
 }
 
 func (r *CreateSecurityGroupPoliciesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3318,8 +3318,8 @@ type CreateSecurityGroupPoliciesResponse struct {
 }
 
 func (r *CreateSecurityGroupPoliciesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3345,8 +3345,8 @@ type CreateSecurityGroupRequest struct {
 }
 
 func (r *CreateSecurityGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3379,8 +3379,8 @@ type CreateSecurityGroupResponse struct {
 }
 
 func (r *CreateSecurityGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3406,8 +3406,8 @@ type CreateSecurityGroupWithPoliciesRequest struct {
 }
 
 func (r *CreateSecurityGroupWithPoliciesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3440,8 +3440,8 @@ type CreateSecurityGroupWithPoliciesResponse struct {
 }
 
 func (r *CreateSecurityGroupWithPoliciesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3461,8 +3461,8 @@ type CreateServiceTemplateGroupRequest struct {
 }
 
 func (r *CreateServiceTemplateGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3493,8 +3493,8 @@ type CreateServiceTemplateGroupResponse struct {
 }
 
 func (r *CreateServiceTemplateGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3514,8 +3514,8 @@ type CreateServiceTemplateRequest struct {
 }
 
 func (r *CreateServiceTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3546,8 +3546,8 @@ type CreateServiceTemplateResponse struct {
 }
 
 func (r *CreateServiceTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3579,8 +3579,8 @@ type CreateSubnetRequest struct {
 }
 
 func (r *CreateSubnetRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3615,8 +3615,8 @@ type CreateSubnetResponse struct {
 }
 
 func (r *CreateSubnetResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3642,8 +3642,8 @@ type CreateSubnetsRequest struct {
 }
 
 func (r *CreateSubnetsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3676,8 +3676,8 @@ type CreateSubnetsResponse struct {
 }
 
 func (r *CreateSubnetsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3709,8 +3709,8 @@ type CreateVpcEndPointRequest struct {
 }
 
 func (r *CreateVpcEndPointRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3745,8 +3745,8 @@ type CreateVpcEndPointResponse struct {
 }
 
 func (r *CreateVpcEndPointResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3775,8 +3775,8 @@ type CreateVpcEndPointServiceRequest struct {
 }
 
 func (r *CreateVpcEndPointServiceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3810,8 +3810,8 @@ type CreateVpcEndPointServiceResponse struct {
 }
 
 func (r *CreateVpcEndPointServiceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3834,8 +3834,8 @@ type CreateVpcEndPointServiceWhiteListRequest struct {
 }
 
 func (r *CreateVpcEndPointServiceWhiteListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3864,8 +3864,8 @@ type CreateVpcEndPointServiceWhiteListResponse struct {
 }
 
 func (r *CreateVpcEndPointServiceWhiteListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3897,8 +3897,8 @@ type CreateVpcRequest struct {
 }
 
 func (r *CreateVpcRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3933,8 +3933,8 @@ type CreateVpcResponse struct {
 }
 
 func (r *CreateVpcResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -3984,8 +3984,8 @@ type CreateVpnConnectionRequest struct {
 }
 
 func (r *CreateVpnConnectionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4026,8 +4026,8 @@ type CreateVpnConnectionResponse struct {
 }
 
 func (r *CreateVpnConnectionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4065,8 +4065,8 @@ type CreateVpnGatewayRequest struct {
 }
 
 func (r *CreateVpnGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4103,8 +4103,8 @@ type CreateVpnGatewayResponse struct {
 }
 
 func (r *CreateVpnGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4265,8 +4265,8 @@ type DeleteAddressTemplateGroupRequest struct {
 }
 
 func (r *DeleteAddressTemplateGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4293,8 +4293,8 @@ type DeleteAddressTemplateGroupResponse struct {
 }
 
 func (r *DeleteAddressTemplateGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4311,8 +4311,8 @@ type DeleteAddressTemplateRequest struct {
 }
 
 func (r *DeleteAddressTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4339,8 +4339,8 @@ type DeleteAddressTemplateResponse struct {
 }
 
 func (r *DeleteAddressTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4360,8 +4360,8 @@ type DeleteAssistantCidrRequest struct {
 }
 
 func (r *DeleteAssistantCidrRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4389,8 +4389,8 @@ type DeleteAssistantCidrResponse struct {
 }
 
 func (r *DeleteAssistantCidrResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4407,8 +4407,8 @@ type DeleteBandwidthPackageRequest struct {
 }
 
 func (r *DeleteBandwidthPackageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4435,8 +4435,8 @@ type DeleteBandwidthPackageResponse struct {
 }
 
 func (r *DeleteBandwidthPackageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4453,8 +4453,8 @@ type DeleteCcnRequest struct {
 }
 
 func (r *DeleteCcnRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4481,8 +4481,8 @@ type DeleteCcnResponse struct {
 }
 
 func (r *DeleteCcnResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4499,8 +4499,8 @@ type DeleteCustomerGatewayRequest struct {
 }
 
 func (r *DeleteCustomerGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4527,8 +4527,8 @@ type DeleteCustomerGatewayResponse struct {
 }
 
 func (r *DeleteCustomerGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4545,8 +4545,8 @@ type DeleteDhcpIpRequest struct {
 }
 
 func (r *DeleteDhcpIpRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4573,8 +4573,8 @@ type DeleteDhcpIpResponse struct {
 }
 
 func (r *DeleteDhcpIpResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4594,8 +4594,8 @@ type DeleteDirectConnectGatewayCcnRoutesRequest struct {
 }
 
 func (r *DeleteDirectConnectGatewayCcnRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4623,8 +4623,8 @@ type DeleteDirectConnectGatewayCcnRoutesResponse struct {
 }
 
 func (r *DeleteDirectConnectGatewayCcnRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4641,8 +4641,8 @@ type DeleteDirectConnectGatewayRequest struct {
 }
 
 func (r *DeleteDirectConnectGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4669,8 +4669,8 @@ type DeleteDirectConnectGatewayResponse struct {
 }
 
 func (r *DeleteDirectConnectGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4690,8 +4690,8 @@ type DeleteFlowLogRequest struct {
 }
 
 func (r *DeleteFlowLogRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4719,8 +4719,8 @@ type DeleteFlowLogResponse struct {
 }
 
 func (r *DeleteFlowLogResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4737,8 +4737,8 @@ type DeleteHaVipRequest struct {
 }
 
 func (r *DeleteHaVipRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4765,8 +4765,8 @@ type DeleteHaVipResponse struct {
 }
 
 func (r *DeleteHaVipResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4783,8 +4783,8 @@ type DeleteIp6TranslatorsRequest struct {
 }
 
 func (r *DeleteIp6TranslatorsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4811,8 +4811,8 @@ type DeleteIp6TranslatorsResponse struct {
 }
 
 func (r *DeleteIp6TranslatorsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4835,8 +4835,8 @@ type DeleteLocalGatewayRequest struct {
 }
 
 func (r *DeleteLocalGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4865,8 +4865,8 @@ type DeleteLocalGatewayResponse struct {
 }
 
 func (r *DeleteLocalGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4886,8 +4886,8 @@ type DeleteNatGatewayDestinationIpPortTranslationNatRuleRequest struct {
 }
 
 func (r *DeleteNatGatewayDestinationIpPortTranslationNatRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4915,8 +4915,8 @@ type DeleteNatGatewayDestinationIpPortTranslationNatRuleResponse struct {
 }
 
 func (r *DeleteNatGatewayDestinationIpPortTranslationNatRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4933,8 +4933,8 @@ type DeleteNatGatewayRequest struct {
 }
 
 func (r *DeleteNatGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4961,8 +4961,8 @@ type DeleteNatGatewayResponse struct {
 }
 
 func (r *DeleteNatGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -4982,8 +4982,8 @@ type DeleteNatGatewaySourceIpTranslationNatRuleRequest struct {
 }
 
 func (r *DeleteNatGatewaySourceIpTranslationNatRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5011,8 +5011,8 @@ type DeleteNatGatewaySourceIpTranslationNatRuleResponse struct {
 }
 
 func (r *DeleteNatGatewaySourceIpTranslationNatRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5029,8 +5029,8 @@ type DeleteNetDetectRequest struct {
 }
 
 func (r *DeleteNetDetectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5057,8 +5057,8 @@ type DeleteNetDetectResponse struct {
 }
 
 func (r *DeleteNetDetectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5075,8 +5075,8 @@ type DeleteNetworkAclRequest struct {
 }
 
 func (r *DeleteNetworkAclRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5103,8 +5103,8 @@ type DeleteNetworkAclResponse struct {
 }
 
 func (r *DeleteNetworkAclResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5121,8 +5121,8 @@ type DeleteNetworkInterfaceRequest struct {
 }
 
 func (r *DeleteNetworkInterfaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5149,8 +5149,8 @@ type DeleteNetworkInterfaceResponse struct {
 }
 
 func (r *DeleteNetworkInterfaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5167,8 +5167,8 @@ type DeleteRouteTableRequest struct {
 }
 
 func (r *DeleteRouteTableRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5195,8 +5195,8 @@ type DeleteRouteTableResponse struct {
 }
 
 func (r *DeleteRouteTableResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5216,8 +5216,8 @@ type DeleteRoutesRequest struct {
 }
 
 func (r *DeleteRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5248,8 +5248,8 @@ type DeleteRoutesResponse struct {
 }
 
 func (r *DeleteRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5269,8 +5269,8 @@ type DeleteSecurityGroupPoliciesRequest struct {
 }
 
 func (r *DeleteSecurityGroupPoliciesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5298,8 +5298,8 @@ type DeleteSecurityGroupPoliciesResponse struct {
 }
 
 func (r *DeleteSecurityGroupPoliciesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5316,8 +5316,8 @@ type DeleteSecurityGroupRequest struct {
 }
 
 func (r *DeleteSecurityGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5344,8 +5344,8 @@ type DeleteSecurityGroupResponse struct {
 }
 
 func (r *DeleteSecurityGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5362,8 +5362,8 @@ type DeleteServiceTemplateGroupRequest struct {
 }
 
 func (r *DeleteServiceTemplateGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5390,8 +5390,8 @@ type DeleteServiceTemplateGroupResponse struct {
 }
 
 func (r *DeleteServiceTemplateGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5408,8 +5408,8 @@ type DeleteServiceTemplateRequest struct {
 }
 
 func (r *DeleteServiceTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5436,8 +5436,8 @@ type DeleteServiceTemplateResponse struct {
 }
 
 func (r *DeleteServiceTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5454,8 +5454,8 @@ type DeleteSubnetRequest struct {
 }
 
 func (r *DeleteSubnetRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5482,8 +5482,8 @@ type DeleteSubnetResponse struct {
 }
 
 func (r *DeleteSubnetResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5500,8 +5500,8 @@ type DeleteVpcEndPointRequest struct {
 }
 
 func (r *DeleteVpcEndPointRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5528,8 +5528,8 @@ type DeleteVpcEndPointResponse struct {
 }
 
 func (r *DeleteVpcEndPointResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5546,8 +5546,8 @@ type DeleteVpcEndPointServiceRequest struct {
 }
 
 func (r *DeleteVpcEndPointServiceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5574,8 +5574,8 @@ type DeleteVpcEndPointServiceResponse struct {
 }
 
 func (r *DeleteVpcEndPointServiceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5595,8 +5595,8 @@ type DeleteVpcEndPointServiceWhiteListRequest struct {
 }
 
 func (r *DeleteVpcEndPointServiceWhiteListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5624,8 +5624,8 @@ type DeleteVpcEndPointServiceWhiteListResponse struct {
 }
 
 func (r *DeleteVpcEndPointServiceWhiteListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5642,8 +5642,8 @@ type DeleteVpcRequest struct {
 }
 
 func (r *DeleteVpcRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5670,8 +5670,8 @@ type DeleteVpcResponse struct {
 }
 
 func (r *DeleteVpcResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5691,8 +5691,8 @@ type DeleteVpnConnectionRequest struct {
 }
 
 func (r *DeleteVpnConnectionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5720,8 +5720,8 @@ type DeleteVpnConnectionResponse struct {
 }
 
 func (r *DeleteVpnConnectionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5738,8 +5738,8 @@ type DeleteVpnGatewayRequest struct {
 }
 
 func (r *DeleteVpnGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5766,8 +5766,8 @@ type DeleteVpnGatewayResponse struct {
 }
 
 func (r *DeleteVpnGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5781,8 +5781,8 @@ type DescribeAccountAttributesRequest struct {
 }
 
 func (r *DescribeAccountAttributesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5811,8 +5811,8 @@ type DescribeAccountAttributesResponse struct {
 }
 
 func (r *DescribeAccountAttributesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5826,8 +5826,8 @@ type DescribeAddressQuotaRequest struct {
 }
 
 func (r *DescribeAddressQuotaRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5856,8 +5856,8 @@ type DescribeAddressQuotaResponse struct {
 }
 
 func (r *DescribeAddressQuotaResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5882,8 +5882,8 @@ type DescribeAddressTemplateGroupsRequest struct {
 }
 
 func (r *DescribeAddressTemplateGroupsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5918,8 +5918,8 @@ type DescribeAddressTemplateGroupsResponse struct {
 }
 
 func (r *DescribeAddressTemplateGroupsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5944,8 +5944,8 @@ type DescribeAddressTemplatesRequest struct {
 }
 
 func (r *DescribeAddressTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -5980,8 +5980,8 @@ type DescribeAddressTemplatesResponse struct {
 }
 
 func (r *DescribeAddressTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6018,8 +6018,8 @@ type DescribeAddressesRequest struct {
 }
 
 func (r *DescribeAddressesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6055,8 +6055,8 @@ type DescribeAddressesResponse struct {
 }
 
 func (r *DescribeAddressesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6083,8 +6083,8 @@ type DescribeAssistantCidrRequest struct {
 }
 
 func (r *DescribeAssistantCidrRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6109,7 +6109,7 @@ type DescribeAssistantCidrResponse struct {
 	Response *struct {
 
 		// 符合条件的辅助CIDR数组。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AssistantCidrSet []*AssistantCidr `json:"AssistantCidrSet,omitempty" name:"AssistantCidrSet" list`
 
 		// 符合条件的实例数量。
@@ -6121,8 +6121,8 @@ type DescribeAssistantCidrResponse struct {
 }
 
 func (r *DescribeAssistantCidrResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6139,8 +6139,8 @@ type DescribeBandwidthPackageBillUsageRequest struct {
 }
 
 func (r *DescribeBandwidthPackageBillUsageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6170,8 +6170,8 @@ type DescribeBandwidthPackageBillUsageResponse struct {
 }
 
 func (r *DescribeBandwidthPackageBillUsageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6185,8 +6185,8 @@ type DescribeBandwidthPackageQuotaRequest struct {
 }
 
 func (r *DescribeBandwidthPackageQuotaRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6215,8 +6215,8 @@ type DescribeBandwidthPackageQuotaResponse struct {
 }
 
 func (r *DescribeBandwidthPackageQuotaResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6244,8 +6244,8 @@ type DescribeBandwidthPackageResourcesRequest struct {
 }
 
 func (r *DescribeBandwidthPackageResourcesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6281,8 +6281,8 @@ type DescribeBandwidthPackageResourcesResponse struct {
 }
 
 func (r *DescribeBandwidthPackageResourcesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6315,8 +6315,8 @@ type DescribeBandwidthPackagesRequest struct {
 }
 
 func (r *DescribeBandwidthPackagesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6352,8 +6352,8 @@ type DescribeBandwidthPackagesResponse struct {
 }
 
 func (r *DescribeBandwidthPackagesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6389,8 +6389,8 @@ type DescribeCcnAttachedInstancesRequest struct {
 }
 
 func (r *DescribeCcnAttachedInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6428,8 +6428,8 @@ type DescribeCcnAttachedInstancesResponse struct {
 }
 
 func (r *DescribeCcnAttachedInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6446,8 +6446,8 @@ type DescribeCcnRegionBandwidthLimitsRequest struct {
 }
 
 func (r *DescribeCcnRegionBandwidthLimitsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6477,8 +6477,8 @@ type DescribeCcnRegionBandwidthLimitsResponse struct {
 }
 
 func (r *DescribeCcnRegionBandwidthLimitsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6512,8 +6512,8 @@ type DescribeCcnRoutesRequest struct {
 }
 
 func (r *DescribeCcnRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6550,8 +6550,8 @@ type DescribeCcnRoutesResponse struct {
 }
 
 func (r *DescribeCcnRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6589,8 +6589,8 @@ type DescribeCcnsRequest struct {
 }
 
 func (r *DescribeCcnsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6628,8 +6628,8 @@ type DescribeCcnsResponse struct {
 }
 
 func (r *DescribeCcnsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6654,8 +6654,8 @@ type DescribeClassicLinkInstancesRequest struct {
 }
 
 func (r *DescribeClassicLinkInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6690,8 +6690,8 @@ type DescribeClassicLinkInstancesResponse struct {
 }
 
 func (r *DescribeClassicLinkInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6753,8 +6753,8 @@ type DescribeCrossBorderComplianceRequest struct {
 }
 
 func (r *DescribeCrossBorderComplianceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6802,8 +6802,8 @@ type DescribeCrossBorderComplianceResponse struct {
 }
 
 func (r *DescribeCrossBorderComplianceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6817,8 +6817,8 @@ type DescribeCustomerGatewayVendorsRequest struct {
 }
 
 func (r *DescribeCustomerGatewayVendorsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6847,8 +6847,8 @@ type DescribeCustomerGatewayVendorsResponse struct {
 }
 
 func (r *DescribeCustomerGatewayVendorsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6877,8 +6877,8 @@ type DescribeCustomerGatewaysRequest struct {
 }
 
 func (r *DescribeCustomerGatewaysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6914,8 +6914,8 @@ type DescribeCustomerGatewaysResponse struct {
 }
 
 func (r *DescribeCustomerGatewaysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6946,8 +6946,8 @@ type DescribeDhcpIpsRequest struct {
 }
 
 func (r *DescribeDhcpIpsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -6983,8 +6983,8 @@ type DescribeDhcpIpsResponse struct {
 }
 
 func (r *DescribeDhcpIpsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7012,8 +7012,8 @@ type DescribeDirectConnectGatewayCcnRoutesRequest struct {
 }
 
 func (r *DescribeDirectConnectGatewayCcnRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7049,8 +7049,8 @@ type DescribeDirectConnectGatewayCcnRoutesResponse struct {
 }
 
 func (r *DescribeDirectConnectGatewayCcnRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7083,8 +7083,8 @@ type DescribeDirectConnectGatewaysRequest struct {
 }
 
 func (r *DescribeDirectConnectGatewaysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7120,8 +7120,8 @@ type DescribeDirectConnectGatewaysResponse struct {
 }
 
 func (r *DescribeDirectConnectGatewaysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7141,8 +7141,8 @@ type DescribeFlowLogRequest struct {
 }
 
 func (r *DescribeFlowLogRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7173,8 +7173,8 @@ type DescribeFlowLogResponse struct {
 }
 
 func (r *DescribeFlowLogResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7229,8 +7229,8 @@ type DescribeFlowLogsRequest struct {
 }
 
 func (r *DescribeFlowLogsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7275,8 +7275,8 @@ type DescribeFlowLogsResponse struct {
 }
 
 func (r *DescribeFlowLogsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7317,8 +7317,8 @@ type DescribeGatewayFlowMonitorDetailRequest struct {
 }
 
 func (r *DescribeGatewayFlowMonitorDetailRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7359,8 +7359,8 @@ type DescribeGatewayFlowMonitorDetailResponse struct {
 }
 
 func (r *DescribeGatewayFlowMonitorDetailResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7389,8 +7389,8 @@ type DescribeGatewayFlowQosRequest struct {
 }
 
 func (r *DescribeGatewayFlowQosRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7426,8 +7426,8 @@ type DescribeGatewayFlowQosResponse struct {
 }
 
 func (r *DescribeGatewayFlowQosResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7459,8 +7459,8 @@ type DescribeHaVipsRequest struct {
 }
 
 func (r *DescribeHaVipsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7496,8 +7496,8 @@ type DescribeHaVipsResponse struct {
 }
 
 func (r *DescribeHaVipsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7525,8 +7525,8 @@ type DescribeIp6AddressesRequest struct {
 }
 
 func (r *DescribeIp6AddressesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7562,8 +7562,8 @@ type DescribeIp6AddressesResponse struct {
 }
 
 func (r *DescribeIp6AddressesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7580,8 +7580,8 @@ type DescribeIp6TranslatorQuotaRequest struct {
 }
 
 func (r *DescribeIp6TranslatorQuotaRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7603,7 +7603,7 @@ type DescribeIp6TranslatorQuotaResponse struct {
 	Response *struct {
 
 		// 账户在指定地域的IPV6转换实例及规则配额信息
-	// QUOTAID属性是TOTAL_TRANSLATOR_QUOTA，表示账户在指定地域的IPV6转换实例配额信息；QUOTAID属性是IPV6转换实例唯一ID（形如ip6-xxxxxxxx），表示账户在该转换实例允许创建的转换规则配额
+		// QUOTAID属性是TOTAL_TRANSLATOR_QUOTA，表示账户在指定地域的IPV6转换实例配额信息；QUOTAID属性是IPV6转换实例唯一ID（形如ip6-xxxxxxxx），表示账户在该转换实例允许创建的转换规则配额
 		QuotaSet []*Quota `json:"QuotaSet,omitempty" name:"QuotaSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -7612,8 +7612,8 @@ type DescribeIp6TranslatorQuotaResponse struct {
 }
 
 func (r *DescribeIp6TranslatorQuotaResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7643,8 +7643,8 @@ type DescribeIp6TranslatorsRequest struct {
 }
 
 func (r *DescribeIp6TranslatorsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7680,8 +7680,8 @@ type DescribeIp6TranslatorsResponse struct {
 }
 
 func (r *DescribeIp6TranslatorsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7698,8 +7698,8 @@ type DescribeIpGeolocationDatabaseUrlRequest struct {
 }
 
 func (r *DescribeIpGeolocationDatabaseUrlRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7732,8 +7732,8 @@ type DescribeIpGeolocationDatabaseUrlResponse struct {
 }
 
 func (r *DescribeIpGeolocationDatabaseUrlResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7753,8 +7753,8 @@ type DescribeIpGeolocationInfosRequest struct {
 }
 
 func (r *DescribeIpGeolocationInfosRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7788,8 +7788,8 @@ type DescribeIpGeolocationInfosResponse struct {
 }
 
 func (r *DescribeIpGeolocationInfosResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7813,8 +7813,8 @@ type DescribeLocalGatewayRequest struct {
 }
 
 func (r *DescribeLocalGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7849,8 +7849,8 @@ type DescribeLocalGatewayResponse struct {
 }
 
 func (r *DescribeLocalGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7884,8 +7884,8 @@ type DescribeNatGatewayDestinationIpPortTranslationNatRulesRequest struct {
 }
 
 func (r *DescribeNatGatewayDestinationIpPortTranslationNatRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7921,8 +7921,8 @@ type DescribeNatGatewayDestinationIpPortTranslationNatRulesResponse struct {
 }
 
 func (r *DescribeNatGatewayDestinationIpPortTranslationNatRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7951,8 +7951,8 @@ type DescribeNatGatewaySourceIpTranslationNatRulesRequest struct {
 }
 
 func (r *DescribeNatGatewaySourceIpTranslationNatRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -7977,7 +7977,7 @@ type DescribeNatGatewaySourceIpTranslationNatRulesResponse struct {
 	Response *struct {
 
 		// NAT网关SNAT规则对象数组。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SourceIpTranslationNatRuleSet []*SourceIpTranslationNatRule `json:"SourceIpTranslationNatRuleSet,omitempty" name:"SourceIpTranslationNatRuleSet" list`
 
 		// 符合条件的NAT网关端口转发规则对象数目。
@@ -7989,8 +7989,8 @@ type DescribeNatGatewaySourceIpTranslationNatRulesResponse struct {
 }
 
 func (r *DescribeNatGatewaySourceIpTranslationNatRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8020,8 +8020,8 @@ type DescribeNatGatewaysRequest struct {
 }
 
 func (r *DescribeNatGatewaysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8057,8 +8057,8 @@ type DescribeNatGatewaysResponse struct {
 }
 
 func (r *DescribeNatGatewaysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8085,8 +8085,8 @@ type DescribeNetDetectStatesRequest struct {
 }
 
 func (r *DescribeNetDetectStatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8111,11 +8111,11 @@ type DescribeNetDetectStatesResponse struct {
 	Response *struct {
 
 		// 符合条件的网络探测验证结果对象数组。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		NetDetectStateSet []*NetDetectState `json:"NetDetectStateSet,omitempty" name:"NetDetectStateSet" list`
 
 		// 符合条件的网络探测验证结果对象数量。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -8124,8 +8124,8 @@ type DescribeNetDetectStatesResponse struct {
 }
 
 func (r *DescribeNetDetectStatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8155,8 +8155,8 @@ type DescribeNetDetectsRequest struct {
 }
 
 func (r *DescribeNetDetectsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8181,11 +8181,11 @@ type DescribeNetDetectsResponse struct {
 	Response *struct {
 
 		// 符合条件的网络探测对象数组。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		NetDetectSet []*NetDetect `json:"NetDetectSet,omitempty" name:"NetDetectSet" list`
 
 		// 符合条件的网络探测对象数量。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -8194,8 +8194,8 @@ type DescribeNetDetectsResponse struct {
 }
 
 func (r *DescribeNetDetectsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8224,8 +8224,8 @@ type DescribeNetworkAclsRequest struct {
 }
 
 func (r *DescribeNetworkAclsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8261,8 +8261,8 @@ type DescribeNetworkAclsResponse struct {
 }
 
 func (r *DescribeNetworkAclsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8279,8 +8279,8 @@ type DescribeNetworkInterfaceLimitRequest struct {
 }
 
 func (r *DescribeNetworkInterfaceLimitRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8313,8 +8313,8 @@ type DescribeNetworkInterfaceLimitResponse struct {
 }
 
 func (r *DescribeNetworkInterfaceLimitResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8352,8 +8352,8 @@ type DescribeNetworkInterfacesRequest struct {
 }
 
 func (r *DescribeNetworkInterfacesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8389,8 +8389,8 @@ type DescribeNetworkInterfacesResponse struct {
 }
 
 func (r *DescribeNetworkInterfacesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8407,8 +8407,8 @@ type DescribeProductQuotaRequest struct {
 }
 
 func (r *DescribeProductQuotaRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8441,8 +8441,8 @@ type DescribeProductQuotaResponse struct {
 }
 
 func (r *DescribeProductQuotaResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8462,8 +8462,8 @@ type DescribeRouteConflictsRequest struct {
 }
 
 func (r *DescribeRouteConflictsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8494,8 +8494,8 @@ type DescribeRouteConflictsResponse struct {
 }
 
 func (r *DescribeRouteConflictsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8527,8 +8527,8 @@ type DescribeRouteTablesRequest struct {
 }
 
 func (r *DescribeRouteTablesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8564,8 +8564,8 @@ type DescribeRouteTablesResponse struct {
 }
 
 func (r *DescribeRouteTablesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8582,8 +8582,8 @@ type DescribeSecurityGroupAssociationStatisticsRequest struct {
 }
 
 func (r *DescribeSecurityGroupAssociationStatisticsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8613,8 +8613,8 @@ type DescribeSecurityGroupAssociationStatisticsResponse struct {
 }
 
 func (r *DescribeSecurityGroupAssociationStatisticsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8628,8 +8628,8 @@ type DescribeSecurityGroupLimitsRequest struct {
 }
 
 func (r *DescribeSecurityGroupLimitsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8658,8 +8658,8 @@ type DescribeSecurityGroupLimitsResponse struct {
 }
 
 func (r *DescribeSecurityGroupLimitsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8676,8 +8676,8 @@ type DescribeSecurityGroupPoliciesRequest struct {
 }
 
 func (r *DescribeSecurityGroupPoliciesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8707,8 +8707,8 @@ type DescribeSecurityGroupPoliciesResponse struct {
 }
 
 func (r *DescribeSecurityGroupPoliciesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8725,8 +8725,8 @@ type DescribeSecurityGroupReferencesRequest struct {
 }
 
 func (r *DescribeSecurityGroupReferencesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8756,8 +8756,8 @@ type DescribeSecurityGroupReferencesResponse struct {
 }
 
 func (r *DescribeSecurityGroupReferencesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8788,8 +8788,8 @@ type DescribeSecurityGroupsRequest struct {
 }
 
 func (r *DescribeSecurityGroupsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8814,7 +8814,7 @@ type DescribeSecurityGroupsResponse struct {
 	Response *struct {
 
 		// 安全组对象。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SecurityGroupSet []*SecurityGroup `json:"SecurityGroupSet,omitempty" name:"SecurityGroupSet" list`
 
 		// 符合条件的实例数量。
@@ -8826,8 +8826,8 @@ type DescribeSecurityGroupsResponse struct {
 }
 
 func (r *DescribeSecurityGroupsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8852,8 +8852,8 @@ type DescribeServiceTemplateGroupsRequest struct {
 }
 
 func (r *DescribeServiceTemplateGroupsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8888,8 +8888,8 @@ type DescribeServiceTemplateGroupsResponse struct {
 }
 
 func (r *DescribeServiceTemplateGroupsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8914,8 +8914,8 @@ type DescribeServiceTemplatesRequest struct {
 }
 
 func (r *DescribeServiceTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8950,8 +8950,8 @@ type DescribeServiceTemplatesResponse struct {
 }
 
 func (r *DescribeServiceTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -8986,8 +8986,8 @@ type DescribeSubnetsRequest struct {
 }
 
 func (r *DescribeSubnetsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9023,8 +9023,8 @@ type DescribeSubnetsResponse struct {
 }
 
 func (r *DescribeSubnetsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9044,8 +9044,8 @@ type DescribeTaskResultRequest struct {
 }
 
 func (r *DescribeTaskResultRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9079,8 +9079,8 @@ type DescribeTaskResultResponse struct {
 }
 
 func (r *DescribeTaskResultResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9094,8 +9094,8 @@ type DescribeTemplateLimitsRequest struct {
 }
 
 func (r *DescribeTemplateLimitsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9124,8 +9124,8 @@ type DescribeTemplateLimitsResponse struct {
 }
 
 func (r *DescribeTemplateLimitsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9155,8 +9155,8 @@ type DescribeVpcEndPointRequest struct {
 }
 
 func (r *DescribeVpcEndPointRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9192,8 +9192,8 @@ type DescribeVpcEndPointResponse struct {
 }
 
 func (r *DescribeVpcEndPointResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9222,8 +9222,8 @@ type DescribeVpcEndPointServiceRequest struct {
 }
 
 func (r *DescribeVpcEndPointServiceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9259,8 +9259,8 @@ type DescribeVpcEndPointServiceResponse struct {
 }
 
 func (r *DescribeVpcEndPointServiceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9285,8 +9285,8 @@ type DescribeVpcEndPointServiceWhiteListRequest struct {
 }
 
 func (r *DescribeVpcEndPointServiceWhiteListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9321,8 +9321,8 @@ type DescribeVpcEndPointServiceWhiteListResponse struct {
 }
 
 func (r *DescribeVpcEndPointServiceWhiteListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9348,8 +9348,8 @@ type DescribeVpcInstancesRequest struct {
 }
 
 func (r *DescribeVpcInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9384,8 +9384,8 @@ type DescribeVpcInstancesResponse struct {
 }
 
 func (r *DescribeVpcInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9411,8 +9411,8 @@ type DescribeVpcIpv6AddressesRequest struct {
 }
 
 func (r *DescribeVpcIpv6AddressesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9448,8 +9448,8 @@ type DescribeVpcIpv6AddressesResponse struct {
 }
 
 func (r *DescribeVpcIpv6AddressesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9466,8 +9466,8 @@ type DescribeVpcLimitsRequest struct {
 }
 
 func (r *DescribeVpcLimitsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9497,8 +9497,8 @@ type DescribeVpcLimitsResponse struct {
 }
 
 func (r *DescribeVpcLimitsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9518,8 +9518,8 @@ type DescribeVpcPrivateIpAddressesRequest struct {
 }
 
 func (r *DescribeVpcPrivateIpAddressesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9550,8 +9550,8 @@ type DescribeVpcPrivateIpAddressesResponse struct {
 }
 
 func (r *DescribeVpcPrivateIpAddressesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9568,8 +9568,8 @@ type DescribeVpcResourceDashboardRequest struct {
 }
 
 func (r *DescribeVpcResourceDashboardRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9599,8 +9599,8 @@ type DescribeVpcResourceDashboardResponse struct {
 }
 
 func (r *DescribeVpcResourceDashboardResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9632,8 +9632,8 @@ type DescribeVpcsRequest struct {
 }
 
 func (r *DescribeVpcsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9669,8 +9669,8 @@ type DescribeVpcsResponse struct {
 }
 
 func (r *DescribeVpcsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9701,8 +9701,8 @@ type DescribeVpnConnectionsRequest struct {
 }
 
 func (r *DescribeVpnConnectionsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9738,8 +9738,8 @@ type DescribeVpnConnectionsResponse struct {
 }
 
 func (r *DescribeVpnConnectionsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9762,8 +9762,8 @@ type DescribeVpnGatewayCcnRoutesRequest struct {
 }
 
 func (r *DescribeVpnGatewayCcnRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9798,8 +9798,8 @@ type DescribeVpnGatewayCcnRoutesResponse struct {
 }
 
 func (r *DescribeVpnGatewayCcnRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9832,8 +9832,8 @@ type DescribeVpnGatewaysRequest struct {
 }
 
 func (r *DescribeVpnGatewaysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9869,8 +9869,8 @@ type DescribeVpnGatewaysResponse struct {
 }
 
 func (r *DescribeVpnGatewaysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9911,8 +9911,8 @@ type DetachCcnInstancesRequest struct {
 }
 
 func (r *DetachCcnInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9940,8 +9940,8 @@ type DetachCcnInstancesResponse struct {
 }
 
 func (r *DetachCcnInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9961,8 +9961,8 @@ type DetachClassicLinkVpcRequest struct {
 }
 
 func (r *DetachClassicLinkVpcRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -9990,8 +9990,8 @@ type DetachClassicLinkVpcResponse struct {
 }
 
 func (r *DetachClassicLinkVpcResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10011,8 +10011,8 @@ type DetachNetworkInterfaceRequest struct {
 }
 
 func (r *DetachNetworkInterfaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10040,8 +10040,8 @@ type DetachNetworkInterfaceResponse struct {
 }
 
 func (r *DetachNetworkInterfaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10168,8 +10168,8 @@ type DisableCcnRoutesRequest struct {
 }
 
 func (r *DisableCcnRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10197,8 +10197,8 @@ type DisableCcnRoutesResponse struct {
 }
 
 func (r *DisableCcnRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10218,8 +10218,8 @@ type DisableGatewayFlowMonitorRequest struct {
 }
 
 func (r *DisableGatewayFlowMonitorRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10246,8 +10246,8 @@ type DisableGatewayFlowMonitorResponse struct {
 }
 
 func (r *DisableGatewayFlowMonitorResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10270,8 +10270,8 @@ type DisableRoutesRequest struct {
 }
 
 func (r *DisableRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10300,8 +10300,8 @@ type DisableRoutesResponse struct {
 }
 
 func (r *DisableRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10321,8 +10321,8 @@ type DisassociateAddressRequest struct {
 }
 
 func (r *DisassociateAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10353,8 +10353,8 @@ type DisassociateAddressResponse struct {
 }
 
 func (r *DisassociateAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10371,8 +10371,8 @@ type DisassociateDhcpIpWithAddressIpRequest struct {
 }
 
 func (r *DisassociateDhcpIpWithAddressIpRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10399,8 +10399,8 @@ type DisassociateDhcpIpWithAddressIpResponse struct {
 }
 
 func (r *DisassociateDhcpIpWithAddressIpResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10423,8 +10423,8 @@ type DisassociateDirectConnectGatewayNatGatewayRequest struct {
 }
 
 func (r *DisassociateDirectConnectGatewayNatGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10453,8 +10453,8 @@ type DisassociateDirectConnectGatewayNatGatewayResponse struct {
 }
 
 func (r *DisassociateDirectConnectGatewayNatGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10474,8 +10474,8 @@ type DisassociateNatGatewayAddressRequest struct {
 }
 
 func (r *DisassociateNatGatewayAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10503,8 +10503,8 @@ type DisassociateNatGatewayAddressResponse struct {
 }
 
 func (r *DisassociateNatGatewayAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10524,8 +10524,8 @@ type DisassociateNetworkAclSubnetsRequest struct {
 }
 
 func (r *DisassociateNetworkAclSubnetsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10553,8 +10553,8 @@ type DisassociateNetworkAclSubnetsResponse struct {
 }
 
 func (r *DisassociateNetworkAclSubnetsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10574,8 +10574,8 @@ type DisassociateNetworkInterfaceSecurityGroupsRequest struct {
 }
 
 func (r *DisassociateNetworkInterfaceSecurityGroupsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10603,8 +10603,8 @@ type DisassociateNetworkInterfaceSecurityGroupsResponse struct {
 }
 
 func (r *DisassociateNetworkInterfaceSecurityGroupsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10624,8 +10624,8 @@ type DisassociateVpcEndPointSecurityGroupsRequest struct {
 }
 
 func (r *DisassociateVpcEndPointSecurityGroupsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10653,8 +10653,8 @@ type DisassociateVpcEndPointSecurityGroupsResponse struct {
 }
 
 func (r *DisassociateVpcEndPointSecurityGroupsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10680,8 +10680,8 @@ type DownloadCustomerGatewayConfigurationRequest struct {
 }
 
 func (r *DownloadCustomerGatewayConfigurationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10714,8 +10714,8 @@ type DownloadCustomerGatewayConfigurationResponse struct {
 }
 
 func (r *DownloadCustomerGatewayConfigurationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10735,8 +10735,8 @@ type EnableCcnRoutesRequest struct {
 }
 
 func (r *EnableCcnRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10764,8 +10764,8 @@ type EnableCcnRoutesResponse struct {
 }
 
 func (r *EnableCcnRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10785,8 +10785,8 @@ type EnableGatewayFlowMonitorRequest struct {
 }
 
 func (r *EnableGatewayFlowMonitorRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10813,8 +10813,8 @@ type EnableGatewayFlowMonitorResponse struct {
 }
 
 func (r *EnableGatewayFlowMonitorResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10837,8 +10837,8 @@ type EnableRoutesRequest struct {
 }
 
 func (r *EnableRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10867,8 +10867,8 @@ type EnableRoutesResponse struct {
 }
 
 func (r *EnableRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10891,8 +10891,8 @@ type EnableVpcEndPointConnectRequest struct {
 }
 
 func (r *EnableVpcEndPointConnectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -10921,8 +10921,8 @@ type EnableVpcEndPointConnectResponse struct {
 }
 
 func (r *EnableVpcEndPointConnectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11121,8 +11121,8 @@ type GetCcnRegionBandwidthLimitsRequest struct {
 }
 
 func (r *GetCcnRegionBandwidthLimitsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11149,11 +11149,11 @@ type GetCcnRegionBandwidthLimitsResponse struct {
 	Response *struct {
 
 		// 云联网（CCN）各地域出带宽带宽详情。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CcnBandwidthSet []*CcnBandwidthInfo `json:"CcnBandwidthSet,omitempty" name:"CcnBandwidthSet" list`
 
 		// 符合条件的对象数。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -11162,8 +11162,8 @@ type GetCcnRegionBandwidthLimitsResponse struct {
 }
 
 func (r *GetCcnRegionBandwidthLimitsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11221,8 +11221,8 @@ type HaVipAssociateAddressIpRequest struct {
 }
 
 func (r *HaVipAssociateAddressIpRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11250,8 +11250,8 @@ type HaVipAssociateAddressIpResponse struct {
 }
 
 func (r *HaVipAssociateAddressIpResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11268,8 +11268,8 @@ type HaVipDisassociateAddressIpRequest struct {
 }
 
 func (r *HaVipDisassociateAddressIpRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11296,8 +11296,8 @@ type HaVipDisassociateAddressIpResponse struct {
 }
 
 func (r *HaVipDisassociateAddressIpResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11368,8 +11368,8 @@ type InquirePriceCreateDirectConnectGatewayRequest struct {
 }
 
 func (r *InquirePriceCreateDirectConnectGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11390,11 +11390,11 @@ type InquirePriceCreateDirectConnectGatewayResponse struct {
 	Response *struct {
 
 		// 专线网关标准接入费用
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCost *int64 `json:"TotalCost,omitempty" name:"TotalCost"`
 
 		// 专线网关真实接入费用
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RealTotalCost *int64 `json:"RealTotalCost,omitempty" name:"RealTotalCost"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -11403,8 +11403,8 @@ type InquirePriceCreateDirectConnectGatewayResponse struct {
 }
 
 func (r *InquirePriceCreateDirectConnectGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11427,8 +11427,8 @@ type InquiryPriceCreateVpnGatewayRequest struct {
 }
 
 func (r *InquiryPriceCreateVpnGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11460,8 +11460,8 @@ type InquiryPriceCreateVpnGatewayResponse struct {
 }
 
 func (r *InquiryPriceCreateVpnGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11481,8 +11481,8 @@ type InquiryPriceRenewVpnGatewayRequest struct {
 }
 
 func (r *InquiryPriceRenewVpnGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11513,8 +11513,8 @@ type InquiryPriceRenewVpnGatewayResponse struct {
 }
 
 func (r *InquiryPriceRenewVpnGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11534,8 +11534,8 @@ type InquiryPriceResetVpnGatewayInternetMaxBandwidthRequest struct {
 }
 
 func (r *InquiryPriceResetVpnGatewayInternetMaxBandwidthRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11566,8 +11566,8 @@ type InquiryPriceResetVpnGatewayInternetMaxBandwidthResponse struct {
 }
 
 func (r *InquiryPriceResetVpnGatewayInternetMaxBandwidthResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11816,8 +11816,8 @@ type MigrateNetworkInterfaceRequest struct {
 }
 
 func (r *MigrateNetworkInterfaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11846,8 +11846,8 @@ type MigrateNetworkInterfaceResponse struct {
 }
 
 func (r *MigrateNetworkInterfaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11870,8 +11870,8 @@ type MigratePrivateIpAddressRequest struct {
 }
 
 func (r *MigratePrivateIpAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11900,8 +11900,8 @@ type MigratePrivateIpAddressResponse struct {
 }
 
 func (r *MigratePrivateIpAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11924,8 +11924,8 @@ type ModifyAddressAttributeRequest struct {
 }
 
 func (r *ModifyAddressAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11954,8 +11954,8 @@ type ModifyAddressAttributeResponse struct {
 }
 
 func (r *ModifyAddressAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -11981,8 +11981,8 @@ type ModifyAddressInternetChargeTypeRequest struct {
 }
 
 func (r *ModifyAddressInternetChargeTypeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12012,8 +12012,8 @@ type ModifyAddressInternetChargeTypeResponse struct {
 }
 
 func (r *ModifyAddressInternetChargeTypeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12036,8 +12036,8 @@ type ModifyAddressTemplateAttributeRequest struct {
 }
 
 func (r *ModifyAddressTemplateAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12066,8 +12066,8 @@ type ModifyAddressTemplateAttributeResponse struct {
 }
 
 func (r *ModifyAddressTemplateAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12090,8 +12090,8 @@ type ModifyAddressTemplateGroupAttributeRequest struct {
 }
 
 func (r *ModifyAddressTemplateGroupAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12120,8 +12120,8 @@ type ModifyAddressTemplateGroupAttributeResponse struct {
 }
 
 func (r *ModifyAddressTemplateGroupAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12147,8 +12147,8 @@ type ModifyAddressesBandwidthRequest struct {
 }
 
 func (r *ModifyAddressesBandwidthRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12181,8 +12181,8 @@ type ModifyAddressesBandwidthResponse struct {
 }
 
 func (r *ModifyAddressesBandwidthResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12205,8 +12205,8 @@ type ModifyAssistantCidrRequest struct {
 }
 
 func (r *ModifyAssistantCidrRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12230,7 +12230,7 @@ type ModifyAssistantCidrResponse struct {
 	Response *struct {
 
 		// 辅助CIDR数组。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AssistantCidrSet []*AssistantCidr `json:"AssistantCidrSet,omitempty" name:"AssistantCidrSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -12239,8 +12239,8 @@ type ModifyAssistantCidrResponse struct {
 }
 
 func (r *ModifyAssistantCidrResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12263,8 +12263,8 @@ type ModifyBandwidthPackageAttributeRequest struct {
 }
 
 func (r *ModifyBandwidthPackageAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12293,8 +12293,8 @@ type ModifyBandwidthPackageAttributeResponse struct {
 }
 
 func (r *ModifyBandwidthPackageAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12314,8 +12314,8 @@ type ModifyCcnAttachedInstancesAttributeRequest struct {
 }
 
 func (r *ModifyCcnAttachedInstancesAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12343,8 +12343,8 @@ type ModifyCcnAttachedInstancesAttributeResponse struct {
 }
 
 func (r *ModifyCcnAttachedInstancesAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12367,8 +12367,8 @@ type ModifyCcnAttributeRequest struct {
 }
 
 func (r *ModifyCcnAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12397,8 +12397,8 @@ type ModifyCcnAttributeResponse struct {
 }
 
 func (r *ModifyCcnAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12418,8 +12418,8 @@ type ModifyCcnRegionBandwidthLimitsTypeRequest struct {
 }
 
 func (r *ModifyCcnRegionBandwidthLimitsTypeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12447,8 +12447,8 @@ type ModifyCcnRegionBandwidthLimitsTypeResponse struct {
 }
 
 func (r *ModifyCcnRegionBandwidthLimitsTypeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12468,8 +12468,8 @@ type ModifyCustomerGatewayAttributeRequest struct {
 }
 
 func (r *ModifyCustomerGatewayAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12497,8 +12497,8 @@ type ModifyCustomerGatewayAttributeResponse struct {
 }
 
 func (r *ModifyCustomerGatewayAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12518,8 +12518,8 @@ type ModifyDhcpIpAttributeRequest struct {
 }
 
 func (r *ModifyDhcpIpAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12547,8 +12547,8 @@ type ModifyDhcpIpAttributeResponse struct {
 }
 
 func (r *ModifyDhcpIpAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12574,8 +12574,8 @@ type ModifyDirectConnectGatewayAttributeRequest struct {
 }
 
 func (r *ModifyDirectConnectGatewayAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12605,8 +12605,8 @@ type ModifyDirectConnectGatewayAttributeResponse struct {
 }
 
 func (r *ModifyDirectConnectGatewayAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12632,8 +12632,8 @@ type ModifyFlowLogAttributeRequest struct {
 }
 
 func (r *ModifyFlowLogAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12663,8 +12663,8 @@ type ModifyFlowLogAttributeResponse struct {
 }
 
 func (r *ModifyFlowLogAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12690,8 +12690,8 @@ type ModifyGatewayFlowQosRequest struct {
 }
 
 func (r *ModifyGatewayFlowQosRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12720,8 +12720,8 @@ type ModifyGatewayFlowQosResponse struct {
 }
 
 func (r *ModifyGatewayFlowQosResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12741,8 +12741,8 @@ type ModifyHaVipAttributeRequest struct {
 }
 
 func (r *ModifyHaVipAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12770,8 +12770,8 @@ type ModifyHaVipAttributeResponse struct {
 }
 
 func (r *ModifyHaVipAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12794,8 +12794,8 @@ type ModifyIp6AddressesBandwidthRequest struct {
 }
 
 func (r *ModifyIp6AddressesBandwidthRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12824,8 +12824,8 @@ type ModifyIp6AddressesBandwidthResponse struct {
 }
 
 func (r *ModifyIp6AddressesBandwidthResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12854,8 +12854,8 @@ type ModifyIp6RuleRequest struct {
 }
 
 func (r *ModifyIp6RuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12886,8 +12886,8 @@ type ModifyIp6RuleResponse struct {
 }
 
 func (r *ModifyIp6RuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12907,8 +12907,8 @@ type ModifyIp6TranslatorRequest struct {
 }
 
 func (r *ModifyIp6TranslatorRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12936,8 +12936,8 @@ type ModifyIp6TranslatorResponse struct {
 }
 
 func (r *ModifyIp6TranslatorResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12957,8 +12957,8 @@ type ModifyIpv6AddressesAttributeRequest struct {
 }
 
 func (r *ModifyIpv6AddressesAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -12986,8 +12986,8 @@ type ModifyIpv6AddressesAttributeResponse struct {
 }
 
 func (r *ModifyIpv6AddressesAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13013,8 +13013,8 @@ type ModifyLocalGatewayRequest struct {
 }
 
 func (r *ModifyLocalGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13044,8 +13044,8 @@ type ModifyLocalGatewayResponse struct {
 }
 
 func (r *ModifyLocalGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13074,8 +13074,8 @@ type ModifyNatGatewayAttributeRequest struct {
 }
 
 func (r *ModifyNatGatewayAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13106,8 +13106,8 @@ type ModifyNatGatewayAttributeResponse struct {
 }
 
 func (r *ModifyNatGatewayAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13130,8 +13130,8 @@ type ModifyNatGatewayDestinationIpPortTranslationNatRuleRequest struct {
 }
 
 func (r *ModifyNatGatewayDestinationIpPortTranslationNatRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13160,8 +13160,8 @@ type ModifyNatGatewayDestinationIpPortTranslationNatRuleResponse struct {
 }
 
 func (r *ModifyNatGatewayDestinationIpPortTranslationNatRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13181,8 +13181,8 @@ type ModifyNatGatewaySourceIpTranslationNatRuleRequest struct {
 }
 
 func (r *ModifyNatGatewaySourceIpTranslationNatRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13210,8 +13210,8 @@ type ModifyNatGatewaySourceIpTranslationNatRuleResponse struct {
 }
 
 func (r *ModifyNatGatewaySourceIpTranslationNatRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13253,8 +13253,8 @@ type ModifyNetDetectRequest struct {
 }
 
 func (r *ModifyNetDetectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13286,8 +13286,8 @@ type ModifyNetDetectResponse struct {
 }
 
 func (r *ModifyNetDetectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13307,8 +13307,8 @@ type ModifyNetworkAclAttributeRequest struct {
 }
 
 func (r *ModifyNetworkAclAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13336,8 +13336,8 @@ type ModifyNetworkAclAttributeResponse struct {
 }
 
 func (r *ModifyNetworkAclAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13357,8 +13357,8 @@ type ModifyNetworkAclEntriesRequest struct {
 }
 
 func (r *ModifyNetworkAclEntriesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13386,8 +13386,8 @@ type ModifyNetworkAclEntriesResponse struct {
 }
 
 func (r *ModifyNetworkAclEntriesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13413,8 +13413,8 @@ type ModifyNetworkInterfaceAttributeRequest struct {
 }
 
 func (r *ModifyNetworkInterfaceAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13444,8 +13444,8 @@ type ModifyNetworkInterfaceAttributeResponse struct {
 }
 
 func (r *ModifyNetworkInterfaceAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13465,8 +13465,8 @@ type ModifyNetworkInterfaceQosRequest struct {
 }
 
 func (r *ModifyNetworkInterfaceQosRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13494,8 +13494,8 @@ type ModifyNetworkInterfaceQosResponse struct {
 }
 
 func (r *ModifyNetworkInterfaceQosResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13515,8 +13515,8 @@ type ModifyPrivateIpAddressesAttributeRequest struct {
 }
 
 func (r *ModifyPrivateIpAddressesAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13544,8 +13544,8 @@ type ModifyPrivateIpAddressesAttributeResponse struct {
 }
 
 func (r *ModifyPrivateIpAddressesAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13565,8 +13565,8 @@ type ModifyRouteTableAttributeRequest struct {
 }
 
 func (r *ModifyRouteTableAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13594,8 +13594,8 @@ type ModifyRouteTableAttributeResponse struct {
 }
 
 func (r *ModifyRouteTableAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13618,8 +13618,8 @@ type ModifySecurityGroupAttributeRequest struct {
 }
 
 func (r *ModifySecurityGroupAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13648,8 +13648,8 @@ type ModifySecurityGroupAttributeResponse struct {
 }
 
 func (r *ModifySecurityGroupAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13672,8 +13672,8 @@ type ModifySecurityGroupPoliciesRequest struct {
 }
 
 func (r *ModifySecurityGroupPoliciesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13702,8 +13702,8 @@ type ModifySecurityGroupPoliciesResponse struct {
 }
 
 func (r *ModifySecurityGroupPoliciesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13726,8 +13726,8 @@ type ModifyServiceTemplateAttributeRequest struct {
 }
 
 func (r *ModifyServiceTemplateAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13756,8 +13756,8 @@ type ModifyServiceTemplateAttributeResponse struct {
 }
 
 func (r *ModifyServiceTemplateAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13780,8 +13780,8 @@ type ModifyServiceTemplateGroupAttributeRequest struct {
 }
 
 func (r *ModifyServiceTemplateGroupAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13810,8 +13810,8 @@ type ModifyServiceTemplateGroupAttributeResponse struct {
 }
 
 func (r *ModifyServiceTemplateGroupAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13834,8 +13834,8 @@ type ModifySubnetAttributeRequest struct {
 }
 
 func (r *ModifySubnetAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13864,8 +13864,8 @@ type ModifySubnetAttributeResponse struct {
 }
 
 func (r *ModifySubnetAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13894,8 +13894,8 @@ type ModifyVpcAttributeRequest struct {
 }
 
 func (r *ModifyVpcAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13926,8 +13926,8 @@ type ModifyVpcAttributeResponse struct {
 }
 
 func (r *ModifyVpcAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13950,8 +13950,8 @@ type ModifyVpcEndPointAttributeRequest struct {
 }
 
 func (r *ModifyVpcEndPointAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -13980,8 +13980,8 @@ type ModifyVpcEndPointAttributeResponse struct {
 }
 
 func (r *ModifyVpcEndPointAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14010,8 +14010,8 @@ type ModifyVpcEndPointServiceAttributeRequest struct {
 }
 
 func (r *ModifyVpcEndPointServiceAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14042,8 +14042,8 @@ type ModifyVpcEndPointServiceAttributeResponse struct {
 }
 
 func (r *ModifyVpcEndPointServiceAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14066,8 +14066,8 @@ type ModifyVpcEndPointServiceWhiteListRequest struct {
 }
 
 func (r *ModifyVpcEndPointServiceWhiteListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14096,8 +14096,8 @@ type ModifyVpcEndPointServiceWhiteListResponse struct {
 }
 
 func (r *ModifyVpcEndPointServiceWhiteListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14138,8 +14138,8 @@ type ModifyVpnConnectionAttributeRequest struct {
 }
 
 func (r *ModifyVpnConnectionAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14174,8 +14174,8 @@ type ModifyVpnConnectionAttributeResponse struct {
 }
 
 func (r *ModifyVpnConnectionAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14198,8 +14198,8 @@ type ModifyVpnGatewayAttributeRequest struct {
 }
 
 func (r *ModifyVpnGatewayAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14228,8 +14228,8 @@ type ModifyVpnGatewayAttributeResponse struct {
 }
 
 func (r *ModifyVpnGatewayAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14249,8 +14249,8 @@ type ModifyVpnGatewayCcnRoutesRequest struct {
 }
 
 func (r *ModifyVpnGatewayCcnRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14278,8 +14278,8 @@ type ModifyVpnGatewayCcnRoutesResponse struct {
 }
 
 func (r *ModifyVpnGatewayCcnRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14618,8 +14618,8 @@ type NotifyRoutesRequest struct {
 }
 
 func (r *NotifyRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14647,8 +14647,8 @@ type NotifyRoutesResponse struct {
 }
 
 func (r *NotifyRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14744,8 +14744,8 @@ type RejectAttachCcnInstancesRequest struct {
 }
 
 func (r *RejectAttachCcnInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14773,8 +14773,8 @@ type RejectAttachCcnInstancesResponse struct {
 }
 
 func (r *RejectAttachCcnInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14791,8 +14791,8 @@ type ReleaseAddressesRequest struct {
 }
 
 func (r *ReleaseAddressesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14822,8 +14822,8 @@ type ReleaseAddressesResponse struct {
 }
 
 func (r *ReleaseAddressesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14843,8 +14843,8 @@ type ReleaseIp6AddressesBandwidthRequest struct {
 }
 
 func (r *ReleaseIp6AddressesBandwidthRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14875,8 +14875,8 @@ type ReleaseIp6AddressesBandwidthResponse struct {
 }
 
 func (r *ReleaseIp6AddressesBandwidthResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14899,8 +14899,8 @@ type RemoveBandwidthPackageResourcesRequest struct {
 }
 
 func (r *RemoveBandwidthPackageResourcesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14929,8 +14929,8 @@ type RemoveBandwidthPackageResourcesResponse struct {
 }
 
 func (r *RemoveBandwidthPackageResourcesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14950,8 +14950,8 @@ type RemoveIp6RulesRequest struct {
 }
 
 func (r *RemoveIp6RulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -14979,8 +14979,8 @@ type RemoveIp6RulesResponse struct {
 }
 
 func (r *RemoveIp6RulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15000,8 +15000,8 @@ type RenewAddressesRequest struct {
 }
 
 func (r *RenewAddressesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15029,8 +15029,8 @@ type RenewAddressesResponse struct {
 }
 
 func (r *RenewAddressesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15050,8 +15050,8 @@ type RenewVpnGatewayRequest struct {
 }
 
 func (r *RenewVpnGatewayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15079,8 +15079,8 @@ type RenewVpnGatewayResponse struct {
 }
 
 func (r *RenewVpnGatewayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15100,8 +15100,8 @@ type ReplaceDirectConnectGatewayCcnRoutesRequest struct {
 }
 
 func (r *ReplaceDirectConnectGatewayCcnRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15129,8 +15129,8 @@ type ReplaceDirectConnectGatewayCcnRoutesResponse struct {
 }
 
 func (r *ReplaceDirectConnectGatewayCcnRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15150,8 +15150,8 @@ type ReplaceRouteTableAssociationRequest struct {
 }
 
 func (r *ReplaceRouteTableAssociationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15179,8 +15179,8 @@ type ReplaceRouteTableAssociationResponse struct {
 }
 
 func (r *ReplaceRouteTableAssociationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15200,8 +15200,8 @@ type ReplaceRoutesRequest struct {
 }
 
 func (r *ReplaceRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15235,8 +15235,8 @@ type ReplaceRoutesResponse struct {
 }
 
 func (r *ReplaceRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15259,8 +15259,8 @@ type ReplaceSecurityGroupPolicyRequest struct {
 }
 
 func (r *ReplaceSecurityGroupPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15289,8 +15289,8 @@ type ReplaceSecurityGroupPolicyResponse struct {
 }
 
 func (r *ReplaceSecurityGroupPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15313,8 +15313,8 @@ type ResetAttachCcnInstancesRequest struct {
 }
 
 func (r *ResetAttachCcnInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15343,8 +15343,8 @@ type ResetAttachCcnInstancesResponse struct {
 }
 
 func (r *ResetAttachCcnInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15364,8 +15364,8 @@ type ResetNatGatewayConnectionRequest struct {
 }
 
 func (r *ResetNatGatewayConnectionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15393,8 +15393,8 @@ type ResetNatGatewayConnectionResponse struct {
 }
 
 func (r *ResetNatGatewayConnectionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15417,8 +15417,8 @@ type ResetRoutesRequest struct {
 }
 
 func (r *ResetRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15447,8 +15447,8 @@ type ResetRoutesResponse struct {
 }
 
 func (r *ResetRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15468,8 +15468,8 @@ type ResetVpnConnectionRequest struct {
 }
 
 func (r *ResetVpnConnectionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15497,8 +15497,8 @@ type ResetVpnConnectionResponse struct {
 }
 
 func (r *ResetVpnConnectionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15518,8 +15518,8 @@ type ResetVpnGatewayInternetMaxBandwidthRequest struct {
 }
 
 func (r *ResetVpnGatewayInternetMaxBandwidthRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15547,8 +15547,8 @@ type ResetVpnGatewayInternetMaxBandwidthResponse struct {
 }
 
 func (r *ResetVpnGatewayInternetMaxBandwidthResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -15709,7 +15709,7 @@ type Route struct {
 	// DIRECTCONNECT：专线网关；
 	// PEERCONNECTION：对等连接；
 	// SSLVPN：sslvpn网关；
-	// NAT：NAT网关; 
+	// NAT：NAT网关;
 	// NORMAL_CVM：普通云服务器；
 	// EIP：云服务器的公网IP；
 	// CCN：云联网；
@@ -15984,8 +15984,8 @@ type SetCcnRegionBandwidthLimitsRequest struct {
 }
 
 func (r *SetCcnRegionBandwidthLimitsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -16013,8 +16013,8 @@ type SetCcnRegionBandwidthLimitsResponse struct {
 }
 
 func (r *SetCcnRegionBandwidthLimitsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -16162,8 +16162,8 @@ type TransformAddressRequest struct {
 }
 
 func (r *TransformAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -16190,8 +16190,8 @@ type TransformAddressResponse struct {
 }
 
 func (r *TransformAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -16211,8 +16211,8 @@ type UnassignIpv6AddressesRequest struct {
 }
 
 func (r *UnassignIpv6AddressesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -16240,8 +16240,8 @@ type UnassignIpv6AddressesResponse struct {
 }
 
 func (r *UnassignIpv6AddressesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -16261,8 +16261,8 @@ type UnassignIpv6CidrBlockRequest struct {
 }
 
 func (r *UnassignIpv6CidrBlockRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -16290,8 +16290,8 @@ type UnassignIpv6CidrBlockResponse struct {
 }
 
 func (r *UnassignIpv6CidrBlockResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -16311,8 +16311,8 @@ type UnassignIpv6SubnetCidrBlockRequest struct {
 }
 
 func (r *UnassignIpv6SubnetCidrBlockRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -16340,8 +16340,8 @@ type UnassignIpv6SubnetCidrBlockResponse struct {
 }
 
 func (r *UnassignIpv6SubnetCidrBlockResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -16361,8 +16361,8 @@ type UnassignPrivateIpAddressesRequest struct {
 }
 
 func (r *UnassignPrivateIpAddressesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -16390,8 +16390,8 @@ type UnassignPrivateIpAddressesResponse struct {
 }
 
 func (r *UnassignPrivateIpAddressesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -16651,8 +16651,8 @@ type WithdrawNotifyRoutesRequest struct {
 }
 
 func (r *WithdrawNotifyRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -16680,8 +16680,8 @@ type WithdrawNotifyRoutesResponse struct {
 }
 
 func (r *WithdrawNotifyRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

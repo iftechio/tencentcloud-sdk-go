@@ -15,10 +15,10 @@
 package v20180813
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type AddResourceTagRequest struct {
@@ -35,8 +35,8 @@ type AddResourceTagRequest struct {
 }
 
 func (r *AddResourceTagRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -65,8 +65,8 @@ type AddResourceTagResponse struct {
 }
 
 func (r *AddResourceTagResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -98,8 +98,8 @@ type AttachResourcesTagRequest struct {
 }
 
 func (r *AttachResourcesTagRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -131,8 +131,8 @@ type AttachResourcesTagResponse struct {
 }
 
 func (r *AttachResourcesTagResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -152,8 +152,8 @@ type CreateTagRequest struct {
 }
 
 func (r *CreateTagRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -181,8 +181,8 @@ type CreateTagResponse struct {
 }
 
 func (r *CreateTagResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -202,8 +202,8 @@ type DeleteResourceTagRequest struct {
 }
 
 func (r *DeleteResourceTagRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -231,8 +231,8 @@ type DeleteResourceTagResponse struct {
 }
 
 func (r *DeleteResourceTagResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -252,8 +252,8 @@ type DeleteTagRequest struct {
 }
 
 func (r *DeleteTagRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -281,8 +281,8 @@ type DeleteTagResponse struct {
 }
 
 func (r *DeleteTagResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -314,8 +314,8 @@ type DescribeResourceTagsByResourceIdsRequest struct {
 }
 
 func (r *DescribeResourceTagsByResourceIdsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -359,8 +359,8 @@ type DescribeResourceTagsByResourceIdsResponse struct {
 }
 
 func (r *DescribeResourceTagsByResourceIdsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -392,8 +392,8 @@ type DescribeResourceTagsByResourceIdsSeqRequest struct {
 }
 
 func (r *DescribeResourceTagsByResourceIdsSeqRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -437,8 +437,8 @@ type DescribeResourceTagsByResourceIdsSeqResponse struct {
 }
 
 func (r *DescribeResourceTagsByResourceIdsSeqResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -473,8 +473,8 @@ type DescribeResourceTagsByTagKeysRequest struct {
 }
 
 func (r *DescribeResourceTagsByTagKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -519,8 +519,8 @@ type DescribeResourceTagsByTagKeysResponse struct {
 }
 
 func (r *DescribeResourceTagsByTagKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -558,8 +558,8 @@ type DescribeResourceTagsRequest struct {
 }
 
 func (r *DescribeResourceTagsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -594,7 +594,7 @@ type DescribeResourceTagsResponse struct {
 		Offset *uint64 `json:"Offset,omitempty" name:"Offset"`
 
 		// 每页大小
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Limit *uint64 `json:"Limit,omitempty" name:"Limit"`
 
 		// 资源标签
@@ -606,8 +606,8 @@ type DescribeResourceTagsResponse struct {
 }
 
 func (r *DescribeResourceTagsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -645,8 +645,8 @@ type DescribeResourcesByTagsRequest struct {
 }
 
 func (r *DescribeResourcesByTagsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -681,7 +681,7 @@ type DescribeResourcesByTagsResponse struct {
 		Offset *uint64 `json:"Offset,omitempty" name:"Offset"`
 
 		// 每页大小
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Limit *uint64 `json:"Limit,omitempty" name:"Limit"`
 
 		// 资源标签
@@ -693,8 +693,8 @@ type DescribeResourcesByTagsResponse struct {
 }
 
 func (r *DescribeResourcesByTagsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -732,8 +732,8 @@ type DescribeResourcesByTagsUnionRequest struct {
 }
 
 func (r *DescribeResourcesByTagsUnionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -779,8 +779,8 @@ type DescribeResourcesByTagsUnionResponse struct {
 }
 
 func (r *DescribeResourcesByTagsUnionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -806,8 +806,8 @@ type DescribeTagKeysRequest struct {
 }
 
 func (r *DescribeTagKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -849,8 +849,8 @@ type DescribeTagKeysResponse struct {
 }
 
 func (r *DescribeTagKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -876,8 +876,8 @@ type DescribeTagValuesRequest struct {
 }
 
 func (r *DescribeTagValuesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -919,8 +919,8 @@ type DescribeTagValuesResponse struct {
 }
 
 func (r *DescribeTagValuesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -946,8 +946,8 @@ type DescribeTagValuesSeqRequest struct {
 }
 
 func (r *DescribeTagValuesSeqRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -989,8 +989,8 @@ type DescribeTagValuesSeqResponse struct {
 }
 
 func (r *DescribeTagValuesSeqResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1025,8 +1025,8 @@ type DescribeTagsRequest struct {
 }
 
 func (r *DescribeTagsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1071,8 +1071,8 @@ type DescribeTagsResponse struct {
 }
 
 func (r *DescribeTagsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1107,8 +1107,8 @@ type DescribeTagsSeqRequest struct {
 }
 
 func (r *DescribeTagsSeqRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1153,8 +1153,8 @@ type DescribeTagsSeqResponse struct {
 }
 
 func (r *DescribeTagsSeqResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1183,8 +1183,8 @@ type DetachResourcesTagRequest struct {
 }
 
 func (r *DetachResourcesTagRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1215,8 +1215,8 @@ type DetachResourcesTagResponse struct {
 }
 
 func (r *DetachResourcesTagResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1239,8 +1239,8 @@ type ModifyResourceTagsRequest struct {
 }
 
 func (r *ModifyResourceTagsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1269,8 +1269,8 @@ type ModifyResourceTagsResponse struct {
 }
 
 func (r *ModifyResourceTagsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1302,8 +1302,8 @@ type ModifyResourcesTagValueRequest struct {
 }
 
 func (r *ModifyResourcesTagValueRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1335,8 +1335,8 @@ type ModifyResourcesTagValueResponse struct {
 }
 
 func (r *ModifyResourcesTagValueResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1451,8 +1451,8 @@ type UpdateResourceTagValueRequest struct {
 }
 
 func (r *UpdateResourceTagValueRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1481,8 +1481,8 @@ type UpdateResourceTagValueResponse struct {
 }
 
 func (r *UpdateResourceTagValueResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

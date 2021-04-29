@@ -15,10 +15,10 @@
 package v20191022
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type AlgorithmSpecification struct {
@@ -115,8 +115,8 @@ type CreateCodeRepositoryRequest struct {
 }
 
 func (r *CreateCodeRepositoryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -148,8 +148,8 @@ type CreateCodeRepositoryResponse struct {
 }
 
 func (r *CreateCodeRepositoryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -218,8 +218,8 @@ type CreateNotebookInstanceRequest struct {
 }
 
 func (r *CreateNotebookInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -261,8 +261,8 @@ type CreateNotebookInstanceResponse struct {
 }
 
 func (r *CreateNotebookInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -287,8 +287,8 @@ type CreateNotebookLifecycleScriptRequest struct {
 }
 
 func (r *CreateNotebookLifecycleScriptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -320,8 +320,8 @@ type CreateNotebookLifecycleScriptResponse struct {
 }
 
 func (r *CreateNotebookLifecycleScriptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -342,8 +342,8 @@ type CreatePresignedNotebookInstanceUrlRequest struct {
 }
 
 func (r *CreatePresignedNotebookInstanceUrlRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -374,8 +374,8 @@ type CreatePresignedNotebookInstanceUrlResponse struct {
 }
 
 func (r *CreatePresignedNotebookInstanceUrlResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -423,8 +423,8 @@ type CreateTrainingJobRequest struct {
 }
 
 func (r *CreateTrainingJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -464,8 +464,8 @@ type CreateTrainingJobResponse struct {
 }
 
 func (r *CreateTrainingJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -493,8 +493,8 @@ type DeleteCodeRepositoryRequest struct {
 }
 
 func (r *DeleteCodeRepositoryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -524,8 +524,8 @@ type DeleteCodeRepositoryResponse struct {
 }
 
 func (r *DeleteCodeRepositoryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -542,8 +542,8 @@ type DeleteNotebookInstanceRequest struct {
 }
 
 func (r *DeleteNotebookInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -570,8 +570,8 @@ type DeleteNotebookInstanceResponse struct {
 }
 
 func (r *DeleteNotebookInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -591,8 +591,8 @@ type DeleteNotebookLifecycleScriptRequest struct {
 }
 
 func (r *DeleteNotebookLifecycleScriptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -620,8 +620,8 @@ type DeleteNotebookLifecycleScriptResponse struct {
 }
 
 func (r *DeleteNotebookLifecycleScriptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -651,8 +651,8 @@ type DescribeCodeRepositoriesRequest struct {
 }
 
 func (r *DescribeCodeRepositoriesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -680,7 +680,7 @@ type DescribeCodeRepositoriesResponse struct {
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 存储库列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CodeRepoSet []*CodeRepoSummary `json:"CodeRepoSet,omitempty" name:"CodeRepoSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -689,8 +689,8 @@ type DescribeCodeRepositoriesResponse struct {
 }
 
 func (r *DescribeCodeRepositoriesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -707,8 +707,8 @@ type DescribeCodeRepositoryRequest struct {
 }
 
 func (r *DescribeCodeRepositoryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -750,8 +750,8 @@ type DescribeCodeRepositoryResponse struct {
 }
 
 func (r *DescribeCodeRepositoryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -769,8 +769,8 @@ type DescribeNotebookInstanceRequest struct {
 }
 
 func (r *DescribeNotebookInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -795,91 +795,91 @@ type DescribeNotebookInstanceResponse struct {
 		NotebookInstanceName *string `json:"NotebookInstanceName,omitempty" name:"NotebookInstanceName"`
 
 		// Notebook算力资源类型
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InstanceType *string `json:"InstanceType,omitempty" name:"InstanceType"`
 
 		// 角色的资源描述
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RoleArn *string `json:"RoleArn,omitempty" name:"RoleArn"`
 
 		// 外网访问权限
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DirectInternetAccess *string `json:"DirectInternetAccess,omitempty" name:"DirectInternetAccess"`
 
 		// Root用户权限
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RootAccess *string `json:"RootAccess,omitempty" name:"RootAccess"`
 
 		// 子网ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SubnetId *string `json:"SubnetId,omitempty" name:"SubnetId"`
 
 		// 数据卷大小(GB)
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VolumeSizeInGB *uint64 `json:"VolumeSizeInGB,omitempty" name:"VolumeSizeInGB"`
 
 		// 创建失败原因
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FailureReason *string `json:"FailureReason,omitempty" name:"FailureReason"`
 
 		// Notebook实例创建时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CreationTime *string `json:"CreationTime,omitempty" name:"CreationTime"`
 
 		// Notebook实例最近修改时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LastModifiedTime *string `json:"LastModifiedTime,omitempty" name:"LastModifiedTime"`
 
 		// Notebook实例日志链接
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LogUrl *string `json:"LogUrl,omitempty" name:"LogUrl"`
 
 		// Notebook实例状态
-	// 
-	// Pending: 创建中
-	// Inservice: 运行中
-	// Stopping: 停止中
-	// Stopped: 已停止
-	// Failed: 失败
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		//
+		// Pending: 创建中
+		// Inservice: 运行中
+		// Stopping: 停止中
+		// Stopped: 已停止
+		// Failed: 失败
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		NotebookInstanceStatus *string `json:"NotebookInstanceStatus,omitempty" name:"NotebookInstanceStatus"`
 
 		// Notebook实例ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InstanceId *string `json:"InstanceId,omitempty" name:"InstanceId"`
 
 		// notebook生命周期脚本名称
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LifecycleScriptsName *string `json:"LifecycleScriptsName,omitempty" name:"LifecycleScriptsName"`
 
 		// 默认存储库名称
-	// 可以是已创建的存储库名称或者已https://开头的公共git库
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 可以是已创建的存储库名称或者已https://开头的公共git库
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DefaultCodeRepository *string `json:"DefaultCodeRepository,omitempty" name:"DefaultCodeRepository"`
 
 		// 其他存储库列表
-	// 每个元素可以是已创建的存储库名称或者已https://开头的公共git库
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 每个元素可以是已创建的存储库名称或者已https://开头的公共git库
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AdditionalCodeRepositories []*string `json:"AdditionalCodeRepositories,omitempty" name:"AdditionalCodeRepositories" list`
 
 		// 是否开启CLS日志服务
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ClsAccess *string `json:"ClsAccess,omitempty" name:"ClsAccess"`
 
 		// 是否预付费实例
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Prepay *bool `json:"Prepay,omitempty" name:"Prepay"`
 
 		// 实例运行截止时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Deadline *string `json:"Deadline,omitempty" name:"Deadline"`
 
 		// 自动停止配置
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StoppingCondition *StoppingCondition `json:"StoppingCondition,omitempty" name:"StoppingCondition"`
 
 		// Cls配置
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ClsConfig *ClsConfig `json:"ClsConfig,omitempty" name:"ClsConfig"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -888,8 +888,8 @@ type DescribeNotebookInstanceResponse struct {
 }
 
 func (r *DescribeNotebookInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -928,8 +928,8 @@ type DescribeNotebookInstancesRequest struct {
 }
 
 func (r *DescribeNotebookInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -966,8 +966,8 @@ type DescribeNotebookInstancesResponse struct {
 }
 
 func (r *DescribeNotebookInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -984,8 +984,8 @@ type DescribeNotebookLifecycleScriptRequest struct {
 }
 
 func (r *DescribeNotebookLifecycleScriptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1010,11 +1010,11 @@ type DescribeNotebookLifecycleScriptResponse struct {
 		NotebookLifecycleScriptsName *string `json:"NotebookLifecycleScriptsName,omitempty" name:"NotebookLifecycleScriptsName"`
 
 		// 创建脚本
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CreateScript *string `json:"CreateScript,omitempty" name:"CreateScript"`
 
 		// 启动脚本
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StartScript *string `json:"StartScript,omitempty" name:"StartScript"`
 
 		// 创建时间
@@ -1029,8 +1029,8 @@ type DescribeNotebookLifecycleScriptResponse struct {
 }
 
 func (r *DescribeNotebookLifecycleScriptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1060,8 +1060,8 @@ type DescribeNotebookLifecycleScriptsRequest struct {
 }
 
 func (r *DescribeNotebookLifecycleScriptsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1097,8 +1097,8 @@ type DescribeNotebookLifecycleScriptsResponse struct {
 }
 
 func (r *DescribeNotebookLifecycleScriptsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1112,8 +1112,8 @@ type DescribeNotebookSummaryRequest struct {
 }
 
 func (r *DescribeNotebookSummaryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1151,8 +1151,8 @@ type DescribeNotebookSummaryResponse struct {
 }
 
 func (r *DescribeNotebookSummaryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1169,8 +1169,8 @@ type DescribeTrainingJobRequest struct {
 }
 
 func (r *DescribeTrainingJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1198,7 +1198,7 @@ type DescribeTrainingJobResponse struct {
 		TrainingJobName *string `json:"TrainingJobName,omitempty" name:"TrainingJobName"`
 
 		// 算法超级参数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		HyperParameters *string `json:"HyperParameters,omitempty" name:"HyperParameters"`
 
 		// 输入数据配置
@@ -1208,65 +1208,65 @@ type DescribeTrainingJobResponse struct {
 		OutputDataConfig *OutputDataConfig `json:"OutputDataConfig,omitempty" name:"OutputDataConfig"`
 
 		// 中止条件
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StoppingCondition *StoppingCondition `json:"StoppingCondition,omitempty" name:"StoppingCondition"`
 
 		// 计算实例配置
 		ResourceConfig *ResourceConfig `json:"ResourceConfig,omitempty" name:"ResourceConfig"`
 
 		// 私有网络配置
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VpcConfig *VpcConfig `json:"VpcConfig,omitempty" name:"VpcConfig"`
 
 		// 失败原因
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FailureReason *string `json:"FailureReason,omitempty" name:"FailureReason"`
 
 		// 最近修改时间
 		LastModifiedTime *string `json:"LastModifiedTime,omitempty" name:"LastModifiedTime"`
 
 		// 任务开始时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TrainingStartTime *string `json:"TrainingStartTime,omitempty" name:"TrainingStartTime"`
 
 		// 任务完成时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TrainingEndTime *string `json:"TrainingEndTime,omitempty" name:"TrainingEndTime"`
 
 		// 模型输出配置
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ModelArtifacts *ModelArtifacts `json:"ModelArtifacts,omitempty" name:"ModelArtifacts"`
 
 		// 详细状态，取值范围
-	// Starting：启动中
-	// Downloading: 准备训练数据
-	// Training: 正在训练
-	// Uploading: 上传训练结果
-	// Completed：已完成
-	// Failed: 失败
-	// MaxRuntimeExceeded: 任务超过最大运行时间
-	// Stopping: 停止中
-	// Stopped：已停止
+		// Starting：启动中
+		// Downloading: 准备训练数据
+		// Training: 正在训练
+		// Uploading: 上传训练结果
+		// Completed：已完成
+		// Failed: 失败
+		// MaxRuntimeExceeded: 任务超过最大运行时间
+		// Stopping: 停止中
+		// Stopped：已停止
 		SecondaryStatus *string `json:"SecondaryStatus,omitempty" name:"SecondaryStatus"`
 
 		// 详细状态事件记录
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SecondaryStatusTransitions []*SecondaryStatusTransition `json:"SecondaryStatusTransitions,omitempty" name:"SecondaryStatusTransitions" list`
 
 		// 角色名称
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RoleName *string `json:"RoleName,omitempty" name:"RoleName"`
 
 		// 训练任务状态，取值范围
-	// InProgress：运行中
-	// Completed: 已完成
-	// Failed: 失败
-	// Stopping: 停止中
-	// Stopped：已停止
+		// InProgress：运行中
+		// Completed: 已完成
+		// Failed: 失败
+		// Stopping: 停止中
+		// Stopped：已停止
 		TrainingJobStatus *string `json:"TrainingJobStatus,omitempty" name:"TrainingJobStatus"`
 
 		// 训练任务日志链接
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LogUrl *string `json:"LogUrl,omitempty" name:"LogUrl"`
 
 		// 训练任务实例ID
@@ -1278,8 +1278,8 @@ type DescribeTrainingJobResponse struct {
 }
 
 func (r *DescribeTrainingJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1316,8 +1316,8 @@ type DescribeTrainingJobsRequest struct {
 }
 
 func (r *DescribeTrainingJobsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1356,8 +1356,8 @@ type DescribeTrainingJobsResponse struct {
 }
 
 func (r *DescribeTrainingJobsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1587,8 +1587,8 @@ type StartNotebookInstanceRequest struct {
 }
 
 func (r *StartNotebookInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1617,8 +1617,8 @@ type StartNotebookInstanceResponse struct {
 }
 
 func (r *StartNotebookInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1635,8 +1635,8 @@ type StopNotebookInstanceRequest struct {
 }
 
 func (r *StopNotebookInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1663,8 +1663,8 @@ type StopNotebookInstanceResponse struct {
 }
 
 func (r *StopNotebookInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1681,8 +1681,8 @@ type StopTrainingJobRequest struct {
 }
 
 func (r *StopTrainingJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1709,8 +1709,8 @@ type StopTrainingJobResponse struct {
 }
 
 func (r *StopTrainingJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1777,8 +1777,8 @@ type UpdateCodeRepositoryRequest struct {
 }
 
 func (r *UpdateCodeRepositoryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1809,8 +1809,8 @@ type UpdateCodeRepositoryResponse struct {
 }
 
 func (r *UpdateCodeRepositoryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1877,8 +1877,8 @@ type UpdateNotebookInstanceRequest struct {
 }
 
 func (r *UpdateNotebookInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1919,8 +1919,8 @@ type UpdateNotebookInstanceResponse struct {
 }
 
 func (r *UpdateNotebookInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1945,8 +1945,8 @@ type UpdateNotebookLifecycleScriptRequest struct {
 }
 
 func (r *UpdateNotebookLifecycleScriptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1975,8 +1975,8 @@ type UpdateNotebookLifecycleScriptResponse struct {
 }
 
 func (r *UpdateNotebookLifecycleScriptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

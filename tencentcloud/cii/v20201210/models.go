@@ -15,10 +15,10 @@
 package v20201210
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type CompareMetricsData struct {
@@ -74,8 +74,8 @@ type CreateStructureTaskRequest struct {
 }
 
 func (r *CreateStructureTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -112,8 +112,8 @@ type CreateStructureTaskResponse struct {
 }
 
 func (r *CreateStructureTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -130,8 +130,8 @@ type DescribeStructCompareDataRequest struct {
 }
 
 func (r *DescribeStructCompareDataRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -188,8 +188,8 @@ type DescribeStructCompareDataResponse struct {
 }
 
 func (r *DescribeStructCompareDataResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -206,8 +206,8 @@ type DescribeStructureTaskResultRequest struct {
 }
 
 func (r *DescribeStructureTaskResultRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -229,13 +229,13 @@ type DescribeStructureTaskResultResponse struct {
 	Response *struct {
 
 		// 结果状态：
-	// 0：返回成功
-	// 1：结果未生成
-	// 2：结果生成失败
+		// 0：返回成功
+		// 1：结果未生成
+		// 2：结果生成失败
 		Status *uint64 `json:"Status,omitempty" name:"Status"`
 
 		// 结构化识别结果数组，每个数组元素对应一个图片的结构化结果，顺序和输入参数的ImageList或FileList对应。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Results []*ResultObject `json:"Results,omitempty" name:"Results" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -244,8 +244,8 @@ type DescribeStructureTaskResultResponse struct {
 }
 
 func (r *DescribeStructureTaskResultResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

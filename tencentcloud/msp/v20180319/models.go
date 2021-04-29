@@ -15,10 +15,10 @@
 package v20180319
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type DeregisterMigrationTaskRequest struct {
@@ -29,8 +29,8 @@ type DeregisterMigrationTaskRequest struct {
 }
 
 func (r *DeregisterMigrationTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -57,8 +57,8 @@ type DeregisterMigrationTaskResponse struct {
 }
 
 func (r *DeregisterMigrationTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -75,8 +75,8 @@ type DescribeMigrationTaskRequest struct {
 }
 
 func (r *DescribeMigrationTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -106,8 +106,8 @@ type DescribeMigrationTaskResponse struct {
 }
 
 func (r *DescribeMigrationTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -142,8 +142,8 @@ type ListMigrationProjectRequest struct {
 }
 
 func (r *ListMigrationProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -177,8 +177,8 @@ type ListMigrationProjectResponse struct {
 }
 
 func (r *ListMigrationProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -201,8 +201,8 @@ type ListMigrationTaskRequest struct {
 }
 
 func (r *ListMigrationTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -237,8 +237,8 @@ type ListMigrationTaskResponse struct {
 }
 
 func (r *ListMigrationTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -258,8 +258,8 @@ type ModifyMigrationTaskBelongToProjectRequest struct {
 }
 
 func (r *ModifyMigrationTaskBelongToProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -287,8 +287,8 @@ type ModifyMigrationTaskBelongToProjectResponse struct {
 }
 
 func (r *ModifyMigrationTaskBelongToProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -308,8 +308,8 @@ type ModifyMigrationTaskStatusRequest struct {
 }
 
 func (r *ModifyMigrationTaskStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -337,8 +337,8 @@ type ModifyMigrationTaskStatusResponse struct {
 }
 
 func (r *ModifyMigrationTaskStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -397,8 +397,8 @@ type RegisterMigrationTaskRequest struct {
 }
 
 func (r *RegisterMigrationTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -439,8 +439,8 @@ type RegisterMigrationTaskResponse struct {
 }
 
 func (r *RegisterMigrationTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

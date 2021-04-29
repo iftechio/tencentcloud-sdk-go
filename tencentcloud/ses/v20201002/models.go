@@ -15,10 +15,10 @@
 package v20201002
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type Attachment struct {
@@ -50,8 +50,8 @@ type CreateEmailAddressRequest struct {
 }
 
 func (r *CreateEmailAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -79,8 +79,8 @@ type CreateEmailAddressResponse struct {
 }
 
 func (r *CreateEmailAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -97,8 +97,8 @@ type CreateEmailIdentityRequest struct {
 }
 
 func (r *CreateEmailIdentityRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -134,8 +134,8 @@ type CreateEmailIdentityResponse struct {
 }
 
 func (r *CreateEmailIdentityResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -155,8 +155,8 @@ type CreateEmailTemplateRequest struct {
 }
 
 func (r *CreateEmailTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -184,8 +184,8 @@ type CreateEmailTemplateResponse struct {
 }
 
 func (r *CreateEmailTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -220,8 +220,8 @@ type DeleteBlackListRequest struct {
 }
 
 func (r *DeleteBlackListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -248,8 +248,8 @@ type DeleteBlackListResponse struct {
 }
 
 func (r *DeleteBlackListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -266,8 +266,8 @@ type DeleteEmailAddressRequest struct {
 }
 
 func (r *DeleteEmailAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -294,8 +294,8 @@ type DeleteEmailAddressResponse struct {
 }
 
 func (r *DeleteEmailAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -312,8 +312,8 @@ type DeleteEmailIdentityRequest struct {
 }
 
 func (r *DeleteEmailIdentityRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -340,8 +340,8 @@ type DeleteEmailIdentityResponse struct {
 }
 
 func (r *DeleteEmailIdentityResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -358,8 +358,8 @@ type DeleteEmailTemplateRequest struct {
 }
 
 func (r *DeleteEmailTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -386,8 +386,8 @@ type DeleteEmailTemplateResponse struct {
 }
 
 func (r *DeleteEmailTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -430,8 +430,8 @@ type GetEmailIdentityRequest struct {
 }
 
 func (r *GetEmailIdentityRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -467,8 +467,8 @@ type GetEmailIdentityResponse struct {
 }
 
 func (r *GetEmailIdentityResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -485,8 +485,8 @@ type GetEmailTemplateRequest struct {
 }
 
 func (r *GetEmailTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -516,8 +516,8 @@ type GetEmailTemplateResponse struct {
 }
 
 func (r *GetEmailTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -546,8 +546,8 @@ type GetSendEmailStatusRequest struct {
 }
 
 func (r *GetSendEmailStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -581,8 +581,8 @@ type GetSendEmailStatusResponse struct {
 }
 
 func (r *GetSendEmailStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -608,8 +608,8 @@ type GetStatisticsReportRequest struct {
 }
 
 func (r *GetStatisticsReportRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -645,8 +645,8 @@ type GetStatisticsReportResponse struct {
 }
 
 func (r *GetStatisticsReportResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -678,8 +678,8 @@ type ListBlackEmailAddressRequest struct {
 }
 
 func (r *ListBlackEmailAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -717,8 +717,8 @@ type ListBlackEmailAddressResponse struct {
 }
 
 func (r *ListBlackEmailAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -732,8 +732,8 @@ type ListEmailAddressRequest struct {
 }
 
 func (r *ListEmailAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -754,7 +754,7 @@ type ListEmailAddressResponse struct {
 	Response *struct {
 
 		// 发信地址列表详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		EmailSenders []*EmailSender `json:"EmailSenders,omitempty" name:"EmailSenders" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -763,8 +763,8 @@ type ListEmailAddressResponse struct {
 }
 
 func (r *ListEmailAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -778,8 +778,8 @@ type ListEmailIdentitiesRequest struct {
 }
 
 func (r *ListEmailIdentitiesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -808,8 +808,8 @@ type ListEmailIdentitiesResponse struct {
 }
 
 func (r *ListEmailIdentitiesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -829,8 +829,8 @@ type ListEmailTemplatesRequest struct {
 }
 
 func (r *ListEmailTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -864,8 +864,8 @@ type ListEmailTemplatesResponse struct {
 }
 
 func (r *ListEmailTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -877,7 +877,7 @@ func (r *ListEmailTemplatesResponse) FromJsonString(s string) error {
 type SendEmailRequest struct {
 	*tchttp.BaseRequest
 
-	// 发信邮件地址。请填写发件人邮箱地址，例如：noreply@mail.qcloud.com。如需填写发件人说明，请按照 
+	// 发信邮件地址。请填写发件人邮箱地址，例如：noreply@mail.qcloud.com。如需填写发件人说明，请按照
 	// 发信人 &lt;邮件地址&gt; 的方式填写，例如：
 	// 腾讯云团队 &lt;noreply@mail.qcloud.com&gt;
 	FromEmailAddress *string `json:"FromEmailAddress,omitempty" name:"FromEmailAddress"`
@@ -902,8 +902,8 @@ type SendEmailRequest struct {
 }
 
 func (r *SendEmailRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -939,8 +939,8 @@ type SendEmailResponse struct {
 }
 
 func (r *SendEmailResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -977,7 +977,7 @@ type SendEmailStatus struct {
 	// 3007: 模板ID无效或者不可用
 	// 3008: 模板状态异常
 	// 3009: 无权限使用该模板
-	// 3010: TemplateData字段格式不正确 
+	// 3010: TemplateData字段格式不正确
 	// 3014: 发件域名没有经过认证，无法发送
 	// 3020: 收件方邮箱类型在黑名单
 	// 3024: 邮箱地址格式预检查失败
@@ -1068,8 +1068,8 @@ type UpdateEmailIdentityRequest struct {
 }
 
 func (r *UpdateEmailIdentityRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1105,8 +1105,8 @@ type UpdateEmailIdentityResponse struct {
 }
 
 func (r *UpdateEmailIdentityResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1129,8 +1129,8 @@ type UpdateEmailTemplateRequest struct {
 }
 
 func (r *UpdateEmailTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1159,8 +1159,8 @@ type UpdateEmailTemplateResponse struct {
 }
 
 func (r *UpdateEmailTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

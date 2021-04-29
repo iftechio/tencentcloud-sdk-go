@@ -15,10 +15,10 @@
 package v20181106
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type EvaluationRequest struct {
@@ -65,8 +65,8 @@ type EvaluationRequest struct {
 }
 
 func (r *EvaluationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -103,7 +103,7 @@ type EvaluationResponse struct {
 		SessionId *string `json:"SessionId,omitempty" name:"SessionId"`
 
 		// 识别出的算式信息；
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Items []*Item `json:"Items,omitempty" name:"Items" list`
 
 		// 任务 id，用于查询接口
@@ -115,8 +115,8 @@ type EvaluationResponse struct {
 }
 
 func (r *EvaluationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function

@@ -15,10 +15,10 @@
 package v20180709
 
 import (
-    "encoding/json"
-    "errors"
+	"encoding/json"
+	"errors"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/iftechio/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type ActionSummaryOverviewItem struct {
@@ -794,8 +794,8 @@ type DescribeAccountBalanceRequest struct {
 }
 
 func (r *DescribeAccountBalanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -860,8 +860,8 @@ type DescribeAccountBalanceResponse struct {
 }
 
 func (r *DescribeAccountBalanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -912,8 +912,8 @@ type DescribeBillDetailRequest struct {
 }
 
 func (r *DescribeBillDetailRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -949,7 +949,7 @@ type DescribeBillDetailResponse struct {
 		DetailSet []*BillDetail `json:"DetailSet,omitempty" name:"DetailSet" list`
 
 		// 总记录数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Total *uint64 `json:"Total,omitempty" name:"Total"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -958,8 +958,8 @@ type DescribeBillDetailResponse struct {
 }
 
 func (r *DescribeBillDetailResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -994,8 +994,8 @@ type DescribeBillListRequest struct {
 }
 
 func (r *DescribeBillListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1064,8 +1064,8 @@ type DescribeBillListResponse struct {
 }
 
 func (r *DescribeBillListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1098,8 +1098,8 @@ type DescribeBillResourceSummaryRequest struct {
 }
 
 func (r *DescribeBillResourceSummaryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1129,7 +1129,7 @@ type DescribeBillResourceSummaryResponse struct {
 		ResourceSummarySet []*BillResourceSummary `json:"ResourceSummarySet,omitempty" name:"ResourceSummarySet" list`
 
 		// 资源汇总列表总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Total *int64 `json:"Total,omitempty" name:"Total"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1138,8 +1138,8 @@ type DescribeBillResourceSummaryResponse struct {
 }
 
 func (r *DescribeBillResourceSummaryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1162,8 +1162,8 @@ type DescribeBillSummaryByPayModeRequest struct {
 }
 
 func (r *DescribeBillSummaryByPayModeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1190,7 +1190,7 @@ type DescribeBillSummaryByPayModeResponse struct {
 		Ready *uint64 `json:"Ready,omitempty" name:"Ready"`
 
 		// 各付费模式花费分布详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SummaryOverview []*PayModeSummaryOverviewItem `json:"SummaryOverview,omitempty" name:"SummaryOverview" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1199,8 +1199,8 @@ type DescribeBillSummaryByPayModeResponse struct {
 }
 
 func (r *DescribeBillSummaryByPayModeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1223,8 +1223,8 @@ type DescribeBillSummaryByProductRequest struct {
 }
 
 func (r *DescribeBillSummaryByProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1251,11 +1251,11 @@ type DescribeBillSummaryByProductResponse struct {
 		Ready *uint64 `json:"Ready,omitempty" name:"Ready"`
 
 		// 总花费详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SummaryTotal *BusinessSummaryTotal `json:"SummaryTotal,omitempty" name:"SummaryTotal"`
 
 		// 各产品花费分布
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SummaryOverview []*BusinessSummaryOverviewItem `json:"SummaryOverview,omitempty" name:"SummaryOverview" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1264,8 +1264,8 @@ type DescribeBillSummaryByProductResponse struct {
 }
 
 func (r *DescribeBillSummaryByProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1288,8 +1288,8 @@ type DescribeBillSummaryByProjectRequest struct {
 }
 
 func (r *DescribeBillSummaryByProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1316,7 +1316,7 @@ type DescribeBillSummaryByProjectResponse struct {
 		Ready *uint64 `json:"Ready,omitempty" name:"Ready"`
 
 		// 各项目花费分布详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SummaryOverview []*ProjectSummaryOverviewItem `json:"SummaryOverview,omitempty" name:"SummaryOverview" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1325,8 +1325,8 @@ type DescribeBillSummaryByProjectResponse struct {
 }
 
 func (r *DescribeBillSummaryByProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1349,8 +1349,8 @@ type DescribeBillSummaryByRegionRequest struct {
 }
 
 func (r *DescribeBillSummaryByRegionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1377,7 +1377,7 @@ type DescribeBillSummaryByRegionResponse struct {
 		Ready *uint64 `json:"Ready,omitempty" name:"Ready"`
 
 		// 各地域花费分布详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SummaryOverview []*RegionSummaryOverviewItem `json:"SummaryOverview,omitempty" name:"SummaryOverview" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1386,8 +1386,8 @@ type DescribeBillSummaryByRegionResponse struct {
 }
 
 func (r *DescribeBillSummaryByRegionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1413,8 +1413,8 @@ type DescribeBillSummaryByTagRequest struct {
 }
 
 func (r *DescribeBillSummaryByTagRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1442,7 +1442,7 @@ type DescribeBillSummaryByTagResponse struct {
 		Ready *uint64 `json:"Ready,omitempty" name:"Ready"`
 
 		// 各标签值花费分布详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SummaryOverview []*TagSummaryOverviewItem `json:"SummaryOverview,omitempty" name:"SummaryOverview" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1451,8 +1451,8 @@ type DescribeBillSummaryByTagResponse struct {
 }
 
 func (r *DescribeBillSummaryByTagResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1494,8 +1494,8 @@ type DescribeCostDetailRequest struct {
 }
 
 func (r *DescribeCostDetailRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1525,11 +1525,11 @@ type DescribeCostDetailResponse struct {
 	Response *struct {
 
 		// 消耗明细
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DetailSet []*CostDetail `json:"DetailSet,omitempty" name:"DetailSet" list`
 
 		// 记录数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Total *uint64 `json:"Total,omitempty" name:"Total"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1538,8 +1538,8 @@ type DescribeCostDetailResponse struct {
 }
 
 func (r *DescribeCostDetailResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1571,8 +1571,8 @@ type DescribeCostSummaryByProductRequest struct {
 }
 
 func (r *DescribeCostSummaryByProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1605,11 +1605,11 @@ type DescribeCostSummaryByProductResponse struct {
 		Total *ConsumptionSummaryTotal `json:"Total,omitempty" name:"Total"`
 
 		// 消耗按产品汇总详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*ConsumptionBusinessSummaryDataItem `json:"Data,omitempty" name:"Data" list`
 
 		// 记录数量，NeedRecordNum为0是返回null
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RecordNum *uint64 `json:"RecordNum,omitempty" name:"RecordNum"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1618,8 +1618,8 @@ type DescribeCostSummaryByProductResponse struct {
 }
 
 func (r *DescribeCostSummaryByProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1651,8 +1651,8 @@ type DescribeCostSummaryByProjectRequest struct {
 }
 
 func (r *DescribeCostSummaryByProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1696,8 +1696,8 @@ type DescribeCostSummaryByProjectResponse struct {
 }
 
 func (r *DescribeCostSummaryByProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1729,8 +1729,8 @@ type DescribeCostSummaryByRegionRequest struct {
 }
 
 func (r *DescribeCostSummaryByRegionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1766,7 +1766,7 @@ type DescribeCostSummaryByRegionResponse struct {
 		Data []*ConsumptionRegionSummaryDataItem `json:"Data,omitempty" name:"Data" list`
 
 		// 记录数量，NeedRecordNum为0是返回null
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RecordNum *uint64 `json:"RecordNum,omitempty" name:"RecordNum"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1775,8 +1775,8 @@ type DescribeCostSummaryByRegionResponse struct {
 }
 
 func (r *DescribeCostSummaryByRegionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1814,8 +1814,8 @@ type DescribeCostSummaryByResourceRequest struct {
 }
 
 func (r *DescribeCostSummaryByResourceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1847,19 +1847,19 @@ type DescribeCostSummaryByResourceResponse struct {
 		Ready *uint64 `json:"Ready,omitempty" name:"Ready"`
 
 		// 消耗详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Total *ConsumptionSummaryTotal `json:"Total,omitempty" name:"Total"`
 
 		// 过滤条件
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ConditionValue *ConsumptionResourceSummaryConditionValue `json:"ConditionValue,omitempty" name:"ConditionValue"`
 
 		// 记录数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RecordNum *uint64 `json:"RecordNum,omitempty" name:"RecordNum"`
 
 		// 资源消耗详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*ConsumptionResourceSummaryDataItem `json:"Data,omitempty" name:"Data" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1868,8 +1868,8 @@ type DescribeCostSummaryByResourceResponse struct {
 }
 
 func (r *DescribeCostSummaryByResourceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1916,8 +1916,8 @@ type DescribeDealsByCondRequest struct {
 }
 
 func (r *DescribeDealsByCondRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1956,8 +1956,8 @@ type DescribeDealsByCondResponse struct {
 }
 
 func (r *DescribeDealsByCondResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -1980,8 +1980,8 @@ type DescribeDosageCosDetailByDateRequest struct {
 }
 
 func (r *DescribeDosageCosDetailByDateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2013,8 +2013,8 @@ type DescribeDosageCosDetailByDateResponse struct {
 }
 
 func (r *DescribeDosageCosDetailByDateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2035,7 +2035,7 @@ type DescribeDosageDetailByDateRequest struct {
 	// 互动直播：
 	// 10194   互动直播-核心机房           :
 	// 10195   互动直播-边缘机房
-	// 
+	//
 	// cdn业务：
 	// 10180：CDN静态加速流量(国内)
 	// 10181：CDN静态加速带宽(国内)
@@ -2043,10 +2043,10 @@ type DescribeDosageDetailByDateRequest struct {
 	// 10183：CDN静态加速普通带宽
 	// 10231：CDN静态加速流量(海外)
 	// 10232：CDN静态加速带宽(海外)
-	// 
+	//
 	// 100967：弹性公网IP-按流量计费
 	// 101065：公网负载均衡-按流量计费
-	// 
+	//
 	// 视频直播
 	// 10226 视频直播流量(国内)
 	// 10227 视频直播带宽(国内)
@@ -2064,8 +2064,8 @@ type DescribeDosageDetailByDateRequest struct {
 }
 
 func (r *DescribeDosageDetailByDateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2091,19 +2091,19 @@ type DescribeDosageDetailByDateResponse struct {
 	Response *struct {
 
 		// 计量单位
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Unit *string `json:"Unit,omitempty" name:"Unit"`
 
 		// 用量数组
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DetailSets []*DetailSet `json:"DetailSets,omitempty" name:"DetailSets" list`
 
 		// 错误码
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RetCode *int64 `json:"RetCode,omitempty" name:"RetCode"`
 
 		// 错误信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RetMsg *string `json:"RetMsg,omitempty" name:"RetMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2112,8 +2112,8 @@ type DescribeDosageDetailByDateResponse struct {
 }
 
 func (r *DescribeDosageDetailByDateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2161,8 +2161,8 @@ type PayDealsRequest struct {
 }
 
 func (r *PayDealsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
@@ -2201,8 +2201,8 @@ type PayDealsResponse struct {
 }
 
 func (r *PayDealsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 // It is highly **NOT** recommended to use this function
