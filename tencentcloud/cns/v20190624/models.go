@@ -303,7 +303,7 @@ type RecordModifyResponse struct {
 	CodeDesc *string `json:"codeDesc,omitempty" name:"codeDesc"`
 	Data     *struct {
 		Record *struct {
-			ID     *string `json:"id"`
+			ID     *int    `json:"id"`
 			Name   *string `json:"name"`
 			Status *string `json:"status"`
 			Value  *string `json:"value"`
