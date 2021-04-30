@@ -9,10 +9,10 @@ import (
 type DomainListRequest struct {
 	*tchttp.BaseRequest
 
-	Offset     *int    `json:"Offset,omitempty" name:"Offset"`
-	Length     *int    `json:"Length,omitempty" name:"Length"`
-	Keyword    *string `json:"Keyword,omitempty" name:"Keyword"`
-	QProjectId *int    `json:"QProjectId,omitempty" name:"QProjectId"`
+	Offset     *int    `json:"offset,omitempty" name:"offset"`
+	Length     *int    `json:"length,omitempty" name:"length"`
+	Keyword    *string `json:"keyword,omitempty" name:"keyword"`
+	QProjectId *int    `json:"qProjectId,omitempty" name:"qProjectId"`
 }
 
 func (r *DomainListRequest) ToJsonString() string {
@@ -75,8 +75,8 @@ func (r *DomainListResponse) FromJsonString(s string) error {
 type DomainCreateRequest struct {
 	*tchttp.BaseRequest
 
-	Domain    *string `json:"Domain" name:"Domain"`
-	ProjectId *int    `json:"ProjectId,omitempty" name:"ProjectId"`
+	Domain    *string `json:"domain" name:"domain"`
+	ProjectId *int    `json:"projectId,omitempty" name:"projectId"`
 }
 
 func (r *DomainCreateRequest) ToJsonString() string {
@@ -115,8 +115,8 @@ func (r *DomainCreateResponse) FromJsonString(s string) error {
 type SetDomainStatusRequest struct {
 	*tchttp.BaseRequest
 
-	Domain    *string `json:"domain" name:"Domain"`
-	ProjectId *int    `json:"ProjectId,omitempty" name:"ProjectId"`
+	Domain    *string `json:"domain" name:"domain"`
+	ProjectId *int    `json:"projectId,omitempty" name:"projectId"`
 }
 
 func (r *SetDomainStatusRequest) ToJsonString() string {
@@ -148,7 +148,7 @@ func (r *SetDomainStatusResponse) FromJsonString(s string) error {
 type DomainDeleteRequest struct {
 	*tchttp.BaseRequest
 
-	Domain *string `json:"Domain" name:"Domain"`
+	Domain *string `json:"domain" name:"domain"`
 }
 
 func (r *DomainDeleteRequest) ToJsonString() string {
@@ -188,13 +188,13 @@ func (r *DomainDeleteResponse) FromJsonString(s string) error {
 type RecordCreateRequest struct {
 	*tchttp.BaseRequest
 
-	Domain     *string `json:"Domain" name:"Domain"`
-	SubDomain  *string `json:"SubDomain" name:"SubDomain"`
-	RecordType *string `json:"RecordType" name:"RecordType"`
-	RecordLine *string `json:"RecordLine" name:"RecordLine"`
-	Value      *string `json:"Value" name:"Value"`
-	TTL        *int    `json:"TTL,omitempty" name:"TTL" `
-	Mx         *int    `json:"MX,omitempty" name:"MX"`
+	Domain     *string `json:"domain" name:"domain"`
+	SubDomain  *string `json:"subDomain" name:"subDomain"`
+	RecordType *string `json:"recordType" name:"recordType"`
+	RecordLine *string `json:"recordLine" name:"recordLine"`
+	Value      *string `json:"value" name:"value"`
+	TTL        *int    `json:"ttl,omitempty" name:"ttl" `
+	Mx         *int    `json:"mx,omitempty" name:"mx"`
 }
 
 func (r *RecordCreateRequest) ToJsonString() string {
@@ -234,14 +234,9 @@ func (r *RecordCreateResponse) FromJsonString(s string) error {
 type RecordStatusRequest struct {
 	*tchttp.BaseRequest
 
-	Domain     *string `json:"domain" name:"Domain"`
-	SubDomain  *string `json:"subDomain" name:"SubDomain"`
-	RecordID   *int    `json:"recordId" name:"RecordID"`
-	RecordType *string `json:"recordType" name:"RecordType"`
-	RecordLine *string `json:"recordLine" name:"RecordLine"`
-	Value      *string `json:"value" name:"Value"`
-	TTL        *int    `json:"TTL,omitempty" name:"TTL"`
-	Mx         *int    `json:"MX,omitempty" name:"MX"`
+	Domain   *string `json:"domain" name:"domain"`
+	RecordID *int    `json:"recordId" name:"recordId"`
+	Status   *string `json:"status,omitempty" name:"status"`
 }
 
 func (r *RecordStatusRequest) ToJsonString() string {
@@ -281,14 +276,14 @@ func (r *RecordStatusResponse) FromJsonString(s string) error {
 type RecordModifyRequest struct {
 	*tchttp.BaseRequest
 
-	Domain     *string `json:"Domain" name:"Domain"`
-	SubDomain  *string `json:"SubDomain" name:"SubDomain"`
-	RecordID   *int    `json:"RecordID" name:"RecordID"`
-	RecordType *string `json:"RecordType" name:"RecordType"`
-	RecordLine *string `json:"RecordLine" name:"RecordType"`
-	Value      *string `json:"Value" name:"Value"`
-	TTL        *int    `json:"TTL,omitempty" name:"TTL"`
-	Mx         *int    `json:"MX,omitempty" name:"MX"`
+	Domain     *string `json:"domain" name:"domain"`
+	RecordID   *int    `json:"recordID" name:"recordId"`
+	SubDomain  *string `json:"subDomain" name:"subDomain"`
+	RecordType *string `json:"recordType" name:"recordType"`
+	RecordLine *string `json:"recordLine" name:"recordLine"`
+	Value      *string `json:"value" name:"value"`
+	TTL        *int    `json:"ttl,omitempty" name:"ttl"`
+	Mx         *int    `json:"mx,omitempty" name:"mx"`
 }
 
 func (r *RecordModifyRequest) ToJsonString() string {
@@ -330,11 +325,11 @@ type RecordListRequest struct {
 	*tchttp.BaseRequest
 
 	Domain     *string `json:"domain" name:"domain"`
-	Offset     *int    `json:"Offset,omitempty" name:"offset"`
-	Length     *int    `json:"Length,omitempty" name:"length"`
-	SubDomain  *string `json:"SubDomain,omitempty" name:"subDomain"`
-	RecordType *string `json:"RecordType,omitempty" name:"recordType"`
-	QProjectID *int    `json:"QProjectID,omitempty" name:"qProjectID"`
+	Offset     *int    `json:"offset,omitempty" name:"offset"`
+	Length     *int    `json:"length,omitempty" name:"length"`
+	SubDomain  *string `json:"subDomain,omitempty" name:"subDomain"`
+	RecordType *string `json:"recordType,omitempty" name:"recordType"`
+	QProjectID *int    `json:"qProjectId,omitempty" name:"qProjectId"`
 }
 
 func (r *RecordListRequest) ToJsonString() string {
@@ -408,8 +403,8 @@ func (r *RecordListResponse) FromJsonString(s string) error {
 type RecordDeleteRequest struct {
 	*tchttp.BaseRequest
 
-	Domain   *string `json:"Domain" name:"Domain"`
-	RecordID *int    `json:"RecordID,omitempty" name:"RecordID"`
+	Domain   *string `json:"domain" name:"domain"`
+	RecordID *int    `json:"recordId,omitempty" name:"recordId"`
 }
 
 func (r *RecordDeleteRequest) ToJsonString() string {
